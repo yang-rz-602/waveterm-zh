@@ -1,128 +1,34 @@
 # Wave Terminal 简体中文版
 
-基于 Wave Terminal `v0.14.5` 的 Windows x64 中文构建，版本标识 `0.14.5-zh.1`。
-本项目保留上游 Apache-2.0 许可与版权声明。
+基于 Wave Terminal `v0.14.5` 构建，版本 `0.14.5-zh.1`，适用于 Windows x64。汉化版程序、源码和使用说明均已发布。
 
-- [汉化说明与构建步骤](localization/README.zh-CN.md)
-- 汉化版程序包见 GitHub Releases。
-- [Wave Terminal 上游项目](https://github.com/wavetermdev/waveterm/tree/v0.14.5)
+## 下载
 
----
+- [下载 Windows x64 压缩包](https://github.com/yang-rz-602/waveterm-zh/releases/download/v0.14.5-zh.1/Wave-ZH-0.14.5-zh.1-public-windows-x64.zip)
+- [SHA-256 校验文件](https://github.com/yang-rz-602/waveterm-zh/releases/download/v0.14.5-zh.1/Wave-ZH-0.14.5-zh.1-public-windows-x64.zip.sha256)
+- [全部版本与更新记录](https://github.com/yang-rz-602/waveterm-zh/releases)
 
-<p align="center">
-  <a href="https://www.waveterm.dev">
-	<picture>
-		<source media="(prefers-color-scheme: dark)" srcset="./assets/wave-dark.png">
-		<source media="(prefers-color-scheme: light)" srcset="./assets/wave-light.png">
-		<img alt="Wave Terminal Logo" src="./assets/wave-light.png" width="240">
-	</picture>
-  </a>
-  <br/>
-</p>
+下载并解压后，运行 `Wave-ZH.exe`。首次启动会将英文版的连接配置、加密凭据和常用设置复制到汉化版独立目录。发布包只含通用程序文件。
 
-# Wave Terminal
+## 本地数据目录
 
-<div align="center">
+- 汉化版配置：`%USERPROFILE%\.config\waveterm-zh`
+- 汉化版运行数据：`%LOCALAPPDATA%\waveterm-zh\Data`
+- 汉化版 Electron 配置：`%APPDATA%\Wave-ZH`
+- 英文版配置来源：`%USERPROFILE%\.config\waveterm`
 
-[English](README.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
+汉化版后续更改保存在自己的目录中。Wave 凭据继续使用当前 Windows 用户保护的加密格式。汉化版采用手动更新。
 
-</div>
+## 汉化范围
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwavetermdev%2Fwaveterm.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwavetermdev%2Fwaveterm?ref=badge_shield)
+覆盖原生菜单、SSH 连接与状态、设置和凭据管理、标签页和工作区、文件浏览器、进程查看器、Wave AI 面板及首次使用引导。翻译表包含 757 条目，自动化转换覆盖 899 处源码文案。
 
-Wave is an open-source, AI-integrated terminal for macOS, Linux, and Windows. It works with any AI model. Bring your own API keys for OpenAI, Claude, or Gemini, or run local models via Ollama and LM Studio. No accounts required.
+终端程序输出、命令、网址、配置键、协议字段和用户文件内容保留原文；历史版本说明及部分内置编辑器文案仍可能显示英文。
 
-Wave also supports durable SSH sessions that survive network interruptions and restarts, with automatic reconnection. Edit remote files with a built-in graphical editor and preview files inline without leaving the terminal.
+## 构建与验证
 
-![WaveTerm Screenshot](./assets/wave-screenshot.webp)
+React 界面、Electron 主进程和预加载脚本由本仓库源码构建。Electron 运行时为官方 41.1.0；Wave 原生 SSH/backend 组件沿用官方 0.14.5 版本。完整构建步骤见[汉化说明](localization/README.zh-CN.md)。
 
-## Key Features
+静态源码检查、应用启动、`zh-CN` 语言标识、加密凭据读取和连接菜单检查均已通过。SSH 登录需在具体网络和服务器环境中验证。
 
-- Wave AI - Context-aware terminal assistant that reads your terminal output, analyzes widgets, and performs file operations
-- Durable SSH Sessions - Remote terminal sessions survive connection interruptions, network changes, and Wave restarts with automatic reconnection
-- Flexible drag & drop interface to organize terminal blocks, editors, web browsers, and AI assistants
-- Built-in editor for editing remote files with syntax highlighting and modern editor features
-- Rich file preview system for remote files (markdown, images, video, PDFs, CSVs, directories)
-- Quick full-screen toggle for any block - expand terminals, editors, and previews for better visibility, then instantly return to multi-block view
-- AI chat widget with support for multiple models (OpenAI, Claude, Azure, Perplexity, Ollama)
-- Command Blocks for isolating and monitoring individual commands
-- One-click remote connections with full terminal and file system access
-- Secure secret storage using native system backends - store API keys and credentials locally, access them across SSH sessions
-- Rich customization including tab themes, terminal styles, and background images
-- Powerful `wsh` command system for managing your workspace from the CLI and sharing data between terminal sessions
-- Connected file management with `wsh file` - seamlessly copy and sync files between local and remote SSH hosts
-
-## Wave AI
-
-Wave AI is your context-aware terminal assistant with access to your workspace:
-
-- **Terminal Context**: Reads terminal output and scrollback for debugging and analysis
-- **File Operations**: Read, write, and edit files with automatic backups and user approval
-- **CLI Integration**: Use `wsh ai` to pipe output or attach files directly from the command line
-- **BYOK Support**: Bring your own API keys for OpenAI, Claude, Gemini, Azure, and other providers
-- **Local Models**: Run local models with Ollama, LM Studio, and other OpenAI-compatible providers
-- **Free Beta**: Included AI credits while we refine the experience
-- **Coming Soon**: Command execution (with approval)
-
-Learn more in our [Wave AI documentation](https://docs.waveterm.dev/waveai) and [Wave AI Modes documentation](https://docs.waveterm.dev/waveai-modes).
-
-## Installation
-
-Wave Terminal works on macOS, Linux, and Windows.
-
-Platform-specific installation instructions can be found [here](https://docs.waveterm.dev/gettingstarted).
-
-You can also install Wave Terminal directly from: [www.waveterm.dev/download](https://www.waveterm.dev/download).
-
-### Minimum requirements
-
-Wave Terminal runs on the following platforms:
-
-- macOS 11 or later (arm64, x64)
-- Windows 10 1809 or later (x64)
-- Linux based on glibc-2.28 or later (Debian 10, RHEL 8, Ubuntu 20.04, etc.) (arm64, x64)
-
-The WSH helper runs on the following platforms:
-
-- macOS 11 or later (arm64, x64)
-- Windows 10 or later (x64)
-- Linux Kernel 2.6.32 or later (x64), Linux Kernel 3.1 or later (arm64)
-
-## Roadmap
-
-Wave is constantly improving! Our roadmap will be continuously updated with our goals for each release. You can find it [here](./ROADMAP.md).
-
-Want to provide input to our future releases? Connect with us on [Discord](https://discord.gg/XfvZ334gwU) or open a [Feature Request](https://github.com/wavetermdev/waveterm/issues/new/choose)!
-
-## Links
-
-- Homepage &mdash; https://www.waveterm.dev
-- Download Page &mdash; https://www.waveterm.dev/download
-- Documentation &mdash; https://docs.waveterm.dev
-- X &mdash; https://x.com/wavetermdev
-- Discord Community &mdash; https://discord.gg/XfvZ334gwU
-
-## Building from Source
-
-See [Building Wave Terminal](BUILD.md).
-
-## Contributing
-
-Wave uses GitHub Issues for issue tracking.
-
-Find more information in our [Contributions Guide](CONTRIBUTING.md), which includes:
-
-- [Ways to contribute](CONTRIBUTING.md#contributing-to-wave-terminal)
-- [Contribution guidelines](CONTRIBUTING.md#before-you-start)
-
-### Sponsoring Wave ❤️
-
-If Wave Terminal is useful to you or your company, consider sponsoring development.
-
-Sponsorship helps support the time spent building and maintaining the project.
-
-- https://github.com/sponsors/wavetermdev
-
-## License
-
-Wave Terminal is licensed under the Apache-2.0 License. For more information on our dependencies, see [here](./ACKNOWLEDGEMENTS.md).
+上游项目及原始英文说明保存在 [`README.upstream.md`](README.upstream.md)，上游代码采用 Apache-2.0 许可证。
