@@ -58,3 +58,4 @@ localization/smoke-*.json
 localization/qa-*.png
 localization/native-binary-verification.json
 localization/strings-inventory.json
+localization/capture-readme-screenshot.mjs
