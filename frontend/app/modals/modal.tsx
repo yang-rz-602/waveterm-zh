@@ -48,7 +48,7 @@ const Modal = forwardRef<HTMLDivElement, ModalProps>(
             <div className="modal-wrapper">
                 {renderBackdrop(onClickBackdrop)}
                 <div ref={ref} className={clsx(`modal`, className)}>
-                    <Button className="grey ghost modal-close-btn" onClick={onClose} title="Close (ESC)">
+                    <Button className="grey ghost modal-close-btn" onClick={onClose} title={"关闭（Esc）"}>
                         <i className="fa-sharp fa-solid fa-xmark"></i>
                     </Button>
                     <div className="content-wrapper">
@@ -92,7 +92,7 @@ interface ModalFooterProps {
 const ModalFooter = ({
     onCancel,
     onOk,
-    cancelLabel = "Cancel",
+    cancelLabel = "取消",
     okLabel = "Ok",
     okDisabled,
     cancelDisabled,

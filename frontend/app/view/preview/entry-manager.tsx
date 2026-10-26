@@ -6,9 +6,9 @@ import { Input } from "@/app/element/input";
 import React, { memo, useState } from "react";
 
 export enum EntryManagerType {
-    NewFile = "New File",
-    NewDirectory = "New Folder",
-    EditName = "Rename",
+    NewFile = "新建文件",
+    NewDirectory = "新建文件夹",
+    EditName = "重命名",
 }
 
 export type EntryManagerOverlayProps = {
@@ -51,10 +51,10 @@ export const EntryManagerOverlay = memo(
                 </div>
                 <div className="entry-manager-buttons">
                     <Button className="py-[4px]" onClick={() => onSave(value)}>
-                        Save
+                        保存
                     </Button>
                     <Button className="py-[4px] red outlined" onClick={onCancel}>
-                        Cancel
+                        取消
                     </Button>
                 </div>
             </div>

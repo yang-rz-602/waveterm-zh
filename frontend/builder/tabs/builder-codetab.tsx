@@ -55,7 +55,7 @@ const BuilderCodeTab = memo(() => {
     if (!builderAppId) {
         return (
             <div className="w-full h-full flex items-center justify-center">
-                <div className="text-secondary">No builder app selected</div>
+                <div className="text-secondary">请选择要编辑的应用</div>
             </div>
         );
     }
@@ -63,7 +63,7 @@ const BuilderCodeTab = memo(() => {
     if (isLoading) {
         return (
             <div className="w-full h-full flex items-center justify-center">
-                <div className="text-secondary">Loading app.go...</div>
+                <div className="text-secondary">正在加载 app.go…</div>
             </div>
         );
     }
@@ -87,7 +87,7 @@ const BuilderCodeTab = memo(() => {
                 )}
                 onClick={saveNeeded ? handleSave : undefined}
             >
-                Save
+                保存
             </button>
             <CodeEditor
                 blockId={builderAppId}

@@ -112,18 +112,18 @@ async function handleContextMenu(e: React.MouseEvent<HTMLDivElement>) {
     }
     const menu: ContextMenuItem[] = [];
     if (canCut) {
-        menu.push({ label: "Cut", role: "cut" });
+        menu.push({ label: "剪切", role: "cut" });
     }
     if (canCopy) {
-        menu.push({ label: "Copy", role: "copy" });
+        menu.push({ label: "复制", role: "copy" });
     }
     if (canPaste) {
-        menu.push({ label: "Paste", role: "paste" });
+        menu.push({ label: "粘贴", role: "paste" });
     }
     if (clipboardURL) {
         menu.push({ type: "separator" });
         menu.push({
-            label: "Open Clipboard URL (" + clipboardURL.hostname + ")",
+            label: "打开剪贴板网址（" + clipboardURL.hostname + ")",
             click: () => {
                 createBlock({
                     meta: {
@@ -364,7 +364,7 @@ const AppInner = () => {
         return (
             <div className="flex flex-col w-full h-full">
                 <AppBackground />
-                <CenteredDiv>invalid configuration, client or window was not loaded</CenteredDiv>
+                <CenteredDiv>配置无效，客户端或窗口加载失败</CenteredDiv>
             </div>
         );
     }

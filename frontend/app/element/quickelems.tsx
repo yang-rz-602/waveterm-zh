@@ -5,7 +5,7 @@ import React from "react";
 import "./quickelems.scss";
 
 function CenteredLoadingDiv() {
-    return <CenteredDiv>loading...</CenteredDiv>;
+    return <CenteredDiv>正在加载…</CenteredDiv>;
 }
 
 function CenteredDiv({ children }: { children: React.ReactNode }) {

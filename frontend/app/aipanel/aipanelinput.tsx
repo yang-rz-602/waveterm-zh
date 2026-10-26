@@ -33,9 +33,9 @@ export const AIPanelInput = memo(({ onSubmit, status, model }: AIPanelInputProps
     if (!isChatEmpty) {
         placeholder = "Continue...";
     } else if (model.inBuilder) {
-        placeholder = "What would you like to build...";
+        placeholder = "描述你想构建的应用…";
     } else {
-        placeholder = "Ask Wave AI anything...";
+        placeholder = "向 Wave AI 提问…";
     }
 
     const resizeTextarea = useCallback(() => {
@@ -158,7 +158,7 @@ export const AIPanelInput = memo(({ onSubmit, status, model }: AIPanelInputProps
                         style={{ fontSize: "13px" }}
                         rows={2}
                     />
-                    <Tooltip content="Attach files" placement="top" divClassName="absolute bottom-6.5 right-1">
+                    <Tooltip content={"附加文件"} placement="top" divClassName="absolute bottom-6.5 right-1">
                         <button
                             type="button"
                             onClick={handleUploadClick}
@@ -170,7 +170,7 @@ export const AIPanelInput = memo(({ onSubmit, status, model }: AIPanelInputProps
                         </button>
                     </Tooltip>
                     {status === "streaming" ? (
-                        <Tooltip content="Stop Response" placement="top" divClassName="absolute bottom-1.5 right-1">
+                        <Tooltip content={"停止回复"} placement="top" divClassName="absolute bottom-1.5 right-1">
                             <button
                                 type="button"
                                 onClick={() => model.stopResponse()}
@@ -183,7 +183,7 @@ export const AIPanelInput = memo(({ onSubmit, status, model }: AIPanelInputProps
                             </button>
                         </Tooltip>
                     ) : (
-                        <Tooltip content="Send message (Enter)" placement="top" divClassName="absolute bottom-1.5 right-1">
+                        <Tooltip content={"发送消息（Enter）"} placement="top" divClassName="absolute bottom-1.5 right-1">
                             <button
                                 type="submit"
                                 disabled={status !== "ready" || !input.trim()}

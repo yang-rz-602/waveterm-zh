@@ -21,7 +21,7 @@ const UpgradeOnboardingModal_v0_14_0_Content = () => {
                 </div>
                 <div className="flex flex-col items-start gap-2 flex-1">
                     <div className="text-foreground text-base font-semibold leading-[18px]">
-                        Durable SSH Sessions{" "}
+                        持久 SSH 会话{" "}
                         <button
                             onClick={() => waveEnv.electron.openExternal("https://docs.waveterm.dev/durable-sessions")}
                             className="text-accent text-sm font-normal cursor-pointer hover:underline"

@@ -97,7 +97,7 @@ const Mermaid = ({ chart }: { chart: string }) => {
                 setIsLoading(false);
             } catch (err) {
                 console.error("Error rendering mermaid diagram:", err);
-                setError(`Failed to render diagram: ${err.message || err}`);
+                setError(`渲染图表失败：${err.message || err}`);
                 setIsLoading(false);
             }
         };
@@ -109,10 +109,10 @@ const Mermaid = ({ chart }: { chart: string }) => {
         if (!ref.current) return;
 
         if (error) {
-            ref.current.textContent = `Error: ${error}`;
+            ref.current.textContent = `错误：${error}`;
             ref.current.className = "mermaid error";
         } else if (isLoading) {
-            ref.current.textContent = "Loading diagram...";
+            ref.current.textContent = "正在加载图表…";
             ref.current.className = "mermaid";
         } else {
             ref.current.className = "mermaid";
@@ -166,7 +166,7 @@ const CodeBlock = ({ children, onClickExecute }: CodeBlockProps) => {
         <pre className="codeblock">
             {children}
             <div className="codeblock-actions">
-                <CopyButton onClick={handleCopy} title="Copy" />
+                <CopyButton onClick={handleCopy} title={"复制"} />
                 {onClickExecute && (
                     <IconButton
                         decl={{
@@ -405,7 +405,7 @@ const Markdown = ({
                         className="toc-item toc-empty text-secondary"
                         style={{ "--indent-factor": 2 } as React.CSSProperties}
                     >
-                        No sub-headings found
+                        暂无子标题
                     </div>
                 );
             }
@@ -498,7 +498,7 @@ const Markdown = ({
             {toc && (
                 <OverlayScrollbarsComponent className="toc mt-1" options={{ scrollbars: { autoHide: "leave" } }}>
                     <div className="toc-inner">
-                        <h4 className="font-bold">Table of Contents</h4>
+                        <h4 className="font-bold">目录</h4>
                         {toc}
                     </div>
                 </OverlayScrollbarsComponent>

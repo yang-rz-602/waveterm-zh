@@ -85,7 +85,7 @@ const AIThinking = memo(() => (
             <i className="fa fa-circle text-[10px] mx-1"></i>
             <i className="fa fa-circle text-[10px]"></i>
         </div>
-        <span className="text-sm text-gray-400">AI is thinking...</span>
+        <span className="text-sm text-gray-400">AI 正在思考…</span>
     </div>
 ));
 
@@ -209,21 +209,21 @@ const FakeAIPanelHeader = memo(() => {
 
             <div className="flex items-center flex-shrink-0 whitespace-nowrap">
                 <div className="flex items-center text-sm whitespace-nowrap">
-                    <span className="text-gray-300 mr-1 text-[12px]">Context</span>
+                    <span className="text-gray-300 mr-1 text-[12px]">上下文</span>
                     <button
                         className="relative inline-flex h-6 w-14 items-center rounded-full transition-colors bg-accent-600"
-                        title="Widget Access ON"
+                        title={"组件访问已开启"}
                     >
                         <span className="absolute inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-8" />
                         <span className="relative z-10 text-xs text-white transition-all ml-2.5 mr-6 text-left font-bold">
-                            ON
+                            开启
                         </span>
                     </button>
                 </div>
 
                 <button
                     className="text-gray-400 transition-colors p-1 rounded flex-shrink-0 ml-2 focus:outline-none"
-                    title="More options"
+                    title={"更多选项"}
                 >
                     <i className="fa fa-ellipsis-vertical"></i>
                 </button>

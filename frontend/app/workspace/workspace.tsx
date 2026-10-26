@@ -155,7 +155,7 @@ const WorkspaceElem = memo(() => {
                         <PanelResizeHandle className={outerHandleClass} />
                         <Panel order={1} defaultSize={100 - leftGroupInitialPct}>
                             {tabId === "" ? (
-                                <CenteredDiv>No Active Tab</CenteredDiv>
+                                <CenteredDiv>当前无活动标签页</CenteredDiv>
                             ) : (
                                 <div className="flex flex-row h-full">
                                     <TabContent key={tabId} tabId={tabId} noTopPadding={showLeftTabBar && isMacOS()} />

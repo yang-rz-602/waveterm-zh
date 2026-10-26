@@ -81,7 +81,7 @@ export const MIME_TO_EXT: Record<string, string> = {
 export async function createTempFileFromBlob(blob: Blob): Promise<string> {
     // Check size limit (5MB)
     if (blob.size > 5 * 1024 * 1024) {
-        throw new Error("Image too large (>5MB)");
+        throw new Error("图片超过大小限制（5 MB）");
     }
 
     // Get file extension from MIME type

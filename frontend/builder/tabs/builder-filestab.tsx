@@ -71,15 +71,15 @@ const RenameFileModal = memo(
                 onOk={handleRename}
                 onCancel={handleClose}
                 onClose={handleClose}
-                okLabel="Rename"
-                cancelLabel="Cancel"
+                okLabel={"重命名"}
+                cancelLabel={"取消"}
                 okDisabled={isRenaming || !newName.trim()}
             >
                 <div className="flex flex-col gap-4 mb-4">
-                    <h2 className="text-xl font-semibold">Rename File</h2>
+                    <h2 className="text-xl font-semibold">重命名文件</h2>
                     <div className="flex flex-col gap-2">
                         <div className="text-sm text-secondary mb-1">
-                            Current name: <span className="font-medium text-primary">{displayName}</span>
+                            当前名称： <span className="font-medium text-primary">{displayName}</span>
                         </div>
                         <input
                             type="text"
@@ -156,16 +156,16 @@ const DeleteFileModal = memo(
                 onOk={handleDelete}
                 onCancel={handleClose}
                 onClose={handleClose}
-                okLabel="Delete"
-                cancelLabel="Cancel"
+                okLabel={"删除"}
+                cancelLabel={"取消"}
                 okDisabled={isDeleting}
             >
                 <div className="flex flex-col gap-4 mb-4">
-                    <h2 className="text-xl font-semibold">Delete File</h2>
+                    <h2 className="text-xl font-semibold">删除文件</h2>
                     <p>
-                        Are you sure you want to delete <strong>{fileName.replace("static/", "")}</strong>?
+                        确定删除 <strong>{fileName.replace("static/", "")}</strong>?
                     </p>
-                    <p className="text-sm text-secondary">This action cannot be undone.</p>
+                    <p className="text-sm text-secondary">此操作将永久生效。</p>
                     {error && <div className="text-sm text-error">{error}</div>}
                 </div>
             </Modal>
@@ -284,7 +284,7 @@ const BuilderFilesTab = memo(() => {
     const handleContextMenu = (e: React.MouseEvent, fileName: string) => {
         const menu: ContextMenuItem[] = [
             {
-                label: "Rename File",
+                label: "重命名文件",
                 click: () => {
                     modalsModel.pushModal("RenameFileModal", { appId: builderAppId, fileName, onSuccess: loadFiles });
                 },
@@ -293,7 +293,7 @@ const BuilderFilesTab = memo(() => {
                 type: "separator",
             },
             {
-                label: "Delete File",
+                label: "删除文件",
                 click: () => {
                     modalsModel.pushModal("DeleteFileModal", { appId: builderAppId, fileName, onSuccess: loadFiles });
                 },
@@ -313,13 +313,13 @@ const BuilderFilesTab = memo(() => {
             onDragLeave={handleDragLeave}
         >
             <div className="flex items-center justify-between mb-4">
-                <h2 className="text-lg font-semibold">Static Files</h2>
+                <h2 className="text-lg font-semibold">静态文件</h2>
                 <div className="flex gap-2">
                     <button
                         className="px-3 py-1 text-sm font-medium rounded bg-panel border border-border hover:bg-hover transition-colors cursor-pointer"
                         onClick={handleRefresh}
                         disabled={loading}
-                        title="Refresh file list"
+                        title={"刷新文件列表"}
                     >
                         <i className="fa fa-refresh" />
                     </button>
@@ -329,7 +329,7 @@ const BuilderFilesTab = memo(() => {
                         disabled={loading}
                     >
                         <i className="fa fa-plus mr-2" />
-                        Add File
+                        添加文件
                     </button>
                 </div>
                 <input ref={fileInputRef} type="file" onChange={handleFileInputChange} className="hidden" />
@@ -343,16 +343,16 @@ const BuilderFilesTab = memo(() => {
             )}
 
             <div className="mb-3 p-2 bg-blue-500/10 border border-blue-500/30 rounded text-sm text-secondary">
-                Drag and drop files here or click "Add File". Maximum file size: {formatFileSize(MaxFileSize)}
+                将文件拖入此处，或点击“添加文件”。文件大小上限： {formatFileSize(MaxFileSize)}
             </div>
 
             <div className="flex-1 overflow-auto">
                 {loading && files.length === 0 ? (
-                    <div className="text-center text-secondary py-8">Loading files...</div>
+                    <div className="text-center text-secondary py-8">正在加载文件…</div>
                 ) : files.length === 0 ? (
                     <div className="text-center text-secondary py-12">
                         <i className="fa fa-file text-4xl mb-3 opacity-50" />
-                        <p>No files yet. Drag and drop files here or click "Add File" to get started.</p>
+                        <p>暂无文件。拖入文件或点击“添加文件”以开始使用。</p>
                     </div>
                 ) : (
                     <div className="space-y-1">
@@ -370,7 +370,7 @@ const BuilderFilesTab = memo(() => {
                                         {file.isReadOnly && (
                                             <span className="ml-2 text-warning">
                                                 <i className="fa fa-lock mr-1" />
-                                                Generated by framework (read-only)
+                                                由框架生成（只读）
                                             </span>
                                         )}
                                     </div>
@@ -380,7 +380,7 @@ const BuilderFilesTab = memo(() => {
                                     <button
                                         className="px-2 py-1 hover:bg-hover rounded transition-colors cursor-pointer"
                                         onClick={(e) => handleContextMenu(e, file.name)}
-                                        title="File options"
+                                        title={"文件选项"}
                                     >
                                         <i className="fa fa-ellipsis-vertical" />
                                     </button>

@@ -1,0 +1,5403 @@
+{
+  "locale": "zh-CN",
+  "dictionaryEntries": 757,
+  "uniqueTranslated": 739,
+  "occurrences": 899,
+  "files": 99,
+  "changes": [
+    {
+      "file": "frontend/app/aipanel/ai-utils.ts",
+      "line": 375,
+      "en": "Image",
+      "zh": "图片"
+    },
+    {
+      "file": "frontend/app/aipanel/aifeedbackbuttons.tsx",
+      "line": 53,
+      "en": "Good Response",
+      "zh": "回复良好"
+    },
+    {
+      "file": "frontend/app/aipanel/aifeedbackbuttons.tsx",
+      "line": 65,
+      "en": "Bad Response",
+      "zh": "回复欠佳"
+    },
+    {
+      "file": "frontend/app/aipanel/aifeedbackbuttons.tsx",
+      "line": 78,
+      "en": "Copy Message",
+      "zh": "复制消息"
+    },
+    {
+      "file": "frontend/app/aipanel/aimessage.tsx",
+      "line": 15,
+      "en": "AI is thinking...",
+      "zh": "AI 正在思考…"
+    },
+    {
+      "file": "frontend/app/aipanel/aimessage.tsx",
+      "line": 193,
+      "en": "Waiting for Tool Approvals...",
+      "zh": "正在等待工具调用批准…"
+    },
+    {
+      "file": "frontend/app/aipanel/aimessage.tsx",
+      "line": 200,
+      "en": "AI is thinking...",
+      "zh": "AI 正在思考…"
+    },
+    {
+      "file": "frontend/app/aipanel/aimessage.tsx",
+      "line": 231,
+      "en": "(no text content)",
+      "zh": "（无文本内容）"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 75,
+      "en": "Incompatible Modes",
+      "zh": "不兼容模式"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 104,
+      "en": "Current",
+      "zh": "当前"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 104,
+      "en": "Compatible Modes",
+      "zh": "兼容模式"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 108,
+      "en": "Incompatible Modes",
+      "zh": "不兼容模式"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 123,
+      "en": "Wave AI Cloud",
+      "zh": "Wave AI 云服务"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 129,
+      "en": "Custom",
+      "zh": "自定义"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 176,
+      "en": "Invalid ({0})",
+      "zh": "无效（{0}）"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 221,
+      "en": "AI Mode: {0}",
+      "zh": "AI 模式：{0}"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 232,
+      "en": "Warning: This custom mode was configured without the \"tools\" capability in the \"ai:capabilities\" array. Without tool support, Wave AI will not be able to interact with widgets or files.",
+      "zh": "提示：此自定义模式的 ai:capabilities 配置缺少 tools 能力。添加该能力后，Wave AI 才能与组件和文件交互。"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 241,
+      "en": "No Tools Support",
+      "zh": "工具支持尚未启用"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 269,
+      "en": "(Start a New Chat to Switch)",
+      "zh": "（新建对话后切换）"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 277,
+      "en": "(enable telemetry to unlock Wave AI Cloud)",
+      "zh": "（启用使用情况统计后可使用 Wave AI 云服务）"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 313,
+      "en": "New Chat",
+      "zh": "新建对话"
+    },
+    {
+      "file": "frontend/app/aipanel/aimode.tsx",
+      "line": 320,
+      "en": "Configure Modes",
+      "zh": "配置模式"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel-contextmenu.ts",
+      "line": 30,
+      "en": "New Chat",
+      "zh": "新建对话"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel-contextmenu.ts",
+      "line": 61,
+      "en": "64k (Pro)",
+      "zh": "64k（专业版）"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel-contextmenu.ts",
+      "line": 75,
+      "en": "1k (Dev Testing)",
+      "zh": "1k（开发测试）"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel-contextmenu.ts",
+      "line": 99,
+      "en": "16k (Pro)",
+      "zh": "16k（专业版）"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel-contextmenu.ts",
+      "line": 110,
+      "en": "64k (Pro)",
+      "zh": "64k（专业版）"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel-contextmenu.ts",
+      "line": 124,
+      "en": "Max Output Tokens",
+      "zh": "最大输出 Token 数"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel-contextmenu.ts",
+      "line": 131,
+      "en": "Configure Modes",
+      "zh": "配置模式"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel-contextmenu.ts",
+      "line": 151,
+      "en": "Hide Wave AI",
+      "zh": "隐藏 Wave AI"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 65,
+      "en": "Drop files here",
+      "zh": "将文件拖到此处"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 66,
+      "en": "Images, PDFs, and text/code files supported",
+      "zh": "支持图片、PDF、文本及代码文件"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 97,
+      "en": "Welcome to Wave AI",
+      "zh": "欢迎使用 Wave AI"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 101,
+      "en": "Wave AI is your terminal assistant with context. I can read your terminal output, analyze widgets, access files, and help you solve problems faster.",
+      "zh": "Wave AI 是具备上下文的终端助手，可读取终端输出、分析组件、访问文件，帮助你更快解决问题。"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 105,
+      "en": "Getting Started:",
+      "zh": "快速开始："
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 112,
+      "en": "Widget Context",
+      "zh": "组件上下文"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 113,
+      "en": "When ON, I can read your terminal and analyze widgets.",
+      "zh": "开启时，AI 可以读取终端并分析组件。"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 114,
+      "en": "When OFF, I'm sandboxed with no system access.",
+      "zh": "关闭时，AI 在沙盒中运行，系统访问受到隔离。"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 121,
+      "en": "Drag & drop files or images for analysis",
+      "zh": "拖入文件或图片进行分析"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 131,
+      "en": "to start a new chat",
+      "zh": "以新建对话"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 137,
+      "en": "to toggle panel",
+      "zh": "以切换面板显示"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 144,
+      "en": "to focus",
+      "zh": "以聚焦"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 151,
+      "en": "to focus",
+      "zh": "以聚焦"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 162,
+      "en": "Questions or feedback?",
+      "zh": "问题或反馈？"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 169,
+      "en": "Join our Discord",
+      "zh": "加入 Discord 社区"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 177,
+      "en": "BETA: Free to use. Daily limits keep our costs in check.",
+      "zh": "测试版：免费使用，每日额度用于控制服务成本。"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 191,
+      "en": "WaveApp Builder",
+      "zh": "Wave 应用构建器"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 195,
+      "en": "The WaveApp builder helps create wave widgets that integrate seamlessly into Wave Terminal.",
+      "zh": "Wave 应用构建器帮助你创建可集成到终端中的组件。"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 217,
+      "en": "Close error",
+      "zh": "关闭错误提示"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanel.tsx",
+      "line": 227,
+      "en": "New Chat",
+      "zh": "新建对话"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelheader.tsx",
+      "line": 35,
+      "en": "Context",
+      "zh": "上下文"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelheader.tsx",
+      "line": 36,
+      "en": "Widget Context",
+      "zh": "组件上下文"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelheader.tsx",
+      "line": 47,
+      "en": "Widget Access {0}",
+      "zh": "组件访问 {0}"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelheader.tsx",
+      "line": 68,
+      "en": "More options",
+      "zh": "更多选项"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelinput.tsx",
+      "line": 36,
+      "en": "What would you like to build...",
+      "zh": "描述你想构建的应用…"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelinput.tsx",
+      "line": 38,
+      "en": "Ask Wave AI anything...",
+      "zh": "向 Wave AI 提问…"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelinput.tsx",
+      "line": 161,
+      "en": "Attach files",
+      "zh": "附加文件"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelinput.tsx",
+      "line": 173,
+      "en": "Stop Response",
+      "zh": "停止回复"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelinput.tsx",
+      "line": 186,
+      "en": "Send message (Enter)",
+      "zh": "发送消息（Enter）"
+    },
+    {
+      "file": "frontend/app/aipanel/airatelimitstrip.tsx",
+      "line": 35,
+      "en": "Get More",
+      "zh": "获取更多"
+    },
+    {
+      "file": "frontend/app/aipanel/airatelimitstrip.tsx",
+      "line": 94,
+      "en": "Premium Used",
+      "zh": "已用高级额度"
+    },
+    {
+      "file": "frontend/app/aipanel/airatelimitstrip.tsx",
+      "line": 97,
+      "en": "Resets in",
+      "zh": "重置倒计时"
+    },
+    {
+      "file": "frontend/app/aipanel/airatelimitstrip.tsx",
+      "line": 110,
+      "en": "Premium",
+      "zh": "高级额度"
+    },
+    {
+      "file": "frontend/app/aipanel/airatelimitstrip.tsx",
+      "line": 113,
+      "en": "Now on Basic",
+      "zh": "当前使用基础版"
+    },
+    {
+      "file": "frontend/app/aipanel/airatelimitstrip.tsx",
+      "line": 115,
+      "en": "Resets in",
+      "zh": "重置倒计时"
+    },
+    {
+      "file": "frontend/app/aipanel/airatelimitstrip.tsx",
+      "line": 128,
+      "en": "Reqs",
+      "zh": "请求数"
+    },
+    {
+      "file": "frontend/app/aipanel/airatelimitstrip.tsx",
+      "line": 131,
+      "en": "Limit Reached",
+      "zh": "已达使用上限"
+    },
+    {
+      "file": "frontend/app/aipanel/airatelimitstrip.tsx",
+      "line": 133,
+      "en": "Resets in",
+      "zh": "重置倒计时"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 91,
+      "en": "Approve All ({0})",
+      "zh": "全部批准（{0}）"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 91,
+      "en": "Approve",
+      "zh": "批准"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 92,
+      "en": "Deny All",
+      "zh": "全部拒绝"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 92,
+      "en": "Deny",
+      "zh": "拒绝"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 127,
+      "en": "Not approved",
+      "zh": "尚未批准"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 171,
+      "en": "Reading Files",
+      "zh": "正在读取文件"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 289,
+      "en": "Restore backup file",
+      "zh": "恢复备份文件"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 291,
+      "en": "Revert File",
+      "zh": "还原文件"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 299,
+      "en": "Open in diff viewer",
+      "zh": "在差异查看器中打开"
+    },
+    {
+      "file": "frontend/app/aipanel/aitooluse.tsx",
+      "line": 301,
+      "en": "Show Diff",
+      "zh": "显示差异"
+    },
+    {
+      "file": "frontend/app/aipanel/byokannouncement.tsx",
+      "line": 43,
+      "en": "New: BYOK & Local AI Support",
+      "zh": "新增：自备密钥与本地 AI 支持"
+    },
+    {
+      "file": "frontend/app/aipanel/byokannouncement.tsx",
+      "line": 45,
+      "en": "Wave AI now supports bring-your-own-key (BYOK) with OpenAI, Google Gemini, Azure, and OpenRouter, plus local models via Ollama, LM Studio, and other OpenAI-compatible providers.",
+      "zh": "Wave AI 支持使用自备密钥接入 OpenAI、Google Gemini、Azure 和 OpenRouter，也支持 Ollama、LM Studio 及兼容 OpenAI 接口的本地模型。"
+    },
+    {
+      "file": "frontend/app/aipanel/byokannouncement.tsx",
+      "line": 53,
+      "en": "Configure AI Modes",
+      "zh": "配置 AI 模式"
+    },
+    {
+      "file": "frontend/app/aipanel/byokannouncement.tsx",
+      "line": 62,
+      "en": "View Docs",
+      "zh": "查看文档"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 43,
+      "en": "Close",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 45,
+      "en": "Backup Successfully Restored",
+      "zh": "备份恢复成功"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 47,
+      "en": "The file",
+      "zh": "文件"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 47,
+      "en": "has been restored to its previous state.",
+      "zh": "已恢复到先前的状态。"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 57,
+      "en": "Close",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 59,
+      "en": "Failed to Restore Backup",
+      "zh": "备份恢复失败"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 61,
+      "en": "An error occurred while restoring the backup:",
+      "zh": "恢复备份时发生错误："
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 77,
+      "en": "Confirm Restore",
+      "zh": "确认恢复"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 78,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 83,
+      "en": "Restore File Backup",
+      "zh": "恢复文件备份"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 85,
+      "en": "This will restore",
+      "zh": "这将恢复"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 86,
+      "en": "to its state before this edit was made",
+      "zh": "到此次编辑之前的状态"
+    },
+    {
+      "file": "frontend/app/aipanel/restorebackupmodal.tsx",
+      "line": 90,
+      "en": "Any changes made by this edit and subsequent edits will be lost.",
+      "zh": "此次编辑及后续编辑所做的更改将被丢弃。"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 39,
+      "en": "Wave AI is free to use and provides integrated AI chat that can interact with your widgets, help you with code, analyze files, and assist with your terminal workflows.",
+      "zh": "Wave AI 可免费使用，支持与组件交互、协助编程、分析文件，以及处理终端工作流。"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 48,
+      "en": "Telemetry keeps Wave AI free",
+      "zh": "使用情况统计支持 Wave AI 持续免费提供服务"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 51,
+      "en": "To keep Wave AI free for everyone, we require a small amount of",
+      "zh": "为持续免费提供 Wave AI 服务，我们需要少量的"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 51,
+      "en": "anonymous",
+      "zh": "匿名"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 52,
+      "en": "usage data (app version, feature usage, system info).",
+      "zh": "使用情况数据（应用版本、功能使用情况、系统信息）。"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 55,
+      "en": "This helps us block abuse by automated systems and ensure it's used by real people like you.",
+      "zh": "这有助于防止自动化滥用，保障真实用户使用服务。"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 59,
+      "en": "We never collect your files, prompts, keystrokes, hostnames, or personally identifying information. Wave AI is powered by OpenAI's APIs, please refer to OpenAI's privacy policy for details on how they handle your data.",
+      "zh": "Wave 的使用情况统计排除文件、提示词、按键、主机名和个人身份信息。Wave AI 使用 OpenAI API，其数据处理方式请参阅 OpenAI 隐私政策。"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 64,
+      "en": "For information about BYOK and local model support, see",
+      "zh": "关于自备密钥和本地模型的支持，请参阅"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 81,
+      "en": "Enable Telemetry and Continue",
+      "zh": "启用使用情况统计并继续"
+    },
+    {
+      "file": "frontend/app/aipanel/telemetryrequired.tsx",
+      "line": 94,
+      "en": "Privacy Policy",
+      "zh": "隐私政策"
+    },
+    {
+      "file": "frontend/app/aipanel/waveai-model.tsx",
+      "line": 204,
+      "en": "Cannot add directories to Wave AI. Please select a file.",
+      "zh": "请选择文件，Wave AI 当前接受文件附件。"
+    },
+    {
+      "file": "frontend/app/aipanel/waveai-model.tsx",
+      "line": 211,
+      "en": "File not found: {0}",
+      "zh": "文件不存在：{0}"
+    },
+    {
+      "file": "frontend/app/aipanel/waveai-model.tsx",
+      "line": 215,
+      "en": "Cannot add directories to Wave AI. Please select a file.",
+      "zh": "请选择文件，Wave AI 当前接受文件附件。"
+    },
+    {
+      "file": "frontend/app/aipanel/waveai-model.tsx",
+      "line": 229,
+      "en": "Failed to read file: {0}",
+      "zh": "读取文件失败：{0}"
+    },
+    {
+      "file": "frontend/app/aipanel/waveai-model.tsx",
+      "line": 246,
+      "en": "Failed to add file: {0}",
+      "zh": "添加文件失败：{0}"
+    },
+    {
+      "file": "frontend/app/aipanel/waveai-model.tsx",
+      "line": 476,
+      "en": "Failed to load chat. Starting new chat...",
+      "zh": "对话加载失败，正在新建对话…"
+    },
+    {
+      "file": "frontend/app/app.tsx",
+      "line": 115,
+      "en": "Cut",
+      "zh": "剪切"
+    },
+    {
+      "file": "frontend/app/app.tsx",
+      "line": 118,
+      "en": "Copy",
+      "zh": "复制"
+    },
+    {
+      "file": "frontend/app/app.tsx",
+      "line": 121,
+      "en": "Paste",
+      "zh": "粘贴"
+    },
+    {
+      "file": "frontend/app/app.tsx",
+      "line": 126,
+      "en": "Open Clipboard URL (",
+      "zh": "打开剪贴板网址（"
+    },
+    {
+      "file": "frontend/app/app.tsx",
+      "line": 367,
+      "en": "invalid configuration, client or window was not loaded",
+      "zh": "配置无效，客户端或窗口加载失败"
+    },
+    {
+      "file": "frontend/app/block/block.tsx",
+      "line": 37,
+      "en": "No View",
+      "zh": "暂无视图"
+    },
+    {
+      "file": "frontend/app/block/block.tsx",
+      "line": 40,
+      "en": "No View Component",
+      "zh": "暂无视图组件"
+    },
+    {
+      "file": "frontend/app/block/block.tsx",
+      "line": 80,
+      "en": "Loading...",
+      "zh": "正在加载…"
+    },
+    {
+      "file": "frontend/app/block/block.tsx",
+      "line": 262,
+      "en": "Loading...",
+      "zh": "正在加载…"
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 46,
+      "en": "Un-Magnify Block",
+      "zh": "还原区块大小"
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 46,
+      "en": "Magnify Block",
+      "zh": "放大区块"
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 53,
+      "en": "Copy BlockId",
+      "zh": "复制区块 ID"
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 64,
+      "en": "Close Block",
+      "zh": "关闭区块"
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 105,
+      "en": "Error Rendering View Header:",
+      "zh": "渲染视图标题栏时发生错误："
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 139,
+      "en": "Split Horizontally",
+      "zh": "水平拆分"
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 153,
+      "en": "Split Vertically",
+      "zh": "垂直拆分"
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 170,
+      "en": "Settings",
+      "zh": "设置"
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 178,
+      "en": "Add to Layout",
+      "zh": "添加到布局"
+    },
+    {
+      "file": "frontend/app/block/blockframe-header.tsx",
+      "line": 201,
+      "en": "Close",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/block/blockutil.tsx",
+      "line": 53,
+      "en": "(No View)",
+      "zh": "（暂无视图）"
+    },
+    {
+      "file": "frontend/app/block/blockutil.tsx",
+      "line": 56,
+      "en": "Terminal",
+      "zh": "终端"
+    },
+    {
+      "file": "frontend/app/block/blockutil.tsx",
+      "line": 59,
+      "en": "Preview",
+      "zh": "预览"
+    },
+    {
+      "file": "frontend/app/block/blockutil.tsx",
+      "line": 62,
+      "en": "Web",
+      "zh": "网页"
+    },
+    {
+      "file": "frontend/app/block/blockutil.tsx",
+      "line": 68,
+      "en": "Help",
+      "zh": "帮助"
+    },
+    {
+      "file": "frontend/app/block/blockutil.tsx",
+      "line": 71,
+      "en": "Tips",
+      "zh": "使用提示"
+    },
+    {
+      "file": "frontend/app/block/blockutil.tsx",
+      "line": 74,
+      "en": "Processes",
+      "zh": "进程"
+    },
+    {
+      "file": "frontend/app/block/blockutil.tsx",
+      "line": 218,
+      "en": "Minimize",
+      "zh": "最小化"
+    },
+    {
+      "file": "frontend/app/block/blockutil.tsx",
+      "line": 218,
+      "en": "Magnify",
+      "zh": "放大"
+    },
+    {
+      "file": "frontend/app/block/connectionbutton.tsx",
+      "line": 43,
+      "en": "Connected to Git Bash",
+      "zh": "已连接到 Git Bash"
+    },
+    {
+      "file": "frontend/app/block/connectionbutton.tsx",
+      "line": 46,
+      "en": "Connected to Local Machine",
+      "zh": "已连接到本机"
+    },
+    {
+      "file": "frontend/app/block/connectionbutton.tsx",
+      "line": 62,
+      "en": "Connected to",
+      "zh": "已连接到"
+    },
+    {
+      "file": "frontend/app/block/connectionbutton.tsx",
+      "line": 67,
+      "en": "Connecting to",
+      "zh": "正在连接到"
+    },
+    {
+      "file": "frontend/app/block/connectionbutton.tsx",
+      "line": 76,
+      "en": "Error connecting to",
+      "zh": "连接失败"
+    },
+    {
+      "file": "frontend/app/block/connectionbutton.tsx",
+      "line": 83,
+      "en": "Disconnected from",
+      "zh": "已断开连接"
+    },
+    {
+      "file": "frontend/app/block/connectionbutton.tsx",
+      "line": 89,
+      "en": "Connection degraded:",
+      "zh": "连接质量下降："
+    },
+    {
+      "file": "frontend/app/block/connectionbutton.tsx",
+      "line": 91,
+      "en": "Connection stalled:",
+      "zh": "连接停滞："
+    },
+    {
+      "file": "frontend/app/block/connectionbutton.tsx",
+      "line": 150,
+      "en": "wsh is not installed for this connection",
+      "zh": "此连接尚未安装 wsh"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 43,
+      "en": "more than a day",
+      "zh": "超过一天"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 90,
+      "en": "Connection Stalled",
+      "zh": "连接停滞"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 93,
+      "en": "Connection to \"",
+      "zh": "与“"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 93,
+      "en": "\" is stalled",
+      "zh": "”的连接已停滞"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 100,
+      "en": "Disconnect",
+      "zh": "断开连接"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 102,
+      "en": "Disconnect",
+      "zh": "断开连接"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 174,
+      "en": "Disconnected from \"{0}\"",
+      "zh": "已断开与“{0}”的连接"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 177,
+      "en": "Connecting to \"{0}\"...",
+      "zh": "正在连接“{0}”…"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 189,
+      "en": "Reconnect",
+      "zh": "重新连接"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 242,
+      "en": "Copy",
+      "zh": "复制"
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 243,
+      "en": "error:",
+      "zh": "错误："
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 244,
+      "en": "unable to use wsh:",
+      "zh": "wsh 暂不可用："
+    },
+    {
+      "file": "frontend/app/block/connstatusoverlay.tsx",
+      "line": 249,
+      "en": "always disable wsh",
+      "zh": "始终禁用 wsh"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 35,
+      "en": "Learn More",
+      "zh": "了解更多"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 56,
+      "en": "Standard SSH Session",
+      "zh": "标准 SSH 会话"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 59,
+      "en": "Standard SSH sessions end when the connection drops. Durable sessions keep your shell state, running programs, and history alive through network changes, computer sleep, and Wave restarts.",
+      "zh": "标准 SSH 会话随连接中断而结束。持久会话会在网络变化、电脑休眠和 Wave 重启后保留 Shell 状态、运行程序和历史记录。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 67,
+      "en": "Restart as Durable",
+      "zh": "以持久模式重启"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 83,
+      "en": "Durable Session (Attached)",
+      "zh": "持久会话（已连接）"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 86,
+      "en": "Your shell state, running programs, and history are protected. This session will survive network disconnects.",
+      "zh": "Shell 状态、运行中的程序和历史记录已受保护，网络断开后会话仍将保留。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 103,
+      "en": "Durable Session (Detached)",
+      "zh": "持久会话（已分离）"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 106,
+      "en": "Connection lost, but your session is still running on the remote server. Wave will automatically reconnect when the connection is restored.",
+      "zh": "连接已中断，远程服务器上的会话仍在运行。网络恢复后，Wave 将自动重新连接。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 131,
+      "en": "Durable Session (Awaiting Connection)",
+      "zh": "持久会话（等待连接）"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 134,
+      "en": "Configured for a durable session. The session will start when the connection is established.",
+      "zh": "已配置持久会话，连接建立后将自动启动。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 145,
+      "en": "Durable Session (Awaiting Start)",
+      "zh": "持久会话（等待启动）"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 148,
+      "en": "Configured for a durable session, but session hasn't started yet. Click below to start it manually.",
+      "zh": "已配置持久会话，点击下方按钮手动启动。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 155,
+      "en": "Start Session",
+      "zh": "启动会话"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 171,
+      "en": "Durable Session (Starting)",
+      "zh": "持久会话（正在启动）"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 173,
+      "en": "The durable session is starting.",
+      "zh": "持久会话正在启动。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 197,
+      "en": "Durable Session (Ended)",
+      "zh": "持久会话（已结束）"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 198,
+      "en": "The durable session has ended. This block is still configured for durable sessions.",
+      "zh": "持久会话已结束，此区块保留持久会话配置。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 202,
+      "en": "Durable Session (Ended, Exited)",
+      "zh": "持久会话（已退出）"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 204,
+      "en": "The shell was terminated and is no longer running. This block is still configured for durable sessions.",
+      "zh": "Shell 已终止，此区块保留持久会话配置。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 206,
+      "en": "Durable Session (Ended, Lost)",
+      "zh": "持久会话（已丢失）"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 208,
+      "en": "The session was lost or not found on the remote server. This may have occurred due to a system reboot or the session being manually terminated.",
+      "zh": "远程服务器上的会话已丢失，可能由系统重启或手动终止会话引起。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 210,
+      "en": "Durable Session (Failed to Start)",
+      "zh": "持久会话（启动失败）"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 211,
+      "en": "The durable session failed to start.",
+      "zh": "持久会话启动失败。"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 229,
+      "en": "Restart Session",
+      "zh": "重启会话"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 236,
+      "en": "Restart as Standard",
+      "zh": "以标准模式重启"
+    },
+    {
+      "file": "frontend/app/block/durable-session-flyover.tsx",
+      "line": 256,
+      "en": "Restart Session",
+      "zh": "重启会话"
+    },
+    {
+      "file": "frontend/app/element/errorboundary.tsx",
+      "line": 27,
+      "en": "Error: {0} {1}",
+      "zh": "错误：{0} {1}"
+    },
+    {
+      "file": "frontend/app/element/markdown.tsx",
+      "line": 100,
+      "en": "Failed to render diagram: {0}",
+      "zh": "渲染图表失败：{0}"
+    },
+    {
+      "file": "frontend/app/element/markdown.tsx",
+      "line": 112,
+      "en": "Error: {0}",
+      "zh": "错误：{0}"
+    },
+    {
+      "file": "frontend/app/element/markdown.tsx",
+      "line": 115,
+      "en": "Loading diagram...",
+      "zh": "正在加载图表…"
+    },
+    {
+      "file": "frontend/app/element/markdown.tsx",
+      "line": 169,
+      "en": "Copy",
+      "zh": "复制"
+    },
+    {
+      "file": "frontend/app/element/markdown.tsx",
+      "line": 408,
+      "en": "No sub-headings found",
+      "zh": "暂无子标题"
+    },
+    {
+      "file": "frontend/app/element/markdown.tsx",
+      "line": 501,
+      "en": "Table of Contents",
+      "zh": "目录"
+    },
+    {
+      "file": "frontend/app/element/progressbar.tsx",
+      "line": 12,
+      "en": "Progress",
+      "zh": "进度"
+    },
+    {
+      "file": "frontend/app/element/quickelems.tsx",
+      "line": 8,
+      "en": "loading...",
+      "zh": "正在加载…"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 67,
+      "en": "Number (1-9)",
+      "zh": "数字（1–9）"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 101,
+      "en": "Header Icons",
+      "zh": "标题栏图标"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 109,
+      "en": "Magnify a Block",
+      "zh": "放大区块"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 118,
+      "en": "Connect to a remote server",
+      "zh": "连接远程服务器"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 126,
+      "en": "Block Settings",
+      "zh": "区块设置"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 133,
+      "en": "Close Block",
+      "zh": "关闭区块"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 143,
+      "en": "Important Keybindings",
+      "zh": "常用快捷键"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 149,
+      "en": "Main Keybindings",
+      "zh": "主要快捷键"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 152,
+      "en": "New Tab",
+      "zh": "新建标签页"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 156,
+      "en": "New Terminal Block",
+      "zh": "新建终端区块"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 160,
+      "en": "Open Wave AI Panel",
+      "zh": "打开 Wave AI 面板"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 167,
+      "en": "Tab Switching (",
+      "zh": "切换标签页（"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 170,
+      "en": "Switch To Nth Tab",
+      "zh": "切换到指定标签页"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 174,
+      "en": "Previous Tab",
+      "zh": "上一个标签页"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 178,
+      "en": "Next Tab",
+      "zh": "下一个标签页"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 185,
+      "en": "Block Navigation (Ctrl-Shift)",
+      "zh": "区块导航（Ctrl-Shift）"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 188,
+      "en": "Navigate Between Blocks",
+      "zh": "在区块间导航"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 192,
+      "en": "Focus Nth Block",
+      "zh": "聚焦指定区块"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 196,
+      "en": "Focus Wave AI",
+      "zh": "聚焦 Wave AI"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 203,
+      "en": "Split Blocks",
+      "zh": "拆分区块"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 206,
+      "en": "Split Right",
+      "zh": "在右侧拆分"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 210,
+      "en": "Split Below",
+      "zh": "在下方拆分"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 214,
+      "en": "Split in Direction",
+      "zh": "按方向拆分"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 224,
+      "en": "wsh commands",
+      "zh": "wsh 命令"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 233,
+      "en": "Preview files, directories, or web URLs",
+      "zh": "预览文件、目录或网址"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 241,
+      "en": "Edit config and code files",
+      "zh": "编辑配置和代码文件"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 249,
+      "en": "More Tips",
+      "zh": "更多提示"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 257,
+      "en": "Tabs",
+      "zh": "标签页"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 257,
+      "en": "- Right click any tab to change backgrounds or rename.",
+      "zh": "- 右键点击标签页可更换背景或重命名。"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 265,
+      "en": "Web View",
+      "zh": "网页视图"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 265,
+      "en": "- Click the gear in the web view to set your homepage",
+      "zh": "- 点击网页视图中的齿轮，设置主页"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 273,
+      "en": "Terminal",
+      "zh": "终端"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 273,
+      "en": "- Click the gear in the terminal to set your terminal theme and font size",
+      "zh": "- 点击终端中的齿轮，设置主题和字号"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 282,
+      "en": "Need More Help?",
+      "zh": "需要更多帮助？"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 295,
+      "en": "Join Our Discord",
+      "zh": "加入 Discord 社区"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 308,
+      "en": "Configuration Options",
+      "zh": "配置选项"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 321,
+      "en": "All Keybindings",
+      "zh": "全部快捷键"
+    },
+    {
+      "file": "frontend/app/element/quicktips.tsx",
+      "line": 334,
+      "en": "Full Documentation",
+      "zh": "完整文档"
+    },
+    {
+      "file": "frontend/app/element/search.tsx",
+      "line": 132,
+      "en": "Previous Result (Shift+Enter)",
+      "zh": "上一个结果（Shift+Enter）"
+    },
+    {
+      "file": "frontend/app/element/search.tsx",
+      "line": 140,
+      "en": "Next Result (Enter)",
+      "zh": "下一个结果（Enter）"
+    },
+    {
+      "file": "frontend/app/element/search.tsx",
+      "line": 148,
+      "en": "Close (Esc)",
+      "zh": "关闭（Esc）"
+    },
+    {
+      "file": "frontend/app/element/search.tsx",
+      "line": 152,
+      "en": "Regular Expression",
+      "zh": "正则表达式"
+    },
+    {
+      "file": "frontend/app/element/search.tsx",
+      "line": 153,
+      "en": "Whole Word",
+      "zh": "全词匹配"
+    },
+    {
+      "file": "frontend/app/element/search.tsx",
+      "line": 154,
+      "en": "Case Sensitive",
+      "zh": "区分大小写"
+    },
+    {
+      "file": "frontend/app/element/search.tsx",
+      "line": 163,
+      "en": "Search",
+      "zh": "搜索"
+    },
+    {
+      "file": "frontend/app/element/search.tsx",
+      "line": 172,
+      "en": "Search Results",
+      "zh": "搜索结果"
+    },
+    {
+      "file": "frontend/app/element/streamdown.tsx",
+      "line": 164,
+      "en": "Copy",
+      "zh": "复制"
+    },
+    {
+      "file": "frontend/app/modals/about.tsx",
+      "line": 33,
+      "en": "Open-Source AI-Integrated Terminal",
+      "zh": "集成 AI 的开源终端"
+    },
+    {
+      "file": "frontend/app/modals/about.tsx",
+      "line": 35,
+      "en": "Built for Seamless Workflows",
+      "zh": "让工作流程顺畅衔接"
+    },
+    {
+      "file": "frontend/app/modals/about.tsx",
+      "line": 39,
+      "en": "Client Version",
+      "zh": "客户端版本"
+    },
+    {
+      "file": "frontend/app/modals/about.tsx",
+      "line": 41,
+      "en": "Update Channel:",
+      "zh": "更新渠道："
+    },
+    {
+      "file": "frontend/app/modals/about.tsx",
+      "line": 58,
+      "en": "Website",
+      "zh": "官方网站"
+    },
+    {
+      "file": "frontend/app/modals/about.tsx",
+      "line": 66,
+      "en": "Open Source",
+      "zh": "开源"
+    },
+    {
+      "file": "frontend/app/modals/about.tsx",
+      "line": 74,
+      "en": "Sponsor",
+      "zh": "赞助"
+    },
+    {
+      "file": "frontend/app/modals/conntypeahead.tsx",
+      "line": 129,
+      "en": "Reconnect to {0}",
+      "zh": "重新连接到 {0}"
+    },
+    {
+      "file": "frontend/app/modals/conntypeahead.tsx",
+      "line": 176,
+      "en": "Local",
+      "zh": "本地"
+    },
+    {
+      "file": "frontend/app/modals/conntypeahead.tsx",
+      "line": 197,
+      "en": "Remote",
+      "zh": "远程"
+    },
+    {
+      "file": "frontend/app/modals/conntypeahead.tsx",
+      "line": 219,
+      "en": "Disconnect {0}",
+      "zh": "断开 {0}"
+    },
+    {
+      "file": "frontend/app/modals/conntypeahead.tsx",
+      "line": 241,
+      "en": "Edit Connections",
+      "zh": "编辑连接"
+    },
+    {
+      "file": "frontend/app/modals/conntypeahead.tsx",
+      "line": 242,
+      "en": "Edit Connections",
+      "zh": "编辑连接"
+    },
+    {
+      "file": "frontend/app/modals/conntypeahead.tsx",
+      "line": 277,
+      "en": "{0} (New Connection)",
+      "zh": "{0}（新连接）"
+    },
+    {
+      "file": "frontend/app/modals/conntypeahead.tsx",
+      "line": 489,
+      "en": "Connect to (username@host)...",
+      "zh": "连接到（用户名@主机）…"
+    },
+    {
+      "file": "frontend/app/modals/modal.tsx",
+      "line": 51,
+      "en": "Close (ESC)",
+      "zh": "关闭（Esc）"
+    },
+    {
+      "file": "frontend/app/modals/modal.tsx",
+      "line": 95,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "frontend/app/modals/userinputmodal.tsx",
+      "line": 22,
+      "en": "Canceled by the user",
+      "zh": "用户已取消"
+    },
+    {
+      "file": "frontend/app/onboarding/fakechat.tsx",
+      "line": 88,
+      "en": "AI is thinking...",
+      "zh": "AI 正在思考…"
+    },
+    {
+      "file": "frontend/app/onboarding/fakechat.tsx",
+      "line": 212,
+      "en": "Context",
+      "zh": "上下文"
+    },
+    {
+      "file": "frontend/app/onboarding/fakechat.tsx",
+      "line": 226,
+      "en": "More options",
+      "zh": "更多选项"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-patch.tsx",
+      "line": 267,
+      "en": "Update",
+      "zh": "更新"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 166,
+      "en": "Privacy Policy",
+      "zh": "隐私政策"
+    },
+    {
+      "file": "frontend/app/suggestion/suggestion.tsx",
+      "line": 155,
+      "en": "No Suggestions",
+      "zh": "暂无建议"
+    },
+    {
+      "file": "frontend/app/suggestion/suggestion.tsx",
+      "line": 163,
+      "en": "No Suggestions",
+      "zh": "暂无建议"
+    },
+    {
+      "file": "frontend/app/tab/tab.tsx",
+      "line": 160,
+      "en": "Delete",
+      "zh": "删除"
+    },
+    {
+      "file": "frontend/app/tab/tab.tsx",
+      "line": 212,
+      "en": "Close Tab",
+      "zh": "关闭标签页"
+    },
+    {
+      "file": "frontend/app/tab/tabbar.tsx",
+      "line": 64,
+      "en": "Toggle Wave AI Panel",
+      "zh": "切换 Wave AI 面板"
+    },
+    {
+      "file": "frontend/app/tab/tabbar.tsx",
+      "line": 618,
+      "en": "Workspace Switcher",
+      "zh": "工作区切换器"
+    },
+    {
+      "file": "frontend/app/tab/tabbar.tsx",
+      "line": 660,
+      "en": "Add Tab",
+      "zh": "添加标签页"
+    },
+    {
+      "file": "frontend/app/tab/tabcontent.tsx",
+      "line": 53,
+      "en": "Tab Loading",
+      "zh": "标签页正在加载"
+    },
+    {
+      "file": "frontend/app/tab/tabcontent.tsx",
+      "line": 55,
+      "en": "Tab Not Found",
+      "zh": "标签页不存在"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 11,
+      "en": "Green",
+      "zh": "绿色"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 12,
+      "en": "Teal",
+      "zh": "青色"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 13,
+      "en": "Blue",
+      "zh": "蓝色"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 14,
+      "en": "Purple",
+      "zh": "紫色"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 15,
+      "en": "Red",
+      "zh": "红色"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 16,
+      "en": "Orange",
+      "zh": "橙色"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 17,
+      "en": "Yellow",
+      "zh": "黄色"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 24,
+      "en": "Top",
+      "zh": "顶部"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 30,
+      "en": "Left",
+      "zh": "左侧"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 36,
+      "en": "Tab Bar Position",
+      "zh": "标签栏位置"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 47,
+      "en": "Rename Tab",
+      "zh": "重命名标签页"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 49,
+      "en": "Copy TabId",
+      "zh": "复制标签页 ID"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 58,
+      "en": "None",
+      "zh": "无"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 76,
+      "en": "Flag Tab",
+      "zh": "标记标签页"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 89,
+      "en": "Default",
+      "zh": "默认"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 115,
+      "en": "Backgrounds",
+      "zh": "背景"
+    },
+    {
+      "file": "frontend/app/tab/tabcontextmenu.ts",
+      "line": 118,
+      "en": "Close Tab",
+      "zh": "关闭标签页"
+    },
+    {
+      "file": "frontend/app/tab/updatebanner.tsx",
+      "line": 21,
+      "en": "Update",
+      "zh": "更新"
+    },
+    {
+      "file": "frontend/app/tab/updatebanner.tsx",
+      "line": 23,
+      "en": "Downloading",
+      "zh": "正在下载"
+    },
+    {
+      "file": "frontend/app/tab/updatebanner.tsx",
+      "line": 25,
+      "en": "Installing",
+      "zh": "正在安装"
+    },
+    {
+      "file": "frontend/app/tab/updatebanner.tsx",
+      "line": 45,
+      "en": "Click to Install Update",
+      "zh": "点击安装更新"
+    },
+    {
+      "file": "frontend/app/tab/vtab.tsx",
+      "line": 197,
+      "en": "Tab name",
+      "zh": "标签页名称"
+    },
+    {
+      "file": "frontend/app/tab/vtab.tsx",
+      "line": 216,
+      "en": "Close tab",
+      "zh": "关闭标签页"
+    },
+    {
+      "file": "frontend/app/tab/vtabbar.tsx",
+      "line": 38,
+      "en": "Toggle Wave AI Panel",
+      "zh": "切换 Wave AI 面板"
+    },
+    {
+      "file": "frontend/app/tab/vtabbar.tsx",
+      "line": 72,
+      "en": "Workspace Switcher",
+      "zh": "工作区切换器"
+    },
+    {
+      "file": "frontend/app/tab/vtabbar.tsx",
+      "line": 428,
+      "en": "New Tab",
+      "zh": "新建标签页"
+    },
+    {
+      "file": "frontend/app/tab/vtabbar.tsx",
+      "line": 432,
+      "en": "New Tab",
+      "zh": "新建标签页"
+    },
+    {
+      "file": "frontend/app/tab/workspaceeditor.tsx",
+      "line": 118,
+      "en": "Delete workspace",
+      "zh": "删除工作区"
+    },
+    {
+      "file": "frontend/app/tab/workspaceswitcher.tsx",
+      "line": 126,
+      "en": "Switch workspace",
+      "zh": "切换工作区"
+    },
+    {
+      "file": "frontend/app/tab/workspaceswitcher.tsx",
+      "line": 126,
+      "en": "Open workspace",
+      "zh": "打开工作区"
+    },
+    {
+      "file": "frontend/app/tab/workspaceswitcher.tsx",
+      "line": 141,
+      "en": "Create new workspace",
+      "zh": "新建工作区"
+    },
+    {
+      "file": "frontend/app/tab/workspaceswitcher.tsx",
+      "line": 148,
+      "en": "Save workspace",
+      "zh": "保存工作区"
+    },
+    {
+      "file": "frontend/app/tab/workspaceswitcher.tsx",
+      "line": 192,
+      "en": "Edit workspace",
+      "zh": "编辑工作区"
+    },
+    {
+      "file": "frontend/app/tab/workspaceswitcher.tsx",
+      "line": 207,
+      "en": "This is your current workspace",
+      "zh": "这是当前工作区"
+    },
+    {
+      "file": "frontend/app/tab/workspaceswitcher.tsx",
+      "line": 207,
+      "en": "This workspace is open",
+      "zh": "此工作区已打开"
+    },
+    {
+      "file": "frontend/app/treeview/treeview.tsx",
+      "line": 146,
+      "en": "Loading…",
+      "zh": "正在加载…"
+    },
+    {
+      "file": "frontend/app/treeview/treeview.tsx",
+      "line": 156,
+      "en": "Error: {0}",
+      "zh": "错误：{0}"
+    },
+    {
+      "file": "frontend/app/treeview/treeview.tsx",
+      "line": 156,
+      "en": "Unable to load directory",
+      "zh": "目录加载失败"
+    },
+    {
+      "file": "frontend/app/treeview/treeview.tsx",
+      "line": 170,
+      "en": "Showing first {0} entries",
+      "zh": "显示前 {0} 项"
+    },
+    {
+      "file": "frontend/app/treeview/treeview.tsx",
+      "line": 330,
+      "en": "Unknown error",
+      "zh": "未知错误"
+    },
+    {
+      "file": "frontend/app/view/aifilediff/aifilediff.tsx",
+      "line": 51,
+      "en": "AI Diff Viewer",
+      "zh": "AI 差异查看器"
+    },
+    {
+      "file": "frontend/app/view/aifilediff/aifilediff.tsx",
+      "line": 110,
+      "en": "Error loading diff data: {0}",
+      "zh": "加载差异数据时发生错误：{0}"
+    },
+    {
+      "file": "frontend/app/view/aifilediff/aifilediff.tsx",
+      "line": 121,
+      "en": "Loading diff...",
+      "zh": "正在加载差异…"
+    },
+    {
+      "file": "frontend/app/view/aifilediff/aifilediff.tsx",
+      "line": 137,
+      "en": "No diff data available",
+      "zh": "暂无差异数据"
+    },
+    {
+      "file": "frontend/app/view/helpview/helpview.tsx",
+      "line": 46,
+      "en": "Help",
+      "zh": "帮助"
+    },
+    {
+      "file": "frontend/app/view/helpview/helpview.tsx",
+      "line": 87,
+      "en": "Reset",
+      "zh": "重置"
+    },
+    {
+      "file": "frontend/app/view/helpview/helpview.tsx",
+      "line": 107,
+      "en": "Close DevTools",
+      "zh": "关闭开发者工具"
+    },
+    {
+      "file": "frontend/app/view/helpview/helpview.tsx",
+      "line": 107,
+      "en": "Open DevTools",
+      "zh": "打开开发者工具"
+    },
+    {
+      "file": "frontend/app/view/helpview/helpview.tsx",
+      "line": 119,
+      "en": "Set Zoom Factor",
+      "zh": "设置缩放比例"
+    },
+    {
+      "file": "frontend/app/view/launcher/launcher.tsx",
+      "line": 29,
+      "en": "Widget Launcher",
+      "zh": "组件启动器"
+    },
+    {
+      "file": "frontend/app/view/launcher/launcher.tsx",
+      "line": 222,
+      "en": "Search widgets",
+      "zh": "搜索组件"
+    },
+    {
+      "file": "frontend/app/view/launcher/launcher.tsx",
+      "line": 275,
+      "en": "No widgets found. Press Escape to clear search.",
+      "zh": "暂无匹配组件。按 Esc 清空搜索。"
+    },
+    {
+      "file": "frontend/app/view/launcher/launcher.tsx",
+      "line": 278,
+      "en": "Type to Filter",
+      "zh": "输入以筛选"
+    },
+    {
+      "file": "frontend/app/view/launcher/launcher.tsx",
+      "line": 278,
+      "en": "Searching",
+      "zh": "正在搜索"
+    },
+    {
+      "file": "frontend/app/view/launcher/launcher.tsx",
+      "line": 278,
+      "en": ", Enter to Launch,",
+      "zh": "，按 Enter 启动，"
+    },
+    {
+      "file": "frontend/app/view/launcher/launcher.tsx",
+      "line": 279,
+      "en": "Arrow Keys to Navigate",
+      "zh": "使用方向键导航"
+    },
+    {
+      "file": "frontend/app/view/preview/entry-manager.tsx",
+      "line": 9,
+      "en": "New File",
+      "zh": "新建文件"
+    },
+    {
+      "file": "frontend/app/view/preview/entry-manager.tsx",
+      "line": 10,
+      "en": "New Folder",
+      "zh": "新建文件夹"
+    },
+    {
+      "file": "frontend/app/view/preview/entry-manager.tsx",
+      "line": 11,
+      "en": "Rename",
+      "zh": "重命名"
+    },
+    {
+      "file": "frontend/app/view/preview/entry-manager.tsx",
+      "line": 54,
+      "en": "Save",
+      "zh": "保存"
+    },
+    {
+      "file": "frontend/app/view/preview/entry-manager.tsx",
+      "line": 57,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 105,
+      "en": "Rename Failed",
+      "zh": "重命名失败"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 133,
+      "en": "Confirm Delete Directory",
+      "zh": "确认删除目录"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 134,
+      "en": "Deleting a directory requires the recursive flag. Proceed?",
+      "zh": "删除目录需要递归操作。继续？"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 138,
+      "en": "Delete Recursively",
+      "zh": "递归删除"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 145,
+      "en": "Delete Failed",
+      "zh": "删除失败"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 160,
+      "en": "Directory Sort Order",
+      "zh": "目录排序方式"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 163,
+      "en": "Name",
+      "zh": "名称"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 172,
+      "en": "Last Modified",
+      "zh": "修改时间"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 183,
+      "en": "Show Hidden Files",
+      "zh": "显示隐藏文件"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 186,
+      "en": "On",
+      "zh": "开启"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory-utils.tsx",
+      "line": 197,
+      "en": "Off",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 151,
+      "en": "Name",
+      "zh": "名称"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 158,
+      "en": "Perm",
+      "zh": "权限"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 165,
+      "en": "Last Modified",
+      "zh": "修改时间"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 172,
+      "en": "Size",
+      "zh": "大小"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 179,
+      "en": "Type",
+      "zh": "类型"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 373,
+      "en": "New File",
+      "zh": "新建文件"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 379,
+      "en": "New Folder",
+      "zh": "新建文件夹"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 385,
+      "en": "Rename",
+      "zh": "重命名"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 394,
+      "en": "Copy File Name",
+      "zh": "复制文件名"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 398,
+      "en": "Copy Full File Name",
+      "zh": "复制完整文件名"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 402,
+      "en": "Copy File Name (Shell Quoted)",
+      "zh": "复制文件名（Shell 转义）"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 406,
+      "en": "Copy Full File Name (Shell Quoted)",
+      "zh": "复制完整文件名（Shell 转义）"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 416,
+      "en": "Default Settings",
+      "zh": "默认设置"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 423,
+      "en": "Delete",
+      "zh": "删除"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 440,
+      "en": "Type to search (Esc to cancel)",
+      "zh": "输入以搜索（Esc 取消）"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 440,
+      "en": "Searching for \"{0}\"",
+      "zh": "正在搜索“{0}”"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 610,
+      "en": "Cannot Read Directory",
+      "zh": "目录读取失败"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 725,
+      "en": "Confirm Overwrite File(s)",
+      "zh": "确认覆盖文件"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 726,
+      "en": "This copy operation will overwrite an existing file. Would you like to continue?",
+      "zh": "此次复制将覆盖现有文件。继续？"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 730,
+      "en": "Delete Then Copy",
+      "zh": "删除后复制"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 737,
+      "en": "Sync",
+      "zh": "同步"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 747,
+      "en": "Copy Failed",
+      "zh": "复制失败"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 843,
+      "en": "New File",
+      "zh": "新建文件"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-directory.tsx",
+      "line": 849,
+      "en": "New Folder",
+      "zh": "新建文件夹"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-error-overlay.tsx",
+      "line": 45,
+      "en": "Copy",
+      "zh": "复制"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 27,
+      "en": "Home",
+      "zh": "主页"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 28,
+      "en": "Desktop",
+      "zh": "桌面"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 29,
+      "en": "Downloads",
+      "zh": "下载"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 30,
+      "en": "Documents",
+      "zh": "文档"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 31,
+      "en": "Root",
+      "zh": "根目录"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 212,
+      "en": "Go to {0} ({1})",
+      "zh": "转到 {0}（{1}）"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 225,
+      "en": "Preview",
+      "zh": "预览"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 269,
+      "en": "Loading ...",
+      "zh": "正在加载…"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 276,
+      "en": "Read Only",
+      "zh": "只读"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 283,
+      "en": "Save",
+      "zh": "保存"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 291,
+      "en": "Preview",
+      "zh": "预览"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 299,
+      "en": "Edit",
+      "zh": "编辑"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 341,
+      "en": "Hide Hidden Files",
+      "zh": "隐藏隐藏文件"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 341,
+      "en": "Show Hidden Files",
+      "zh": "显示隐藏文件"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 357,
+      "en": "Table of Contents",
+      "zh": "目录"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 363,
+      "en": "Refresh",
+      "zh": "刷新"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 373,
+      "en": "Refresh",
+      "zh": "刷新"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 419,
+      "en": "File Read Failed",
+      "zh": "文件读取失败"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 449,
+      "en": "File Read Failed",
+      "zh": "文件读取失败"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 511,
+      "en": "Load Error: {0}",
+      "zh": "加载错误：{0}"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 514,
+      "en": "Connection Error: {0}",
+      "zh": "连接错误：{0}"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 527,
+      "en": "File Not Found",
+      "zh": "文件不存在"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 530,
+      "en": "File Too Large to Preview (10 MB Max)",
+      "zh": "文件超过预览大小限制（最大 10 MB）"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 533,
+      "en": "CSV File Too Large to Preview (1 MB Max)",
+      "zh": "CSV 文件超过预览大小限制（最大 1 MB）"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 553,
+      "en": "Preview ({0})",
+      "zh": "预览（{0}）"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 670,
+      "en": "Save Failed",
+      "zh": "保存失败"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 709,
+      "en": "Copy Full Path",
+      "zh": "复制完整路径"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 727,
+      "en": "Copy File Name",
+      "zh": "复制文件名"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 772,
+      "en": "Editor Font Size",
+      "zh": "编辑器字号"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 778,
+      "en": "Save File",
+      "zh": "保存文件"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 782,
+      "en": "Revert File",
+      "zh": "还原文件"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 788,
+      "en": "Word Wrap",
+      "zh": "自动换行"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-model.tsx",
+      "line": 802,
+      "en": "Default Settings",
+      "zh": "默认设置"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-streaming.tsx",
+      "line": 19,
+      "en": "Zoom In",
+      "zh": "放大"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-streaming.tsx",
+      "line": 22,
+      "en": "Zoom Out",
+      "zh": "缩小"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-streaming.tsx",
+      "line": 25,
+      "en": "Reset Zoom",
+      "zh": "重置缩放"
+    },
+    {
+      "file": "frontend/app/view/preview/preview-streaming.tsx",
+      "line": 89,
+      "en": "Preview Not Supported",
+      "zh": "此类型暂不支持预览"
+    },
+    {
+      "file": "frontend/app/view/preview/preview.tsx",
+      "line": 62,
+      "en": "Invalid Specialized View Component (",
+      "zh": "专用视图组件无效（"
+    },
+    {
+      "file": "frontend/app/view/preview/preview.tsx",
+      "line": 164,
+      "en": "Open File...",
+      "zh": "打开文件…"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 78,
+      "en": "Processes",
+      "zh": "进程"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 393,
+      "en": "Killed",
+      "zh": "已终止"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 396,
+      "en": "Process #{0} {1}",
+      "zh": "进程 #{0} {1}"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 427,
+      "en": "Refresh Interval",
+      "zh": "刷新间隔"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 431,
+      "en": "1 second",
+      "zh": "1 秒"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 437,
+      "en": "2 seconds",
+      "zh": "2 秒"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 443,
+      "en": "5 seconds",
+      "zh": "5 秒"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 475,
+      "en": "Command",
+      "zh": "命令"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 476,
+      "en": "Status",
+      "zh": "状态"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 477,
+      "en": "User",
+      "zh": "用户"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 478,
+      "en": "Num Threads",
+      "zh": "线程数"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 480,
+      "en": "Memory",
+      "zh": "内存"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 516,
+      "en": "Paused",
+      "zh": "已暂停"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 517,
+      "en": "Click to resume",
+      "zh": "点击继续"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 537,
+      "en": "Error",
+      "zh": "错误"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 537,
+      "en": "Stalled",
+      "zh": "已停滞"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 537,
+      "en": "Updating",
+      "zh": "正在更新"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 541,
+      "en": "Click to pause",
+      "zh": "点击暂停"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 624,
+      "en": "(gone)",
+      "zh": "（已结束）"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 673,
+      "en": "Error: {0}",
+      "zh": "错误：{0}"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 733,
+      "en": "Load",
+      "zh": "加载"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 743,
+      "en": "Mem",
+      "zh": "内存"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 765,
+      "en": "Procs",
+      "zh": "进程"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 788,
+      "en": "Load",
+      "zh": "加载"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 797,
+      "en": "Mem",
+      "zh": "内存"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 820,
+      "en": "Procs",
+      "zh": "进程"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 857,
+      "en": "Filter processes…",
+      "zh": "筛选进程…"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 920,
+      "en": "Copy PID",
+      "zh": "复制进程 ID"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 928,
+      "en": "Signal",
+      "zh": "信号"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 941,
+      "en": "Kill Process",
+      "zh": "终止进程"
+    },
+    {
+      "file": "frontend/app/view/processviewer/processviewer.tsx",
+      "line": 996,
+      "en": "Waiting for connection…",
+      "zh": "正在等待连接…"
+    },
+    {
+      "file": "frontend/app/view/sysinfo/sysinfo.tsx",
+      "line": 84,
+      "en": "Memory Total",
+      "zh": "总内存"
+    },
+    {
+      "file": "frontend/app/view/sysinfo/sysinfo.tsx",
+      "line": 85,
+      "en": "Memory Used",
+      "zh": "已用内存"
+    },
+    {
+      "file": "frontend/app/view/sysinfo/sysinfo.tsx",
+      "line": 86,
+      "en": "Memory Free",
+      "zh": "空闲内存"
+    },
+    {
+      "file": "frontend/app/view/sysinfo/sysinfo.tsx",
+      "line": 87,
+      "en": "Memory Available",
+      "zh": "可用内存"
+    },
+    {
+      "file": "frontend/app/view/sysinfo/sysinfo.tsx",
+      "line": 90,
+      "en": "Core {0}",
+      "zh": "核心 {0}"
+    },
+    {
+      "file": "frontend/app/view/sysinfo/sysinfo.tsx",
+      "line": 311,
+      "en": "Plot Type",
+      "zh": "图表类型"
+    },
+    {
+      "file": "frontend/app/view/term/ijson.tsx",
+      "line": 28,
+      "en": "Unknown tag:",
+      "zh": "未知标签："
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 121,
+      "en": "Wave App",
+      "zh": "Wave 应用"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 135,
+      "en": "Switch back to Terminal",
+      "zh": "切换回终端"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 148,
+      "en": "Switch to Wave App",
+      "zh": "切换到 Wave 应用"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 174,
+      "en": "Restarting Command",
+      "zh": "正在重新执行命令"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 185,
+      "en": "Command Exited Successfully",
+      "zh": "命令执行成功"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 193,
+      "en": "Exit Code:",
+      "zh": "退出码："
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 204,
+      "en": "Multi Input ON",
+      "zh": "多终端同步输入已开启"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 206,
+      "en": "Input will be sent to all connected terminals (click to disable)",
+      "zh": "输入将发送到所有已连接的终端（点击关闭）"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 311,
+      "en": "Command",
+      "zh": "命令"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 314,
+      "en": "Click to Start",
+      "zh": "点击启动"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 317,
+      "en": "Running. Click to Restart",
+      "zh": "运行中，点击重新启动"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 320,
+      "en": "Exited. Click to Restart",
+      "zh": "已退出，点击重新启动"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 414,
+      "en": "No shell integration — Wave AI unable to run commands.",
+      "zh": "Shell 集成尚未启用，Wave AI 的命令执行功能暂不可用。"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 423,
+      "en": "Shell ready — Wave AI can run commands in this terminal.",
+      "zh": "Shell 已就绪，Wave AI 可以在此终端执行命令。"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 429,
+      "en": "Claude Code Detected",
+      "zh": "已检测到 Claude Code"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 430,
+      "en": "Shell busy — Wave AI unable to run commands while another command is running.",
+      "zh": "Shell 正忙，当前命令结束后 Wave AI 才能执行其他命令。"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 437,
+      "en": "Wave AI integration disabled while you're inside {0}.",
+      "zh": "使用 {0} 时，Wave AI 集成暂时关闭。"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 458,
+      "en": "WebGL not supported",
+      "zh": "当前环境不支持 WebGL"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 471,
+      "en": "WebGL enabled (click to disable)",
+      "zh": "WebGL 已启用（点击关闭）"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 479,
+      "en": "WebGL disabled (click to enable)",
+      "zh": "WebGL 已关闭（点击启用）"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 832,
+      "en": "Copy",
+      "zh": "复制"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 845,
+      "en": "Send to Wave AI",
+      "zh": "发送到 Wave AI"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 872,
+      "en": "Open URL (",
+      "zh": "打开网址（"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 872,
+      "en": "Open URL",
+      "zh": "打开网址"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 883,
+      "en": "Open URL in External Browser",
+      "zh": "在外部浏览器中打开网址"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 893,
+      "en": "Paste",
+      "zh": "粘贴"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 903,
+      "en": "Un-Magnify Block",
+      "zh": "还原区块大小"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 903,
+      "en": "Magnify Block",
+      "zh": "放大区块"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 940,
+      "en": "Split Horizontally",
+      "zh": "水平拆分"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 950,
+      "en": "Split Vertically",
+      "zh": "垂直拆分"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 967,
+      "en": "File Browser",
+      "zh": "文件浏览器"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 987,
+      "en": "Save Session As...",
+      "zh": "会话另存为…"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1002,
+      "en": "Failed to save session scrollback: {0}",
+      "zh": "保存会话历史输出失败：{0}"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1008,
+      "en": "No scrollback content to save.",
+      "zh": "暂无可保存的终端历史输出。"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1025,
+      "en": "Default",
+      "zh": "默认"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1032,
+      "en": "Default",
+      "zh": "默认"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1043,
+      "en": "Transparent Background",
+      "zh": "透明背景"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1054,
+      "en": "No Transparency",
+      "zh": "关闭透明效果"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1099,
+      "en": "Default",
+      "zh": "默认"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1110,
+      "en": "Block",
+      "zh": "区块"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1121,
+      "en": "Block (Blinking)",
+      "zh": "方块（闪烁）"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1132,
+      "en": "Bar",
+      "zh": "竖线"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1143,
+      "en": "Bar (Blinking)",
+      "zh": "竖线（闪烁）"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1154,
+      "en": "Underline",
+      "zh": "下划线"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1165,
+      "en": "Underline (Blinking)",
+      "zh": "下划线（闪烁）"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1177,
+      "en": "Themes",
+      "zh": "主题"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1181,
+      "en": "Font Size",
+      "zh": "字号"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1185,
+      "en": "Cursor",
+      "zh": "光标"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1189,
+      "en": "Transparency",
+      "zh": "透明度"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1196,
+      "en": "Allow Bracketed Paste Mode",
+      "zh": "允许括号粘贴模式"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1199,
+      "en": "On",
+      "zh": "开启"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1199,
+      "en": "Off",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1210,
+      "en": "On",
+      "zh": "开启"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1221,
+      "en": "Off",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1234,
+      "en": "Force Restart Controller",
+      "zh": "强制重启控制器"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1239,
+      "en": "Clear Output On Restart",
+      "zh": "重启时清空输出"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1242,
+      "en": "On",
+      "zh": "开启"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1253,
+      "en": "Off",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1267,
+      "en": "Run On Startup",
+      "zh": "启动时运行"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1270,
+      "en": "On",
+      "zh": "开启"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1281,
+      "en": "Off",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1295,
+      "en": "Debug Connection",
+      "zh": "调试连接"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1298,
+      "en": "Off",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1309,
+      "en": "Info",
+      "zh": "信息"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1320,
+      "en": "Verbose",
+      "zh": "详细"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1336,
+      "en": "Session Durability",
+      "zh": "会话持久化"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1339,
+      "en": "Restart Session in Standard Mode",
+      "zh": "以标准模式重启会话"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1346,
+      "en": "Session Durability",
+      "zh": "会话持久化"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1349,
+      "en": "Restart Session in Durable Mode",
+      "zh": "以持久模式重启会话"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1357,
+      "en": "Advanced",
+      "zh": "高级"
+    },
+    {
+      "file": "frontend/app/view/term/term-model.ts",
+      "line": 1363,
+      "en": "Close Toolbar",
+      "zh": "关闭工具栏"
+    },
+    {
+      "file": "frontend/app/view/term/term-tooltip.tsx",
+      "line": 133,
+      "en": "-click to open link",
+      "zh": "并点击以打开链接"
+    },
+    {
+      "file": "frontend/app/view/term/termutil.ts",
+      "line": 84,
+      "en": "Image too large (>5MB)",
+      "zh": "图片超过大小限制（5 MB）"
+    },
+    {
+      "file": "frontend/app/view/tsunami/tsunami.tsx",
+      "line": 202,
+      "en": "Stop WaveApp",
+      "zh": "停止 Wave 应用"
+    },
+    {
+      "file": "frontend/app/view/tsunami/tsunami.tsx",
+      "line": 206,
+      "en": "Restart WaveApp",
+      "zh": "重启 Wave 应用"
+    },
+    {
+      "file": "frontend/app/view/tsunami/tsunami.tsx",
+      "line": 210,
+      "en": "Restart WaveApp and Force Rebuild",
+      "zh": "重启 Wave 应用并强制重新构建"
+    },
+    {
+      "file": "frontend/app/view/tsunami/tsunami.tsx",
+      "line": 221,
+      "en": "Remix WaveApp in Builder",
+      "zh": "在构建器中改编 Wave 应用"
+    },
+    {
+      "file": "frontend/app/view/tsunami/tsunami.tsx",
+      "line": 301,
+      "en": "Start",
+      "zh": "启动"
+    },
+    {
+      "file": "frontend/app/view/tsunami/tsunami.tsx",
+      "line": 304,
+      "en": "Starting...",
+      "zh": "正在启动…"
+    },
+    {
+      "file": "frontend/app/view/vdom/vdom-model.tsx",
+      "line": 151,
+      "en": "Wave App",
+      "zh": "Wave 应用"
+    },
+    {
+      "file": "frontend/app/view/waveai/waveai.tsx",
+      "line": 28,
+      "en": "This legacy Wave AI block is no longer supported",
+      "zh": "旧版 Wave AI 区块已停止维护"
+    },
+    {
+      "file": "frontend/app/view/waveai/waveai.tsx",
+      "line": 30,
+      "en": "This older AI widget has been retired. Please use the modern Wave AI panel for AI chats, terminal context, tools, and uploads going forward.",
+      "zh": "旧版 AI 组件已停用。请使用新版 Wave AI 面板进行对话、访问终端上下文、调用工具及上传文件。"
+    },
+    {
+      "file": "frontend/app/view/waveai/waveai.tsx",
+      "line": 34,
+      "en": "Open Wave AI panel",
+      "zh": "打开 Wave AI 面板"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 45,
+      "en": "No Secrets",
+      "zh": "暂无凭据"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 46,
+      "en": "Add a secret to get started",
+      "zh": "添加凭据以开始使用"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 52,
+      "en": "Add New Secret",
+      "zh": "添加新凭据"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 64,
+      "en": "CLI Access",
+      "zh": "命令行访问"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 108,
+      "en": "Add New Secret",
+      "zh": "添加新凭据"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 141,
+      "en": "Add New Secret",
+      "zh": "添加新凭据"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 143,
+      "en": "Secret Name",
+      "zh": "凭据名称"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 158,
+      "en": "Must start with a letter and contain only letters, numbers, and underscores",
+      "zh": "以字母开头，仅使用字母、数字和下划线"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 162,
+      "en": "Secret Value",
+      "zh": "凭据内容"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 167,
+      "en": "Enter secret value...",
+      "zh": "输入凭据内容…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 178,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 188,
+      "en": "Adding...",
+      "zh": "正在添加…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 191,
+      "en": "Add Secret",
+      "zh": "添加凭据"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 223,
+      "en": "Secret Value",
+      "zh": "凭据内容"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 241,
+      "en": "Enter new secret value...",
+      "zh": "输入新的凭据内容…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 245,
+      "en": "The current secret value is not shown by default for security purposes.",
+      "zh": "凭据内容默认隐藏，点击“显示凭据”可查看。"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 248,
+      "en": "Loading...",
+      "zh": "正在加载…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 256,
+      "en": "Show Secret",
+      "zh": "显示凭据"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 267,
+      "en": "Delete this secret",
+      "zh": "删除此凭据"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 272,
+      "en": "Deleting...",
+      "zh": "正在删除…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 277,
+      "en": "Delete",
+      "zh": "删除"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 287,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 297,
+      "en": "Saving...",
+      "zh": "正在保存…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 300,
+      "en": "Save",
+      "zh": "保存"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/secretscontent.tsx",
+      "line": 345,
+      "en": "Loading secrets...",
+      "zh": "正在加载凭据…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveaivisual.tsx",
+      "line": 14,
+      "en": "Wave AI Modes - Visual Editor",
+      "zh": "Wave AI 模式 — 可视化编辑器"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveaivisual.tsx",
+      "line": 15,
+      "en": "Visual editor coming soon...",
+      "zh": "可视化编辑器即将推出…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 39,
+      "en": "Invalid key \"{0}\": all top-level keys must start with \"ai@\"",
+      "zh": "键“{0}”无效：所有顶层键均须以 ai@ 开头"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 51,
+      "en": "Invalid key \"{0}\": keys must only contain letters, numbers, underscores, @, dots, and hyphens",
+      "zh": "键“{0}”无效：仅支持字母、数字、下划线、@、点和连字符"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 61,
+      "en": "General",
+      "zh": "常规"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 68,
+      "en": "Connections",
+      "zh": "连接"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 72,
+      "en": "SSH hosts and WSL distros",
+      "zh": "SSH 主机与 WSL 发行版"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 72,
+      "en": "SSH hosts",
+      "zh": "SSH 主机"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 76,
+      "en": "Sidebar Widgets",
+      "zh": "侧边栏组件"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 83,
+      "en": "Wave AI Modes",
+      "zh": "Wave AI 模式"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 86,
+      "en": "Local models and BYOK",
+      "zh": "本地模型与自备密钥"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 93,
+      "en": "Tab Backgrounds",
+      "zh": "标签页背景"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 100,
+      "en": "Secrets",
+      "zh": "凭据"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 111,
+      "en": "Presets",
+      "zh": "预设"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 118,
+      "en": "AI Presets",
+      "zh": "AI 预设"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 132,
+      "en": "Wave Config",
+      "zh": "Wave 设置"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 270,
+      "en": "You have unsaved changes. Discard and continue?",
+      "zh": "当前有待保存的更改。丢弃并继续？"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 320,
+      "en": "Failed to load {0}: {1}",
+      "zh": "加载 {0} 失败：{1}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 351,
+      "en": "Failed to save {0}: {1}",
+      "zh": "保存 {0} 失败：{1}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 393,
+      "en": "Failed to save {0}: {1}",
+      "zh": "保存 {0} 失败：{1}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 399,
+      "en": "Invalid JSON: {0}",
+      "zh": "JSON 格式无效：{0}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 417,
+      "en": "No appropriate secret manager found. Cannot manage secrets securely.",
+      "zh": "当前环境缺少可用的安全凭据管理器。"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 423,
+      "en": "Error checking storage backend: {0}",
+      "zh": "检查存储后端时发生错误：{0}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 435,
+      "en": "Failed to load secrets: {0}",
+      "zh": "读取凭据列表失败：{0}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 470,
+      "en": "Secret not found: {0}",
+      "zh": "凭据不存在：{0}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 473,
+      "en": "Failed to load secret: {0}",
+      "zh": "读取凭据失败：{0}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 504,
+      "en": "Failed to save secret: {0}",
+      "zh": "保存凭据失败：{0}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 525,
+      "en": "Failed to delete secret: {0}",
+      "zh": "删除凭据失败：{0}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 550,
+      "en": "Secret name cannot be empty",
+      "zh": "请输入凭据名称"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 557,
+      "en": "Invalid secret name: must start with a letter and contain only letters, numbers, and underscores",
+      "zh": "凭据名称须以字母开头，仅使用字母、数字和下划线"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 564,
+      "en": "Secret \"{0}\" already exists",
+      "zh": "凭据“{0}”已存在"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig-model.ts",
+      "line": 588,
+      "en": "Failed to add secret: {0}",
+      "zh": "添加凭据失败：{0}"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 38,
+      "en": "Config Files",
+      "zh": "配置文件"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 86,
+      "en": "deprecated",
+      "zh": "已弃用"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 164,
+      "en": "Save ({0})",
+      "zh": "保存（{0}）"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 193,
+      "en": "View documentation",
+      "zh": "查看文档"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 213,
+      "en": "Unsaved changes",
+      "zh": "有待保存的更改"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 226,
+      "en": "Saving...",
+      "zh": "正在保存…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 226,
+      "en": "Save",
+      "zh": "保存"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 248,
+      "en": "Visual",
+      "zh": "可视化"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 260,
+      "en": "Raw JSON",
+      "zh": "JSON 源码"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 289,
+      "en": "Loading...",
+      "zh": "正在加载…"
+    },
+    {
+      "file": "frontend/app/view/waveconfig/waveconfig.tsx",
+      "line": 317,
+      "en": "Config Error:",
+      "zh": "配置错误："
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 99,
+      "en": "Web",
+      "zh": "网页"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 189,
+      "en": "Mobile User Agent: iPhone",
+      "zh": "移动端用户代理：iPhone"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 189,
+      "en": "Mobile User Agent: Android",
+      "zh": "移动端用户代理：Android"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 201,
+      "en": "Open in External Browser",
+      "zh": "在外部浏览器中打开"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 626,
+      "en": "Reset",
+      "zh": "重置"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 648,
+      "en": "Default",
+      "zh": "默认"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 661,
+      "en": "Mobile: iPhone",
+      "zh": "移动端：iPhone"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 674,
+      "en": "Mobile: Android",
+      "zh": "移动端：Android"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 691,
+      "en": "Copy URL to Clipboard",
+      "zh": "复制网址到剪贴板"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 695,
+      "en": "Set Block Homepage",
+      "zh": "设置区块主页"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 699,
+      "en": "Set Default Homepage",
+      "zh": "设置默认主页"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 706,
+      "en": "User Agent Type",
+      "zh": "用户代理类型"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 713,
+      "en": "Un-Hide Navigation",
+      "zh": "显示导航"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 713,
+      "en": "Hide Navigation",
+      "zh": "隐藏导航"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 723,
+      "en": "Set Zoom Factor",
+      "zh": "设置缩放比例"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 727,
+      "en": "Close DevTools",
+      "zh": "关闭开发者工具"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 727,
+      "en": "Open DevTools",
+      "zh": "打开开发者工具"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 742,
+      "en": "Clear History",
+      "zh": "清除历史记录"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 746,
+      "en": "Clear Cookies and Storage (All Web Widgets)",
+      "zh": "清除 Cookie 和存储（全部网页组件）"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 782,
+      "en": "Open Bookmark...",
+      "zh": "打开书签…"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 786,
+      "en": "No Bookmarks Configured",
+      "zh": "尚未配置书签"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 788,
+      "en": "Edit your",
+      "zh": "编辑"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 788,
+      "en": "file to configure bookmarks.",
+      "zh": "文件以配置书签。"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 794,
+      "en": "Open bookmarks.json",
+      "zh": "打开 bookmarks.json"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 801,
+      "en": "No matching bookmarks",
+      "zh": "暂无匹配的书签"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 806,
+      "en": "Edit bookmarks.json",
+      "zh": "编辑 bookmarks.json"
+    },
+    {
+      "file": "frontend/app/view/webview/webview.tsx",
+      "line": 1039,
+      "en": "Failed to load {0}: {1}",
+      "zh": "加载 {0} 失败：{1}"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 113,
+      "en": "Settings & Help",
+      "zh": "设置与帮助"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 117,
+      "en": "Settings &amp; Help",
+      "zh": "设置与帮助"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 120,
+      "en": "Config Errors",
+      "zh": "配置错误"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 200,
+      "en": "No local apps found",
+      "zh": "暂无本地应用"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 249,
+      "en": "Build/Edit Apps",
+      "zh": "构建／编辑应用"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 278,
+      "en": "Settings",
+      "zh": "设置"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 292,
+      "en": "Tips",
+      "zh": "使用提示"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 305,
+      "en": "Secrets",
+      "zh": "凭据"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 319,
+      "en": "Release Notes",
+      "zh": "更新日志"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 327,
+      "en": "Help",
+      "zh": "帮助"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 441,
+      "en": "Edit widgets.json",
+      "zh": "编辑 widgets.json"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 480,
+      "en": "Local WaveApps",
+      "zh": "本地 Wave 应用"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 519,
+      "en": "Local WaveApps",
+      "zh": "本地 Wave 应用"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 565,
+      "en": "Running Wave Dev Build",
+      "zh": "正在运行 Wave 开发版本"
+    },
+    {
+      "file": "frontend/app/workspace/widgets.tsx",
+      "line": 612,
+      "en": "Running Wave Dev Build",
+      "zh": "正在运行 Wave 开发版本"
+    },
+    {
+      "file": "frontend/app/workspace/workspace.tsx",
+      "line": 158,
+      "en": "No Active Tab",
+      "zh": "当前无活动标签页"
+    },
+    {
+      "file": "frontend/builder/app-selection-modal.tsx",
+      "line": 145,
+      "en": "WaveApp Builder ({0})",
+      "zh": "Wave 应用构建器（{0}）"
+    },
+    {
+      "file": "frontend/builder/app-selection-modal.tsx",
+      "line": 158,
+      "en": "WaveApp Builder ({0})",
+      "zh": "Wave 应用构建器（{0}）"
+    },
+    {
+      "file": "frontend/builder/builder-app.tsx",
+      "line": 46,
+      "en": "Running Wave Dev Build",
+      "zh": "正在运行 Wave 开发版本"
+    },
+    {
+      "file": "frontend/builder/builder-app.tsx",
+      "line": 51,
+      "en": "WaveApp Builder",
+      "zh": "Wave 应用构建器"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 95,
+      "en": "Close error",
+      "zh": "关闭错误提示"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 173,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 300,
+      "en": "Preview",
+      "zh": "预览"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 322,
+      "en": "Files",
+      "zh": "文件"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 330,
+      "en": "Secrets",
+      "zh": "凭据"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 348,
+      "en": "More options",
+      "zh": "更多选项"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-codetab.tsx",
+      "line": 90,
+      "en": "Save",
+      "zh": "保存"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 185,
+      "en": "Refresh",
+      "zh": "刷新"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 74,
+      "en": "Rename",
+      "zh": "重命名"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 75,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 159,
+      "en": "Delete",
+      "zh": "删除"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 160,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 167,
+      "en": "Starting...",
+      "zh": "正在启动…"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 133,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "emain/emain-ipc.ts",
+      "line": 167,
+      "en": "Save Image",
+      "zh": "保存图片"
+    },
+    {
+      "file": "emain/emain-ipc.ts",
+      "line": 169,
+      "en": "Images",
+      "zh": "图片"
+    },
+    {
+      "file": "emain/emain-ipc.ts",
+      "line": 218,
+      "en": "Save Image",
+      "zh": "保存图片"
+    },
+    {
+      "file": "emain/emain-ipc.ts",
+      "line": 506,
+      "en": "Save Scrollback",
+      "zh": "保存终端历史输出"
+    },
+    {
+      "file": "emain/emain-ipc.ts",
+      "line": 508,
+      "en": "Text Files",
+      "zh": "文本文件"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 52,
+      "en": "Create Workspace",
+      "zh": "新建工作区"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 135,
+      "en": "New Window",
+      "zh": "新建窗口"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 150,
+      "en": "New WaveApp Builder Window",
+      "zh": "新建 Wave 应用构建窗口"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 157,
+      "en": "New Window (hidden-1)",
+      "zh": "新建窗口（隐藏快捷键 1）"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 164,
+      "en": "New Window (hidden-2)",
+      "zh": "新建窗口（隐藏快捷键 2）"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 177,
+      "en": "About Wave Terminal",
+      "zh": "关于 Wave Terminal"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 183,
+      "en": "Check for Updates",
+      "zh": "检查更新"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 212,
+      "en": "Reload Window",
+      "zh": "重新加载窗口"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 212,
+      "en": "Reload Tab",
+      "zh": "重新加载标签页"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 219,
+      "en": "Relaunch All Windows",
+      "zh": "重新打开全部窗口"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 223,
+      "en": "Clear Tab Cache",
+      "zh": "清空标签页缓存"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 227,
+      "en": "Toggle DevTools",
+      "zh": "切换开发者工具"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 236,
+      "en": "Reset Zoom",
+      "zh": "重置缩放"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 246,
+      "en": "Zoom In",
+      "zh": "放大"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 256,
+      "en": "Zoom In (hidden)",
+      "zh": "放大（隐藏快捷键）"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 268,
+      "en": "Zoom Out",
+      "zh": "缩小"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 278,
+      "en": "Zoom Out (hidden)",
+      "zh": "缩小（隐藏快捷键）"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 290,
+      "en": "Launch On Full Screen",
+      "zh": "启动时全屏"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 293,
+      "en": "On",
+      "zh": "开启"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 301,
+      "en": "Off",
+      "zh": "关闭"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 316,
+      "en": "Toggle Widgets Bar",
+      "zh": "切换组件侧栏"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 368,
+      "en": "Workspace",
+      "zh": "工作区"
+    },
+    {
+      "file": "emain/emain-menu.ts",
+      "line": 506,
+      "en": "New Window",
+      "zh": "新建窗口"
+    },
+    {
+      "file": "emain/emain-platform.ts",
+      "line": 49,
+      "en": "Dismiss",
+      "zh": "关闭提示"
+    },
+    {
+      "file": "emain/emain-platform.ts",
+      "line": 49,
+      "en": "Learn More",
+      "zh": "了解更多"
+    },
+    {
+      "file": "emain/emain-platform.ts",
+      "line": 50,
+      "en": "Wave has detected a performance issue",
+      "zh": "Wave 检测到性能问题"
+    },
+    {
+      "file": "emain/emain-platform.ts",
+      "line": 51,
+      "en": "Wave is running in ARM64 translation mode which may impact performance. Recommendation: Download the native ARM64 version from our website for optimal performance.",
+      "zh": "Wave 正在通过 ARM64 转译运行，性能可能受到影响。建议从官网下载原生 ARM64 版本。"
+    },
+    {
+      "file": "emain/emain-util.ts",
+      "line": 277,
+      "en": "Down",
+      "zh": "下方"
+    },
+    {
+      "file": "emain/emain-util.ts",
+      "line": 280,
+      "en": "Left",
+      "zh": "左侧"
+    },
+    {
+      "file": "emain/emain-util.ts",
+      "line": 283,
+      "en": "Right",
+      "zh": "右侧"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 316,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 316,
+      "en": "Close Window",
+      "zh": "关闭窗口"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 317,
+      "en": "Confirm",
+      "zh": "确认"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 319,
+      "en": "Window has unsaved tabs, closing window will delete existing tabs. Continue?",
+      "zh": "窗口中有待保存的标签页，关闭窗口会删除这些标签页。继续？"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 759,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 759,
+      "en": "Close Tab",
+      "zh": "关闭标签页"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 760,
+      "en": "Confirm",
+      "zh": "确认"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 761,
+      "en": "Are you sure you want to close this tab?",
+      "zh": "确定关闭此标签页？"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 809,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 809,
+      "en": "Delete Workspace",
+      "zh": "删除工作区"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 810,
+      "en": "Confirm",
+      "zh": "确认"
+    },
+    {
+      "file": "emain/emain-window.ts",
+      "line": 811,
+      "en": "Deleting workspace will also delete its contents. Continue?",
+      "zh": "删除工作区会同时删除其中的内容。继续？"
+    },
+    {
+      "file": "emain/emain.ts",
+      "line": 280,
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "file": "emain/emain.ts",
+      "line": 280,
+      "en": "Quit",
+      "zh": "退出"
+    },
+    {
+      "file": "emain/emain.ts",
+      "line": 281,
+      "en": "Confirm Quit",
+      "zh": "确认退出"
+    },
+    {
+      "file": "emain/emain.ts",
+      "line": 282,
+      "en": "Are you sure you want to quit Wave Terminal?",
+      "zh": "确定退出 Wave Terminal？"
+    },
+    {
+      "file": "emain/updater.ts",
+      "line": 97,
+      "en": "A new version of Wave Terminal is ready to install.",
+      "zh": "Wave Terminal 新版本已准备好安装。"
+    },
+    {
+      "file": "emain/updater.ts",
+      "line": 166,
+      "en": "There are currently no updates available.",
+      "zh": "当前已是最新版本。"
+    },
+    {
+      "file": "emain/updater.ts",
+      "line": 184,
+      "en": "Restart",
+      "zh": "重启"
+    },
+    {
+      "file": "emain/updater.ts",
+      "line": 184,
+      "en": "Later",
+      "zh": "稍后"
+    },
+    {
+      "file": "emain/updater.ts",
+      "line": 185,
+      "en": "Application Update",
+      "zh": "应用更新"
+    },
+    {
+      "file": "emain/updater.ts",
+      "line": 187,
+      "en": "A new version has been downloaded. Restart the application to apply the updates.",
+      "zh": "新版本已下载，重启应用以完成更新。"
+    },
+    {
+      "file": "frontend/wave.ts",
+      "line": 116,
+      "en": "Wave Terminal - {0}",
+      "zh": "Wave 中文版 — {0}"
+    },
+    {
+      "file": "frontend/wave.ts",
+      "line": 185,
+      "en": "Wave Terminal - {0}",
+      "zh": "Wave 中文版 — {0}"
+    },
+    {
+      "file": "frontend/wave.ts",
+      "line": 256,
+      "en": "WaveApp Builder ({0})",
+      "zh": "Wave 应用构建器（{0}）"
+    },
+    {
+      "file": "frontend/wave.ts",
+      "line": 256,
+      "en": "WaveApp Builder",
+      "zh": "Wave 应用构建器"
+    },
+    {
+      "file": "frontend/app/onboarding/fakechat.tsx",
+      "line": 215,
+      "en": "Widget Access ON",
+      "zh": "组件访问已开启"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-durable.tsx",
+      "line": 43,
+      "en": "Durable SSH Sessions",
+      "zh": "持久 SSH 会话"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-durable.tsx",
+      "line": 50,
+      "en": "SSH Sessions, Protected",
+      "zh": "保护 SSH 会话"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-durable.tsx",
+      "line": 54,
+      "en": "Close your laptop, switch networks, restart Wave — your remote sessions keep running.",
+      "zh": "合上电脑、切换网络或重启 Wave 后，远程会话仍可继续运行。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-durable.tsx",
+      "line": 58,
+      "en": "Shell state, running programs, and terminal history are all preserved",
+      "zh": "保留 Shell 状态、运行程序和终端历史记录"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-durable.tsx",
+      "line": 63,
+      "en": "Sessions automatically reconnect when your connection is restored",
+      "zh": "网络恢复后，会话将自动重新连接"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-durable.tsx",
+      "line": 68,
+      "en": "Buffered output streams back in, never miss a line",
+      "zh": "重新连接后自动补齐缓存输出"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-durable.tsx",
+      "line": 72,
+      "en": "All the persistence of tmux, built into your terminal. Look for the shield icon to enable durability on any SSH session.",
+      "zh": "终端内置类似 tmux 的会话保持能力。点击盾牌图标即可为 SSH 会话启用持久化。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features-footer.tsx",
+      "line": 27,
+      "en": "&lt; Prev",
+      "zh": "&lt; 上一步"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features-footer.tsx",
+      "line": 44,
+      "en": "Skip Feature Tour &gt;",
+      "zh": "跳过功能介绍 &gt;"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 58,
+      "en": "Wave AI is your terminal assistant with context. I can read your terminal output, analyze widgets, read/write files, and help you solve problems faster.",
+      "zh": "Wave AI 是具备上下文的终端助手，可读取终端输出、分析组件、读写文件，帮助你更快解决问题。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 65,
+      "en": "Toggle the Wave AI panel with the",
+      "zh": "切换 Wave AI 面板可点击"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 70,
+      "en": "button in the header (top left)",
+      "zh": "按钮（位于左上角标题栏）"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 77,
+      "en": "Or use the keyboard shortcut",
+      "zh": "也可以使用快捷键"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 81,
+      "en": "to quickly toggle",
+      "zh": "以快速切换"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 88,
+      "en": "Bring your own API keys or run local models with Ollama, LM Studio, and other OpenAI-compatible providers",
+      "zh": "使用自备 API 密钥，或通过 Ollama、LM Studio 及兼容 OpenAI 接口的服务运行本地模型"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 141,
+      "en": "Magnify Blocks",
+      "zh": "放大区块"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 148,
+      "en": "Magnify any block to focus on what matters. Expand terminals, editors, and previews for a better view.",
+      "zh": "放大任意区块以专注当前内容，展开终端、编辑器和预览即可获得更宽敞的视图。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 151,
+      "en": "Use the magnify feature to work with complex outputs and large files more efficiently.",
+      "zh": "使用放大功能，可更高效地处理复杂输出和大型文件。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 153,
+      "en": "You can also magnify a block by clicking on the",
+      "zh": "也可以点击下列按钮放大区块："
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 157,
+      "en": "icon in the block header.",
+      "zh": "图标（位于区块标题栏）。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 211,
+      "en": "Viewing/Editing Files",
+      "zh": "查看与编辑文件"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 218,
+      "en": "Wave can preview markdown, images, and video files on both local",
+      "zh": "Wave 可预览 Markdown、图片和视频文件，文件可位于本机"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 230,
+      "en": "to preview files in Wave's graphical viewer",
+      "zh": "在 Wave 图形查看器中预览文件"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 243,
+      "en": "to open config files or code files in Wave's graphical editor",
+      "zh": "在 Wave 图形编辑器中打开配置或代码文件"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 249,
+      "en": "These commands work seamlessly on both local and remote machines, making it easy to view and edit files wherever they are.",
+      "zh": "这些命令可在本机和远程主机上使用，便于查看和编辑各处的文件。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-starask.tsx",
+      "line": 87,
+      "en": "Support open-source. Star Wave. ⭐",
+      "zh": "支持开源，为 Wave 点赞。⭐"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-starask.tsx",
+      "line": 92,
+      "en": "Wave is free, open-source, and open-model. Stars help us stay visible against closed alternatives. One click makes a difference.",
+      "zh": "Wave 免费、开源并支持多种模型。你的点赞能帮助更多人发现这个项目。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-starask.tsx",
+      "line": 109,
+      "en": "🙏 Already Starred",
+      "zh": "🙏 已经点过赞"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-starask.tsx",
+      "line": 112,
+      "en": "⭐ Star Now",
+      "zh": "⭐ 前往点赞"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-starask.tsx",
+      "line": 115,
+      "en": "Maybe Later",
+      "zh": "稍后再说"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 33,
+      "en": "Welcome to Wave v0.14!",
+      "zh": "欢迎使用 Wave v0.14！"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 48,
+      "en": "Durable SSH Sessions",
+      "zh": "持久 SSH 会话"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 53,
+      "en": "Wave AI is your terminal assistant with full context. It can read your terminal output, analyze widgets, read and write files, and help you solve problems&nbsp;faster.",
+      "zh": "Wave AI 是具备完整上下文的终端助手，可读取终端输出、分析组件、读写文件，帮助你更快解决问题。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 57,
+      "en": "New in v0.13:",
+      "zh": "v0.13 新功能："
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 57,
+      "en": "Wave AI now supports local models and bring-your-own-key! Use Ollama, LM Studio, vLLM, OpenRouter, or any OpenAI-compatible provider.",
+      "zh": "Wave AI 现已支持本地模型和自备密钥，可接入 Ollama、LM Studio、vLLM、OpenRouter 及兼容 OpenAI 接口的服务。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 62,
+      "en": "New in v0.14:",
+      "zh": "v0.14 新功能："
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 62,
+      "en": "Durable SSH sessions survive network drops, laptop sleep, and restarts — all without tmux or screen.",
+      "zh": "持久 SSH 会话可在网络中断、电脑休眠和重启后恢复，持久化由 Wave 内置功能提供。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 71,
+      "en": "Thanks for being an early Wave adopter! ⭐",
+      "zh": "感谢你成为 Wave 的早期用户！⭐"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 73,
+      "en": "A GitHub star shows your support for Wave (and open-source) and helps us reach more developers.",
+      "zh": "在 GitHub 点赞可以支持 Wave 和开源项目，帮助更多开发者发现它。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 82,
+      "en": "🙏 Already Starred",
+      "zh": "🙏 已经点过赞"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 85,
+      "en": "⭐ Star Now",
+      "zh": "⭐ 前往点赞"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-minor.tsx",
+      "line": 88,
+      "en": "Maybe Later",
+      "zh": "稍后再说"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-patch.tsx",
+      "line": 78,
+      "en": "Continue",
+      "zh": "继续"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0121.tsx",
+      "line": 64,
+      "en": "Other Changes",
+      "zh": "其他更改"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0140.tsx",
+      "line": 24,
+      "en": "Durable SSH Sessions",
+      "zh": "持久 SSH 会话"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0142.tsx",
+      "line": 63,
+      "en": "Other Changes",
+      "zh": "其他更改"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0144.tsx",
+      "line": 54,
+      "en": "Other Changes",
+      "zh": "其他更改"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 9,
+      "en": "Wave v0.14.5 introduces a new Process Viewer widget, several quality-of-life improvements, and a fix for creating new config files from the Settings widget.",
+      "zh": "Wave v0.14.5 新增进程查看器，改进多项使用体验，并修复了在设置组件中创建配置文件的问题。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 19,
+      "en": "Process Viewer",
+      "zh": "进程查看器"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 21,
+      "en": "New widget that displays running processes on local and remote machines, with CPU and memory usage and sortable columns.",
+      "zh": "新增进程组件，可查看本机与远程主机上的进程、CPU 和内存使用情况，并按列排序。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 32,
+      "en": "Other Changes",
+      "zh": "其他更改"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 36,
+      "en": "Quake Mode",
+      "zh": "下拉终端模式"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 36,
+      "en": "&mdash; global hotkey (",
+      "zh": "— 全局快捷键（"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 37,
+      "en": ") now toggles a Wave window visible and invisible",
+      "zh": "）现在可以切换 Wave 窗口的显示状态"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 40,
+      "en": "Drag &amp; Drop Files into Terminal",
+      "zh": "将文件拖入终端"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 41,
+      "en": "to paste their quoted path",
+      "zh": "以粘贴经过转义的文件路径"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 44,
+      "en": "New",
+      "zh": "新增"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 44,
+      "en": "setting adds split buttons to block headers",
+      "zh": "设置可在区块标题栏显示拆分按钮"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 46,
+      "en": "Toggle the widgets sidebar on and off from the View menu",
+      "zh": "在查看菜单中切换组件侧栏的显示状态"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 47,
+      "en": "F2 to rename the active tab",
+      "zh": "按 F2 重命名当前标签页"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 48,
+      "en": "Mouse back/forward buttons now navigate in web widgets",
+      "zh": "鼠标前进和后退键现可用于网页组件导航"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 50,
+      "en": "[bugfix]",
+      "zh": "[修复]"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-upgrade-v0145.tsx",
+      "line": 50,
+      "en": "Config files that didn&apos;t exist yet couldn&apos;t be created or edited from the Settings widget",
+      "zh": "修复了设置组件中创建和编辑新配置文件的问题"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 88,
+      "en": "Welcome to Wave Terminal",
+      "zh": "欢迎使用 Wave Terminal"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 108,
+      "en": "Support us on GitHub",
+      "zh": "在 GitHub 支持项目"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 110,
+      "en": "We're",
+      "zh": "我们坚持"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 110,
+      "en": ", and committed to providing a free terminal for individual users. Please show your support by giving us a star on",
+      "zh": "，并致力于为个人用户提供免费终端。欢迎为我们点赞支持，访问"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 119,
+      "en": "Github&nbsp;(wavetermdev/waveterm)",
+      "zh": "GitHub（wavetermdev/waveterm）"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 136,
+      "en": "Join our Community",
+      "zh": "加入社区"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 138,
+      "en": "Get help, submit feature requests, report bugs, or just chat with fellow terminal enthusiasts.",
+      "zh": "获取帮助、提交功能建议、报告问题，或与终端爱好者交流。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 147,
+      "en": "Join the Wave&nbsp;Discord&nbsp;Channel",
+      "zh": "加入 Wave Discord 频道"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 158,
+      "en": "Anonymous usage data helps us improve features you use.",
+      "zh": "匿名使用情况数据有助于改进常用功能。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 185,
+      "en": "Continue",
+      "zh": "继续"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 237,
+      "en": "Telemetry Disabled ✓",
+      "zh": "使用情况统计已关闭 ✓"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 245,
+      "en": "No problem, we respect your privacy.",
+      "zh": "已保留你的隐私偏好。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 247,
+      "en": "But, without usage data, we're flying blind. A GitHub star helps us know Wave is useful and worth maintaining.",
+      "zh": "欢迎通过 GitHub 点赞支持 Wave，这有助于我们了解项目的使用价值并持续维护。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 256,
+      "en": "⭐ Star on GitHub",
+      "zh": "⭐ 在 GitHub 点赞"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 259,
+      "en": "Maybe Later",
+      "zh": "稍后再说"
+    },
+    {
+      "file": "frontend/builder/app-selection-modal.tsx",
+      "line": 54,
+      "en": "Create New WaveApp",
+      "zh": "新建 Wave 应用"
+    },
+    {
+      "file": "frontend/builder/app-selection-modal.tsx",
+      "line": 87,
+      "en": "Create",
+      "zh": "创建"
+    },
+    {
+      "file": "frontend/builder/app-selection-modal.tsx",
+      "line": 178,
+      "en": "Loading apps...",
+      "zh": "正在加载应用…"
+    },
+    {
+      "file": "frontend/builder/app-selection-modal.tsx",
+      "line": 186,
+      "en": "Select a WaveApp to Edit",
+      "zh": "选择要编辑的 Wave 应用"
+    },
+    {
+      "file": "frontend/builder/app-selection-modal.tsx",
+      "line": 199,
+      "en": "Existing WaveApps",
+      "zh": "现有 Wave 应用"
+    },
+    {
+      "file": "frontend/builder/app-selection-modal.tsx",
+      "line": 212,
+      "en": "Last updated:",
+      "zh": "最后更新："
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 138,
+      "en": "App Published Successfully",
+      "zh": "应用发布成功"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 142,
+      "en": "Your app has been published to",
+      "zh": "应用已发布到"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 156,
+      "en": "Publish Failed",
+      "zh": "发布失败"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 176,
+      "en": "Publish App",
+      "zh": "发布应用"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 179,
+      "en": "This will publish your app to",
+      "zh": "这将发布应用到"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 183,
+      "en": "This will overwrite any existing app with the same name. Are you sure?",
+      "zh": "此操作将覆盖同名应用。继续？"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 264,
+      "en": "Publish App",
+      "zh": "发布应用"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 271,
+      "en": "Switch App",
+      "zh": "切换应用"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 308,
+      "en": "Code",
+      "zh": "代码"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 315,
+      "en": "Config/Data",
+      "zh": "配置／数据"
+    },
+    {
+      "file": "frontend/builder/builder-apppanel.tsx",
+      "line": 343,
+      "en": "Publish App",
+      "zh": "发布应用"
+    },
+    {
+      "file": "frontend/builder/builder-buildpanel.tsx",
+      "line": 25,
+      "en": "Add to Context",
+      "zh": "添加到上下文"
+    },
+    {
+      "file": "frontend/builder/builder-buildpanel.tsx",
+      "line": 107,
+      "en": "Build Output",
+      "zh": "构建输出"
+    },
+    {
+      "file": "frontend/builder/builder-buildpanel.tsx",
+      "line": 116,
+      "en": "Debug",
+      "zh": "调试"
+    },
+    {
+      "file": "frontend/builder/builder-buildpanel.tsx",
+      "line": 122,
+      "en": "Send Output to AI",
+      "zh": "将输出发送到 AI"
+    },
+    {
+      "file": "frontend/builder/builder-buildpanel.tsx",
+      "line": 128,
+      "en": "Restart App",
+      "zh": "重启应用"
+    },
+    {
+      "file": "frontend/builder/builder-buildpanel.tsx",
+      "line": 141,
+      "en": "Waiting for output...",
+      "zh": "正在等待输出…"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-codetab.tsx",
+      "line": 58,
+      "en": "No builder app selected",
+      "zh": "请选择要编辑的应用"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-codetab.tsx",
+      "line": 66,
+      "en": "Loading app.go...",
+      "zh": "正在加载 app.go…"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 17,
+      "en": "App Not Running",
+      "zh": "应用尚未运行"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 19,
+      "en": "The tsunami app must be running to view config and data. Please start the app from the Preview tab first.",
+      "zh": "查看配置和数据前，请在预览标签页启动 Tsunami 应用。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 36,
+      "en": "Error Loading Data",
+      "zh": "数据加载错误"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 53,
+      "en": "Loading data...",
+      "zh": "正在加载数据…"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 179,
+      "en": "Config & Data",
+      "zh": "配置与数据"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 194,
+      "en": "Config",
+      "zh": "配置"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 196,
+      "en": "Copy Config",
+      "zh": "复制配置"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 208,
+      "en": "Data",
+      "zh": "数据"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-configdatatab.tsx",
+      "line": 210,
+      "en": "Copy Data",
+      "zh": "复制数据"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 79,
+      "en": "Rename File",
+      "zh": "重命名文件"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 82,
+      "en": "Current name:",
+      "zh": "当前名称："
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 164,
+      "en": "Delete File",
+      "zh": "删除文件"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 166,
+      "en": "Are you sure you want to delete",
+      "zh": "确定删除"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 168,
+      "en": "This action cannot be undone.",
+      "zh": "此操作将永久生效。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 287,
+      "en": "Rename File",
+      "zh": "重命名文件"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 296,
+      "en": "Delete File",
+      "zh": "删除文件"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 316,
+      "en": "Static Files",
+      "zh": "静态文件"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 322,
+      "en": "Refresh file list",
+      "zh": "刷新文件列表"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 332,
+      "en": "Add File",
+      "zh": "添加文件"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 346,
+      "en": "Drag and drop files here or click \"Add File\". Maximum file size:",
+      "zh": "将文件拖入此处，或点击“添加文件”。文件大小上限："
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 351,
+      "en": "Loading files...",
+      "zh": "正在加载文件…"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 355,
+      "en": "No files yet. Drag and drop files here or click \"Add File\" to get started.",
+      "zh": "暂无文件。拖入文件或点击“添加文件”以开始使用。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 373,
+      "en": "Generated by framework (read-only)",
+      "zh": "由框架生成（只读）"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-filestab.tsx",
+      "line": 383,
+      "en": "File options",
+      "zh": "文件选项"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 17,
+      "en": "No App to Preview",
+      "zh": "暂无可预览的应用"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 19,
+      "en": "Get started by using the AI chat interface on the left to create your WaveApp. Describe what you want to build, and the AI will help you generate the code.",
+      "zh": "在左侧 AI 对话中描述想要构建的应用，AI 将协助生成代码。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 24,
+      "en": "Your app will appear here once",
+      "zh": "应用将在此处显示，待"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 24,
+      "en": "is created",
+      "zh": "创建完成"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 71,
+      "en": "Secrets Required",
+      "zh": "需要配置凭据"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 73,
+      "en": "This app requires secrets that must be configured. Please use the Secrets tab to set and bind the required secrets for your app to run.",
+      "zh": "此应用需要凭据，请在凭据标签页完成设置和绑定后运行。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 83,
+      "en": "Go to Secrets Tab",
+      "zh": "前往凭据标签页"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 95,
+      "en": "Build Error",
+      "zh": "构建错误"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 105,
+      "en": "Add Error to AI Context",
+      "zh": "将错误添加到 AI 上下文"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 111,
+      "en": "Ask AI to Fix",
+      "zh": "请 AI 修复"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 129,
+      "en": "App is Building...",
+      "zh": "正在构建应用…"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 131,
+      "en": "Your WaveApp is being compiled and prepared. This may take a few moments.",
+      "zh": "正在编译并准备 Wave 应用，请稍候。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 154,
+      "en": "App is Not Running",
+      "zh": "应用尚未运行"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 156,
+      "en": "Your WaveApp is currently not running. Click the button below to start it.",
+      "zh": "Wave 应用尚未运行，点击下方按钮即可启动。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-previewtab.tsx",
+      "line": 164,
+      "en": "Start App",
+      "zh": "启动应用"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 43,
+      "en": "Required",
+      "zh": "必填"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 46,
+      "en": "Optional",
+      "zh": "可选"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 56,
+      "en": "Map Default",
+      "zh": "映射默认值"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 64,
+      "en": "Set and Map Default",
+      "zh": "设置并映射默认值"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 119,
+      "en": "Error Setting Secret",
+      "zh": "凭据设置错误"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 137,
+      "en": "Set and Map Secret",
+      "zh": "设置并映射凭据"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 140,
+      "en": "Secret Name:",
+      "zh": "凭据名称："
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 145,
+      "en": "Paste secret value here...",
+      "zh": "在此粘贴凭据内容…"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 152,
+      "en": "Secrets are stored securely in Wave's secret store",
+      "zh": "凭据安全地保存在 Wave 凭据库中"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 189,
+      "en": "App manifest not available. Secrets will be shown once the app builds successfully.",
+      "zh": "应用清单尚未生成，构建成功后将显示凭据配置。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 250,
+      "en": "Secret Bindings",
+      "zh": "凭据绑定"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 253,
+      "en": "Map app secrets to Wave secret store names. Required secrets must be bound before the app can run successfully. Changes are saved automatically.",
+      "zh": "将应用凭据映射到 Wave 凭据库中的名称。运行应用前须绑定必填凭据，更改会自动保存。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 259,
+      "en": "Some required secrets are not bound yet.",
+      "zh": "部分必填凭据仍待绑定。"
+    },
+    {
+      "file": "frontend/builder/tabs/builder-secrettab.tsx",
+      "line": 268,
+      "en": "No secrets defined in this app manifest.",
+      "zh": "此应用清单尚未定义凭据。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features-footer.tsx",
+      "line": 31,
+      "en": "of",
+      "zh": "／"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 157,
+      "en": "A quick",
+      "zh": "快速按下"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 157,
+      "en": "-M to magnify and another",
+      "zh": "-M 放大，再次按下"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 157,
+      "en": "-M to unmagnify",
+      "zh": "-M 还原"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 215,
+      "en": "and remote",
+      "zh": "与远程"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 216,
+      "en": "machines.",
+      "zh": "主机。"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 223,
+      "en": "Use",
+      "zh": "使用"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features.tsx",
+      "line": 236,
+      "en": "Use",
+      "zh": "使用"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 78,
+      "en": "Enabled",
+      "zh": "已启用"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 78,
+      "en": "Disabled",
+      "zh": "已关闭"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 110,
+      "en": "open source",
+      "zh": "开源"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding.tsx",
+      "line": 110,
+      "en": "open-model",
+      "zh": "开放模型接入"
+    },
+    {
+      "file": "frontend/builder/app-selection-modal.tsx",
+      "line": 225,
+      "en": "or",
+      "zh": "或"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelheader.tsx",
+      "line": 47,
+      "en": "ON",
+      "zh": "开启"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelheader.tsx",
+      "line": 47,
+      "en": "OFF",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelheader.tsx",
+      "line": 59,
+      "en": "ON",
+      "zh": "开启"
+    },
+    {
+      "file": "frontend/app/aipanel/aipanelheader.tsx",
+      "line": 59,
+      "en": "OFF",
+      "zh": "关闭"
+    },
+    {
+      "file": "frontend/app/onboarding/fakechat.tsx",
+      "line": 219,
+      "en": "ON",
+      "zh": "开启"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features-footer.tsx",
+      "line": 20,
+      "en": "Get Started",
+      "zh": "开始使用"
+    },
+    {
+      "file": "frontend/app/onboarding/onboarding-features-footer.tsx",
+      "line": 20,
+      "en": "Next",
+      "zh": "下一步"
+    }
+  ]
+}

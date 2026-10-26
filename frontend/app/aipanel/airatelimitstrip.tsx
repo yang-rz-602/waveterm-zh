@@ -32,7 +32,7 @@ const GetMoreButton = memo(({ variant, showClose = true }: { variant: "yellow" |
                 {showClose && (
                     <i className={`close fa fa-xmark ${iconColor}/60 hover:${iconColor} transition-colors`}></i>
                 )}
-                <span>Get More</span>
+                <span>获取更多</span>
                 <i className={`fa fa-arrow-right ${iconColor}`}></i>
             </button>
         </div>
@@ -91,10 +91,10 @@ const AIRateLimitStripComponent = memo(() => {
                 <div className="bg-yellow-900/30 border-b border-yellow-700/50 px-2 py-1.5 flex items-center gap-1 text-[11px] text-yellow-200">
                     <i className="fa fa-sparkles text-yellow-400"></i>
                     <span>
-                        {preqlimit - preq}/{preqlimit} Premium Used
+                        {preqlimit - preq}/{preqlimit} 已用高级额度
                     </span>
                     <div className="flex-1"></div>
-                    <span className="text-yellow-300/80">Resets in {timeRemaining}</span>
+                    <span className="text-yellow-300/80">重置倒计时 {timeRemaining}</span>
                 </div>
                 <GetMoreButton variant="yellow" />
             </div>
@@ -107,12 +107,12 @@ const AIRateLimitStripComponent = memo(() => {
                 <div className="bg-yellow-900/30 border-b border-yellow-700/50 px-2 pr-1 py-1.5 flex items-center gap-1 text-[11px] text-yellow-200">
                     <i className="fa fa-check text-yellow-400"></i>
                     <span>
-                        {preqlimit}/{preqlimit} Premium
+                        {preqlimit}/{preqlimit} 高级额度
                     </span>
                     <span className="text-yellow-400">•</span>
-                    <span className="font-medium">Now on Basic</span>
+                    <span className="font-medium">当前使用基础版</span>
                     <div className="flex-1"></div>
-                    <span className="text-yellow-300/80">Resets in {timeRemaining}</span>
+                    <span className="text-yellow-300/80">重置倒计时 {timeRemaining}</span>
                 </div>
                 <GetMoreButton variant="yellow" />
             </div>
@@ -125,12 +125,12 @@ const AIRateLimitStripComponent = memo(() => {
                 <div className="bg-red-900/30 border-b border-red-700/50 px-2 py-1.5 flex items-center gap-2 text-[11px] text-red-200">
                     <i className="fa fa-check text-red-400"></i>
                     <span>
-                        {totalLimit}/{totalLimit} Reqs
+                        {totalLimit}/{totalLimit} 请求数
                     </span>
                     <span className="text-red-400">•</span>
-                    <span className="font-medium">Limit Reached</span>
+                    <span className="font-medium">已达使用上限</span>
                     <div className="flex-1"></div>
-                    <span className="text-red-300/80">Resets in {timeRemaining}</span>
+                    <span className="text-red-300/80">重置倒计时 {timeRemaining}</span>
                 </div>
                 <GetMoreButton variant="red" showClose={false} />
             </div>

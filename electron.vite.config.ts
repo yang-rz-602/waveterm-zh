@@ -85,7 +85,7 @@ export default defineConfig({
             outDir: "dist/main",
             externalizeDeps: false,
         },
-        plugins: [tsconfigPaths()],
+        plugins: [tsconfigPaths({ projects: ["./tsconfig.json"] })],
         resolve: {
             alias: {
                 "@": "frontend",
@@ -119,7 +119,7 @@ export default defineConfig({
         server: {
             open: false,
         },
-        plugins: [tsconfigPaths()],
+        plugins: [tsconfigPaths({ projects: ["./tsconfig.json"] })],
     },
     renderer: {
         root: ".",
@@ -175,7 +175,7 @@ export default defineConfig({
             },
         },
         plugins: [
-            tsconfigPaths(),
+            tsconfigPaths({ projects: ["./tsconfig.json"] }),
             { ...ViteImageOptimizer(), apply: "build" },
             svgr({
                 svgrOptions: { exportType: "default", ref: true, svgo: false, titleProp: true },

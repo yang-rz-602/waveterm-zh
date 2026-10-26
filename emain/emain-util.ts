@@ -274,13 +274,13 @@ export function waveKeyToElectronKey(waveKey: string): string {
             return "Up";
         }
         if (part == "ArrowDown") {
-            return "Down";
+            return "下方";
         }
         if (part == "ArrowLeft") {
-            return "Left";
+            return "左侧";
         }
         if (part == "ArrowRight") {
-            return "Right";
+            return "右侧";
         }
         if (part == "Soft1") {
             return "F21";

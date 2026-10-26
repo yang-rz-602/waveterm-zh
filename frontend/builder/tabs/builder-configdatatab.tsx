@@ -14,10 +14,9 @@ const NotRunningView = memo(() => {
             <div className="flex flex-col items-center gap-6 max-w-[500px] text-center px-8">
                 <i className="fa fa-triangle-exclamation text-6xl text-warning" />
                 <div className="flex flex-col gap-3">
-                    <h2 className="text-2xl font-semibold text-primary">App Not Running</h2>
+                    <h2 className="text-2xl font-semibold text-primary">应用尚未运行</h2>
                     <p className="text-base text-secondary leading-relaxed">
-                        The tsunami app must be running to view config and data. Please start the app from the Preview
-                        tab first.
+                        查看配置和数据前，请在预览标签页启动 Tsunami 应用。
                     </p>
                 </div>
             </div>
@@ -33,7 +32,7 @@ const ErrorView = memo(({ errorMsg }: { errorMsg: string }) => {
             <div className="flex flex-col items-center gap-6 max-w-2xl text-center px-8">
                 <i className="fa fa-circle-xmark text-6xl text-error" />
                 <div className="flex flex-col gap-3">
-                    <h2 className="text-2xl font-semibold text-error">Error Loading Data</h2>
+                    <h2 className="text-2xl font-semibold text-error">数据加载错误</h2>
                     <div className="text-left bg-panel border border-error/30 rounded-lg p-4">
                         <pre className="text-sm text-secondary whitespace-pre-wrap font-mono">{errorMsg}</pre>
                     </div>
@@ -50,7 +49,7 @@ const LoadingView = memo(() => {
         <div className="w-full h-full flex items-center justify-center bg-background">
             <div className="flex flex-col items-center gap-6">
                 <i className="fa fa-spinner fa-spin text-6xl text-secondary" />
-                <p className="text-base text-secondary">Loading data...</p>
+                <p className="text-base text-secondary">正在加载数据…</p>
             </div>
         </div>
     );
@@ -176,13 +175,13 @@ const BuilderConfigDataTab = memo(() => {
     return (
         <div className="w-full h-full flex flex-col bg-background">
             <div className="shrink-0 flex items-center justify-between px-4 py-2 border-b border-border">
-                <h3 className="text-lg font-semibold text-primary">Config & Data</h3>
+                <h3 className="text-lg font-semibold text-primary">配置与数据</h3>
                 <button
                     onClick={handleRefresh}
                     className="px-3 py-1 text-sm font-medium rounded bg-accent/80 text-primary hover:bg-accent transition-colors cursor-pointer flex items-center gap-2"
                 >
                     <i className="fa fa-refresh" />
-                    Refresh
+                    刷新
                 </button>
             </div>
             <div className="flex-1 overflow-auto p-4">
@@ -191,9 +190,9 @@ const BuilderConfigDataTab = memo(() => {
                         <div className="flex items-center justify-between">
                             <h4 className="text-base font-semibold text-primary flex items-center gap-2">
                                 <i className="fa fa-gear" />
-                                Config
+                                配置
                             </h4>
-                            <CopyButton title="Copy Config" onClick={handleCopyConfig} />
+                            <CopyButton title={"复制配置"} onClick={handleCopyConfig} />
                         </div>
                         <div className="bg-panel border border-border rounded-lg p-4 overflow-auto">
                             <pre className="text-xs text-primary font-mono whitespace-pre">
@@ -205,9 +204,9 @@ const BuilderConfigDataTab = memo(() => {
                         <div className="flex items-center justify-between">
                             <h4 className="text-base font-semibold text-primary flex items-center gap-2">
                                 <i className="fa fa-database" />
-                                Data
+                                数据
                             </h4>
-                            <CopyButton title="Copy Data" onClick={handleCopyData} />
+                            <CopyButton title={"复制数据"} onClick={handleCopyData} />
                         </div>
                         <div className="bg-panel border border-border rounded-lg p-4 overflow-auto">
                             <pre className="text-xs text-primary font-mono whitespace-pre">

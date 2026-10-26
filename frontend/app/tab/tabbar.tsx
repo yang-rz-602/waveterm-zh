@@ -61,7 +61,7 @@ const WaveAIButton = memo(({ divRef }: { divRef?: React.RefObject<HTMLDivElement
 
     return (
         <Tooltip
-            content="Toggle Wave AI Panel"
+            content={"切换 Wave AI 面板"}
             placement="bottom"
             hideOnClick
             divClassName={`flex h-[22px] px-3.5 justify-end mb-1 items-center rounded-md mr-1 box-border cursor-pointer bg-hover hover:bg-hoverbg transition-colors text-[12px] ${aiPanelOpen ? "text-accent" : "text-secondary"}`}
@@ -615,7 +615,7 @@ const TabBar = memo(({ workspace, noTabs }: TabBarProps) => {
             )}
             <WaveAIButton divRef={waveAIButtonRef} />
             <Tooltip
-                content="Workspace Switcher"
+                content={"工作区切换器"}
                 placement="bottom"
                 hideOnClick
                 divRef={workspaceSwitcherRef}
@@ -657,7 +657,7 @@ const TabBar = memo(({ workspace, noTabs }: TabBarProps) => {
             </div>
             <button
                 ref={addBtnRef}
-                title="Add Tab"
+                title={"添加标签页"}
                 className={`flex h-[22px] px-2 mb-1 mx-1 items-center rounded-md box-border cursor-pointer hover:bg-hoverbg transition-colors text-[12px] text-secondary hover:text-primary${noTabs ? " invisible" : ""}`}
                 style={{ WebkitAppRegion: "no-drag" } as React.CSSProperties}
                 onClick={handleAddTab}

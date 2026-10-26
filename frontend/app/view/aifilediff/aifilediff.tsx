@@ -48,7 +48,7 @@ export class AiFileDiffViewModel implements ViewModel {
         this.errorAtom = jotai.atom(null) as jotai.PrimitiveAtom<string | null>;
         this.loadingAtom = jotai.atom<boolean>(true);
         this.viewIcon = jotai.atom("file-lines");
-        this.viewName = jotai.atom("AI Diff Viewer");
+        this.viewName = jotai.atom("AI 差异查看器");
         this.viewText = jotai.atom((get) => {
             const diffData = get(this.diffDataAtom);
             return diffData?.fileName ?? "";
@@ -107,7 +107,7 @@ function AiFileDiffView({ blockId, model }: ViewComponentProps<AiFileDiffViewMod
                 globalStore.set(model.loadingAtom, false);
             } catch (e) {
                 console.error("Error loading diff data:", e);
-                globalStore.set(model.errorAtom, `Error loading diff data: ${e.message}`);
+                globalStore.set(model.errorAtom, `加载差异数据时发生错误：${e.message}`);
                 globalStore.set(model.loadingAtom, false);
             }
         }
@@ -118,7 +118,7 @@ function AiFileDiffView({ blockId, model }: ViewComponentProps<AiFileDiffViewMod
     if (loading) {
         return (
             <div className="flex items-center justify-center w-full h-full">
-                <div className="text-secondary">Loading diff...</div>
+                <div className="text-secondary">正在加载差异…</div>
             </div>
         );
     }
@@ -134,7 +134,7 @@ function AiFileDiffView({ blockId, model }: ViewComponentProps<AiFileDiffViewMod
     if (!diffData) {
         return (
             <div className="flex items-center justify-center w-full h-full">
-                <div className="text-secondary">No diff data available</div>
+                <div className="text-secondary">暂无差异数据</div>
             </div>
         );
     }

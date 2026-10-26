@@ -27,6 +27,21 @@ type AppMenuCallbacks = {
     relaunchBrowserWindows: () => Promise<void>;
 };
 
+const chineseRoleLabels: Record<string, string> = {
+    appMenu: "Wave", fileMenu: "文件", editMenu: "编辑", viewMenu: "查看", windowMenu: "窗口",
+    undo: "撤销", redo: "重做", cut: "剪切", copy: "复制", paste: "粘贴", pasteAndMatchStyle: "粘贴并匹配样式",
+    delete: "删除", selectAll: "全选", close: "关闭窗口", quit: "退出", minimize: "最小化", zoom: "缩放窗口", front: "前置全部窗口",
+    togglefullscreen: "切换全屏", services: "服务", hide: "隐藏", hideOthers: "隐藏其他窗口",
+};
+
+function labelMenuRoles(items: Electron.MenuItemConstructorOptions[]): Electron.MenuItemConstructorOptions[] {
+    return items.map((item) => ({
+        ...item,
+        label: item.label ?? chineseRoleLabels[item.role],
+        submenu: Array.isArray(item.submenu) ? labelMenuRoles(item.submenu) : item.submenu,
+    }));
+}
+
 function getWindowWebContents(window: electron.BaseWindow): electron.WebContents {
     if (window == null) {
         return null;
@@ -49,7 +64,7 @@ async function getWorkspaceMenu(ww?: WaveBrowserWindow): Promise<Electron.MenuIt
     const workspaceList = await RpcApi.WorkspaceListCommand(ElectronWshClient);
     const workspaceMenu: Electron.MenuItemConstructorOptions[] = [
         {
-            label: "Create Workspace",
+            label: "新建工作区",
             click: (_, window) => fireAndForget(() => createWorkspace((window as WaveBrowserWindow) ?? ww)),
         },
     ];
@@ -132,7 +147,7 @@ function makeFileMenu(
 ): Electron.MenuItemConstructorOptions[] {
     const fileMenu: Electron.MenuItemConstructorOptions[] = [
         {
-            label: "New Window",
+            label: "新建窗口",
             accelerator: "CommandOrControl+Shift+N",
             click: () => fireAndForget(callbacks.createNewWaveWindow),
         },
@@ -147,21 +162,21 @@ function makeFileMenu(
     const featureWaveAppBuilder = fullConfig?.settings?.["feature:waveappbuilder"];
     if (isDev || featureWaveAppBuilder) {
         fileMenu.splice(1, 0, {
-            label: "New WaveApp Builder Window",
+            label: "新建 Wave 应用构建窗口",
             accelerator: unamePlatform === "darwin" ? "Command+Shift+B" : "Alt+Shift+B",
             click: () => openBuilderWindow(""),
         });
     }
     if (numWaveWindows == 0) {
         fileMenu.push({
-            label: "New Window (hidden-1)",
+            label: "新建窗口（隐藏快捷键 1）",
             accelerator: unamePlatform === "darwin" ? "Command+N" : "Alt+N",
             acceleratorWorksWhenHidden: true,
             visible: false,
             click: () => fireAndForget(callbacks.createNewWaveWindow),
         });
         fileMenu.push({
-            label: "New Window (hidden-2)",
+            label: "新建窗口（隐藏快捷键 2）",
             accelerator: unamePlatform === "darwin" ? "Command+T" : "Alt+T",
             acceleratorWorksWhenHidden: true,
             visible: false,
@@ -174,15 +189,16 @@ function makeFileMenu(
 function makeAppMenuItems(webContents: electron.WebContents): Electron.MenuItemConstructorOptions[] {
     const appMenuItems: Electron.MenuItemConstructorOptions[] = [
         {
-            label: "About Wave Terminal",
+            label: "关于 Wave Terminal",
             click: (_, window) => {
                 (getWindowWebContents(window) ?? webContents)?.send("menu-item-about");
             },
         },
         {
-            label: "Check for Updates",
+            label: "汉化版更新说明",
             click: () => {
-                fireAndForget(() => updater?.checkForUpdates(true));
+                if (updater) fireAndForget(() => updater.checkForUpdates(true));
+                else fireAndForget(() => electron.dialog.showMessageBox({ type: "info", title: "Wave 简体中文版", message: "当前版本：0.14.5-zh.1", detail: "此版本由官方 v0.14.5 源码编译汉化。更新时请使用新的汉化构建包，英文原版保留在原安装目录。", buttons: ["确定"] }));
             },
         },
         { type: "separator" },
@@ -209,22 +225,22 @@ function makeViewMenu(
     const devToolsAccel = unamePlatform === "darwin" ? "Option+Command+I" : "Alt+Shift+I";
     return [
         {
-            label: isBuilderWindowFocused ? "Reload Window" : "Reload Tab",
+            label: isBuilderWindowFocused ? "重新加载窗口" : "重新加载标签页",
             accelerator: "Shift+CommandOrControl+R",
             click: (_, window) => {
                 (getWindowWebContents(window) ?? webContents)?.reloadIgnoringCache();
             },
         },
         {
-            label: "Relaunch All Windows",
+            label: "重新打开全部窗口",
             click: () => callbacks.relaunchBrowserWindows(),
         },
         {
-            label: "Clear Tab Cache",
+            label: "清空标签页缓存",
             click: () => clearTabCache(),
         },
         {
-            label: "Toggle DevTools",
+            label: "切换开发者工具",
             accelerator: devToolsAccel,
             click: (_, window) => {
                 const wc = getWindowWebContents(window) ?? webContents;
@@ -233,7 +249,7 @@ function makeViewMenu(
         },
         { type: "separator" },
         {
-            label: "Reset Zoom",
+            label: "重置缩放",
             accelerator: "CommandOrControl+0",
             click: (_, window) => {
                 const wc = getWindowWebContents(window) ?? webContents;
@@ -243,7 +259,7 @@ function makeViewMenu(
             },
         },
         {
-            label: "Zoom In",
+            label: "放大",
             accelerator: "CommandOrControl+=",
             click: (_, window) => {
                 const wc = getWindowWebContents(window) ?? webContents;
@@ -253,7 +269,7 @@ function makeViewMenu(
             },
         },
         {
-            label: "Zoom In (hidden)",
+            label: "放大（隐藏快捷键）",
             accelerator: "CommandOrControl+Shift+=",
             click: (_, window) => {
                 const wc = getWindowWebContents(window) ?? webContents;
@@ -265,7 +281,7 @@ function makeViewMenu(
             acceleratorWorksWhenHidden: true,
         },
         {
-            label: "Zoom Out",
+            label: "缩小",
             accelerator: "CommandOrControl+-",
             click: (_, window) => {
                 const wc = getWindowWebContents(window) ?? webContents;
@@ -275,7 +291,7 @@ function makeViewMenu(
             },
         },
         {
-            label: "Zoom Out (hidden)",
+            label: "缩小（隐藏快捷键）",
             accelerator: "CommandOrControl+Shift+-",
             click: (_, window) => {
                 const wc = getWindowWebContents(window) ?? webContents;
@@ -287,10 +303,10 @@ function makeViewMenu(
             acceleratorWorksWhenHidden: true,
         },
         {
-            label: "Launch On Full Screen",
+            label: "启动时全屏",
             submenu: [
                 {
-                    label: "On",
+                    label: "开启",
                     type: "radio",
                     checked: fullscreenOnLaunch,
                     click: () => {
@@ -298,7 +314,7 @@ function makeViewMenu(
                     },
                 },
                 {
-                    label: "Off",
+                    label: "关闭",
                     type: "radio",
                     checked: !fullscreenOnLaunch,
                     click: () => {
@@ -313,7 +329,7 @@ function makeViewMenu(
         },
         { type: "separator" },
         {
-            label: "Toggle Widgets Bar",
+            label: "切换组件侧栏",
             click: () => {
                 fireAndForget(async () => {
                     const workspaceId = focusedWaveWindow?.workspaceId;
@@ -365,7 +381,7 @@ async function makeFullAppMenu(callbacks: AppMenuCallbacks, workspaceOrBuilderId
     ];
     if (workspaceMenu != null && !isBuilderWindowFocused) {
         menuTemplate.push({
-            label: "Workspace",
+            label: "工作区",
             id: "workspace-menu",
             submenu: workspaceMenu,
         });
@@ -374,7 +390,7 @@ async function makeFullAppMenu(callbacks: AppMenuCallbacks, workspaceOrBuilderId
         role: "windowMenu",
         submenu: windowMenu,
     });
-    return electron.Menu.buildFromTemplate(menuTemplate);
+    return electron.Menu.buildFromTemplate(labelMenuRoles(menuTemplate));
 }
 
 export function instantiateAppMenu(workspaceOrBuilderId?: string): Promise<electron.Menu> {
@@ -428,7 +444,7 @@ function convertMenuDefArrToMenu(
     for (const menuDef of menuDefArr) {
         const menuItemTemplate: electron.MenuItemConstructorOptions = {
             role: menuDef.role as any,
-            label: menuDef.label,
+            label: menuDef.label ?? chineseRoleLabels[menuDef.role],
             type: menuDef.type,
             click: () => {
                 menuState.hasClick = true;
@@ -503,7 +519,7 @@ electron.ipcMain.on("builder-appmenu-show", (event, builderId: string) => {
 
 const dockMenu = electron.Menu.buildFromTemplate([
     {
-        label: "New Window",
+        label: "新建窗口",
         click() {
             fireAndForget(createNewWaveWindow);
         },

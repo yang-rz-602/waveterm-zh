@@ -313,10 +313,10 @@ export class WaveBrowserWindow extends BaseWindow {
                         if (isNonEmptyUnsavedWorkspace(workspace)) {
                             const choice = dialog.showMessageBoxSync(this, {
                                 type: "question",
-                                buttons: ["Cancel", "Close Window"],
-                                title: "Confirm",
+                                buttons: ["取消", "关闭窗口"],
+                                title: "确认",
                                 message:
-                                    "Window has unsaved tabs, closing window will delete existing tabs.\n\nContinue?",
+                                    "窗口中有待保存的标签页，关闭窗口会删除这些标签页。继续？",
                             });
                             if (choice === 0) {
                                 return;
@@ -756,9 +756,9 @@ ipcMain.handle("close-tab", async (event, workspaceId: string, tabId: string, co
             type: "question",
             defaultId: 1, // Enter activates "Close Tab"
             cancelId: 0, // Esc activates "Cancel"
-            buttons: ["Cancel", "Close Tab"],
-            title: "Confirm",
-            message: "Are you sure you want to close this tab?",
+            buttons: ["取消", "关闭标签页"],
+            title: "确认",
+            message: "确定关闭此标签页？",
         });
         if (choice === 0) {
             return false;
@@ -806,9 +806,9 @@ ipcMain.on("delete-workspace", (event, workspaceId) => {
 
         const choice = dialog.showMessageBoxSync(this, {
             type: "question",
-            buttons: ["Cancel", "Delete Workspace"],
-            title: "Confirm",
-            message: `Deleting workspace will also delete its contents.\n\nContinue?`,
+            buttons: ["取消", "删除工作区"],
+            title: "确认",
+            message: "删除工作区会同时删除其中的内容。继续？",
         });
         if (choice === 0) {
             console.log("user cancelled workspace delete", workspaceId, ww?.waveWindowId);

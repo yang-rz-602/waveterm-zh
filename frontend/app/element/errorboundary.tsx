@@ -24,7 +24,7 @@ export class ErrorBoundary extends React.Component<
             if (fallback != null) {
                 return React.cloneElement(fallback as any, { error });
             }
-            const errorMsg = `Error: ${error?.message}\n\n${error?.stack}`;
+            const errorMsg = `错误：${error?.message} ${error?.stack}`;
             return <pre className="error-boundary">{errorMsg}</pre>;
         } else {
             return <>{this.props.children}</>;

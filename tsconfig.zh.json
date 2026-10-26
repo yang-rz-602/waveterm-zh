@@ -1,0 +1,5 @@
+{
+    "extends": "./tsconfig.json",
+    "include": ["frontend/**/*", "emain/**/*"],
+    "exclude": ["node_modules", "frontend/preview/**/*", "**/*.test.ts", "**/*.test.tsx"]
+}

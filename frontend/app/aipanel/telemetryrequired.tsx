@@ -36,8 +36,7 @@ const TelemetryRequiredMessage = ({ className }: TelemetryRequiredMessageProps) 
                         <i className="fa fa-sparkles text-accent text-5xl"></i>
                         <h2 className="text-2xl font-semibold text-foreground">Wave AI</h2>
                         <p className="text-secondary leading-relaxed">
-                            Wave AI is free to use and provides integrated AI chat that can interact with your widgets,
-                            help you with code, analyze files, and assist with your terminal workflows.
+                            Wave AI 可免费使用，支持与组件交互、协助编程、分析文件，以及处理终端工作流。
                         </p>
                     </div>
 
@@ -45,23 +44,20 @@ const TelemetryRequiredMessage = ({ className }: TelemetryRequiredMessageProps) 
                         <div className="flex items-start gap-3">
                             <i className="fa fa-info-circle text-blue-400 text-lg mt-0.5"></i>
                             <div className="text-left">
-                                <div className="text-blue-400 font-medium mb-1">Telemetry keeps Wave AI free</div>
+                                <div className="text-blue-400 font-medium mb-1">使用情况统计支持 Wave AI 持续免费提供服务</div>
                                 <div className="text-secondary text-sm mb-3">
                                     <p className="mb-2">
-                                        To keep Wave AI free for everyone, we require a small amount of <i>anonymous</i>{" "}
-                                        usage data (app version, feature usage, system info).
+                                        为持续免费提供 Wave AI 服务，我们需要少量的 <i>匿名</i>{" "}
+                                        使用情况数据（应用版本、功能使用情况、系统信息）。
                                     </p>
                                     <p className="mb-2">
-                                        This helps us block abuse by automated systems and ensure it's used by real
-                                        people like you.
+                                        这有助于防止自动化滥用，保障真实用户使用服务。
                                     </p>
                                     <p className="mb-2">
-                                        We never collect your files, prompts, keystrokes, hostnames, or personally
-                                        identifying information. Wave AI is powered by OpenAI's APIs, please refer to
-                                        OpenAI's privacy policy for details on how they handle your data.
+                                        Wave 的使用情况统计排除文件、提示词、按键、主机名和个人身份信息。Wave AI 使用 OpenAI API，其数据处理方式请参阅 OpenAI 隐私政策。
                                     </p>
                                     <p>
-                                        For information about BYOK and local model support, see{" "}
+                                        关于自备密钥和本地模型的支持，请参阅{" "}
                                         <a
                                             href="https://docs.waveterm.dev/waveai-modes"
                                             target="_blank"
@@ -78,7 +74,7 @@ const TelemetryRequiredMessage = ({ className }: TelemetryRequiredMessageProps) 
                                     disabled={isEnabling}
                                     className="bg-accent/80 hover:bg-accent disabled:bg-accent/50 text-background px-4 py-2 rounded-lg font-medium cursor-pointer disabled:cursor-not-allowed"
                                 >
-                                    {isEnabling ? "Enabling..." : "Enable Telemetry and Continue"}
+                                    {isEnabling ? "Enabling..." : "启用使用情况统计并继续"}
                                 </button>
                             </div>
                         </div>
@@ -91,7 +87,7 @@ const TelemetryRequiredMessage = ({ className }: TelemetryRequiredMessageProps) 
                             rel="noopener noreferrer"
                             className="!text-secondary hover:!text-accent/80 cursor-pointer"
                         >
-                            Privacy Policy
+                            隐私政策
                         </a>
                     </div>
                 </div>

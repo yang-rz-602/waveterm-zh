@@ -1,0 +1,757 @@
+- Click the gear in the terminal to set your terminal theme and font size	- 点击终端中的齿轮，设置主题和字号
+- Click the gear in the web view to set your homepage	- 点击网页视图中的齿轮，设置主页
+- Right click any tab to change backgrounds or rename.	- 右键点击标签页可更换背景或重命名。
+-click to open link	并点击以打开链接
+, Enter to Launch,	，按 Enter 启动，
+" is stalled	”的连接已停滞
+(enable telemetry to unlock Wave AI Cloud)	（启用使用情况统计后可使用 Wave AI 云服务）
+(gone)	（已结束）
+(no text content)	（无文本内容）
+(Start a New Chat to Switch)	（新建对话后切换）
+1 second	1 秒
+2 seconds	2 秒
+5 seconds	5 秒
+16k (Pro)	16k（专业版）
+64k (Pro)	64k（专业版）
+1k (Dev Testing)	1k（开发测试）
+About Wave Terminal	关于 Wave Terminal
+Add a secret to get started	添加凭据以开始使用
+Add New Secret	添加新凭据
+Add Secret	添加凭据
+Add Tab	添加标签页
+Add to Layout	添加到布局
+Adding...	正在添加…
+Advanced	高级
+AI is thinking...	AI 正在思考…
+AI Presets	AI 预设
+AI Diff Viewer	AI 差异查看器
+All Keybindings	全部快捷键
+Allow Bracketed Paste Mode	允许括号粘贴模式
+always disable wsh	始终禁用 wsh
+An error occurred while restoring the backup:	恢复备份时发生错误：
+anonymous	匿名
+Any changes made by this edit and subsequent edits will be lost.	此次编辑及后续编辑所做的更改将被丢弃。
+Application Update	应用更新
+Are you sure you want to close this tab?	确定关闭此标签页？
+Are you sure you want to quit Wave Terminal?	确定退出 Wave Terminal？
+Attach files	附加文件
+Backgrounds	背景
+Backup Successfully Restored	备份恢复成功
+Bad Response	回复欠佳
+Bar	竖线
+Bar (Blinking)	竖线（闪烁）
+BETA: Free to use. Daily limits keep our costs in check.	测试版：免费使用，每日额度用于控制服务成本。
+Block	区块
+Block (Blinking)	方块（闪烁）
+Block Navigation (Ctrl-Shift)	区块导航（Ctrl-Shift）
+Block Settings	区块设置
+Blue	蓝色
+Build/Edit Apps	构建／编辑应用
+Built for Seamless Workflows	让工作流程顺畅衔接
+Cancel	取消
+Check for Updates	检查更新
+Clear Cookies and Storage (All Web Widgets)	清除 Cookie 和存储（全部网页组件）
+Clear History	清除历史记录
+Clear Output On Restart	重启时清空输出
+Clear Tab Cache	清空标签页缓存
+CLI Access	命令行访问
+Click to pause	点击暂停
+Click to resume	点击继续
+Client Version	客户端版本
+Close	关闭
+Close (Esc)	关闭（Esc）
+Close (ESC)	关闭（Esc）
+Close Block	关闭区块
+Close error	关闭错误提示
+Close tab	关闭标签页
+Close Tab	关闭标签页
+Close Toolbar	关闭工具栏
+Close Window	关闭窗口
+Command	命令
+Command Exited Successfully	命令执行成功
+Config Error:	配置错误：
+Config Errors	配置错误
+Config Files	配置文件
+Configuration Options	配置选项
+Configure AI Modes	配置 AI 模式
+Configure Modes	配置模式
+Configured for a durable session, but session hasn't started yet. Click below to start it manually.	已配置持久会话，点击下方按钮手动启动。
+Configured for a durable session. The session will start when the connection is established.	已配置持久会话，连接建立后将自动启动。
+Confirm	确认
+Confirm Quit	确认退出
+Connect to (username@host)...	连接到（用户名@主机）…
+Connect to a remote server	连接远程服务器
+Connection lost, but your session is still running on the remote server. Wave will automatically reconnect when the connection is restored.	连接已中断，远程服务器上的会话仍在运行。网络恢复后，Wave 将自动重新连接。
+Connection Stalled	连接停滞
+Connection to "	与“
+Connections	连接
+Context	上下文
+Copy	复制
+Copy BlockId	复制区块 ID
+Copy File Name	复制文件名
+Copy File Name (Shell Quoted)	复制文件名（Shell 转义）
+Copy Full File Name	复制完整文件名
+Copy Full File Name (Shell Quoted)	复制完整文件名（Shell 转义）
+Copy Full Path	复制完整路径
+Copy Message	复制消息
+Copy PID	复制进程 ID
+Copy TabId	复制标签页 ID
+Copy URL to Clipboard	复制网址到剪贴板
+Create new workspace	新建工作区
+Create Workspace	新建工作区
+Cursor	光标
+Cut	剪切
+Debug Connection	调试连接
+Default	默认
+Default Settings	默认设置
+Delete	删除
+Delete Recursively	递归删除
+Delete Then Copy	删除后复制
+Delete this secret	删除此凭据
+Delete workspace	删除工作区
+Delete Workspace	删除工作区
+Deleting a directory requires the recursive flag. Proceed?	删除目录需要递归操作。继续？
+Deleting workspace will also delete its contents. Continue?	删除工作区会同时删除其中的内容。继续？
+Deleting...	正在删除…
+deprecated	已弃用
+Desktop	桌面
+Directory Sort Order	目录排序方式
+Disconnect	断开连接
+Documents	文档
+Downloads	下载
+Drag & drop files or images for analysis	拖入文件或图片进行分析
+Drop files here	将文件拖到此处
+Durable Session (Attached)	持久会话（已连接）
+Durable Session (Awaiting Connection)	持久会话（等待连接）
+Durable Session (Awaiting Start)	持久会话（等待启动）
+Durable Session (Detached)	持久会话（已分离）
+Durable Session (Starting)	持久会话（正在启动）
+Durable Session (Ended, Exited)	持久会话（已退出）
+Durable Session (Ended, Lost)	持久会话（已丢失）
+Durable Session (Ended)	持久会话（已结束）
+Durable Session (Failed to Start)	持久会话（启动失败）
+Edit	编辑
+Edit bookmarks.json	编辑 bookmarks.json
+Edit config and code files	编辑配置和代码文件
+Edit Connections	编辑连接
+Edit widgets.json	编辑 widgets.json
+Edit workspace	编辑工作区
+Edit your	编辑
+Editor Font Size	编辑器字号
+Enter secret value...	输入凭据内容…
+Enter new secret value...	输入新的凭据内容…
+error:	错误：
+Failed to Restore Backup	备份恢复失败
+File Browser	文件浏览器
+file to configure bookmarks.	文件以配置书签。
+Files	文件
+Filter processes…	筛选进程…
+Flag Tab	标记标签页
+Focus Nth Block	聚焦指定区块
+Focus Wave AI	聚焦 Wave AI
+Font Size	字号
+For information about BYOK and local model support, see	关于自备密钥和本地模型的支持，请参阅
+Force Restart Controller	强制重启控制器
+Full Documentation	完整文档
+General	常规
+Get More	获取更多
+Getting Started:	快速开始：
+Good Response	回复良好
+Green	绿色
+has been restored to its previous state.	已恢复到先前的状态。
+Header Icons	标题栏图标
+Help	帮助
+Hide Wave AI	隐藏 Wave AI
+Home	主页
+Images	图片
+Images, PDFs, and text/code files supported	支持图片、PDF、文本及代码文件
+Important Keybindings	常用快捷键
+Info	信息
+Input will be sent to all connected terminals (click to disable)	输入将发送到所有已连接的终端（点击关闭）
+invalid configuration, client or window was not loaded	配置无效，客户端或窗口加载失败
+Invalid Specialized View Component (	专用视图组件无效（
+Join our Discord	加入 Discord 社区
+Join Our Discord	加入 Discord 社区
+Kill Process	终止进程
+Last Modified	修改时间
+Launch On Full Screen	启动时全屏
+Learn More	了解更多
+Left	左侧
+Limit Reached	已达使用上限
+Load	加载
+Loading ...	正在加载…
+Loading diff...	正在加载差异…
+Loading secrets...	正在加载凭据…
+loading...	正在加载…
+Loading...	正在加载…
+Loading…	正在加载…
+Local models and BYOK	本地模型与自备密钥
+Local WaveApps	本地 Wave 应用
+Magnify a Block	放大区块
+Main Keybindings	主要快捷键
+Max Output Tokens	最大输出 Token 数
+Mem	内存
+Memory	内存
+Mobile: Android	移动端：Android
+Mobile: iPhone	移动端：iPhone
+More options	更多选项
+More Tips	更多提示
+Multi Input ON	多终端同步输入已开启
+Must start with a letter and contain only letters, numbers, and underscores	以字母开头，仅使用字母、数字和下划线
+Name	名称
+Navigate Between Blocks	在区块间导航
+Need More Help?	需要更多帮助？
+New Chat	新建对话
+New File	新建文件
+New Folder	新建文件夹
+New Tab	新建标签页
+New Terminal Block	新建终端区块
+New WaveApp Builder Window	新建 Wave 应用构建窗口
+New Window	新建窗口
+New Window (hidden-1)	新建窗口（隐藏快捷键 1）
+New Window (hidden-2)	新建窗口（隐藏快捷键 2）
+New: BYOK & Local AI Support	新增：自备密钥与本地 AI 支持
+Next Result (Enter)	下一个结果（Enter）
+Next Tab	下一个标签页
+No Active Tab	当前无活动标签页
+No Bookmarks Configured	尚未配置书签
+No diff data available	暂无差异数据
+No local apps found	暂无本地应用
+No matching bookmarks	暂无匹配的书签
+No Secrets	暂无凭据
+No shell integration — Wave AI unable to run commands.	Shell 集成尚未启用，Wave AI 的命令执行功能暂不可用。
+No sub-headings found	暂无子标题
+No Suggestions	暂无建议
+No Tools Support	工具支持尚未启用
+No Transparency	关闭透明效果
+No View	暂无视图
+No View Component	暂无视图组件
+No widgets found. Press Escape to clear search.	暂无匹配组件。按 Esc 清空搜索。
+None	无
+Now on Basic	当前使用基础版
+Num Threads	线程数
+Number (1-9)	数字（1–9）
+Off	关闭
+On	开启
+Open bookmarks.json	打开 bookmarks.json
+Open in diff viewer	在差异查看器中打开
+Open in External Browser	在外部浏览器中打开
+Open Source	开源
+Open URL in External Browser	在外部浏览器中打开网址
+Open Wave AI panel	打开 Wave AI 面板
+Open Wave AI Panel	打开 Wave AI 面板
+Open-Source AI-Integrated Terminal	集成 AI 的开源终端
+Orange	橙色
+Paste	粘贴
+Paused	已暂停
+Perm	权限
+Plot Type	图表类型
+Premium	高级额度
+Premium Used	已用高级额度
+Presets	预设
+Preview	预览
+Preview files, directories, or web URLs	预览文件、目录或网址
+Preview Not Supported	此类型暂不支持预览
+Previous Result (Shift+Enter)	上一个结果（Shift+Enter）
+Previous Tab	上一个标签页
+Privacy Policy	隐私政策
+Procs	进程
+Purple	紫色
+Questions or feedback?	问题或反馈？
+Raw JSON	JSON 源码
+Read Only	只读
+Reading Files	正在读取文件
+Red	红色
+Refresh	刷新
+Refresh Interval	刷新间隔
+Relaunch All Windows	重新打开全部窗口
+Release Notes	更新日志
+Remix WaveApp in Builder	在构建器中改编 Wave 应用
+Rename	重命名
+Rename Tab	重命名标签页
+Reqs	请求数
+Reset	重置
+Reset Zoom	重置缩放
+Resets in	重置倒计时
+Restart as Durable	以持久模式重启
+Restart as Standard	以标准模式重启
+Restart Session	重启会话
+Restart Session in Durable Mode	以持久模式重启会话
+Restart Session in Standard Mode	以标准模式重启会话
+Restart WaveApp	重启 Wave 应用
+Restart WaveApp and Force Rebuild	重启 Wave 应用并强制重新构建
+Restarting Command	正在重新执行命令
+Restore backup file	恢复备份文件
+Restore File Backup	恢复文件备份
+Revert File	还原文件
+Root	根目录
+Run On Startup	启动时运行
+Running Wave Dev Build	正在运行 Wave 开发版本
+Save	保存
+Save File	保存文件
+Save Image	保存图片
+Save Scrollback	保存终端历史输出
+Save Session As...	会话另存为…
+Save workspace	保存工作区
+Saving...	正在保存…
+Search	搜索
+Search Results	搜索结果
+Search widgets	搜索组件
+Secret Name	凭据名称
+Secret Value	凭据内容
+Secrets	凭据
+Send message (Enter)	发送消息（Enter）
+Send to Wave AI	发送到 Wave AI
+Session Durability	会话持久化
+Set Block Homepage	设置区块主页
+Set Default Homepage	设置默认主页
+Set Zoom Factor	设置缩放比例
+Settings	设置
+Settings & Help	设置与帮助
+Settings &amp; Help	设置与帮助
+Shell ready — Wave AI can run commands in this terminal.	Shell 已就绪，Wave AI 可以在此终端执行命令。
+Show Diff	显示差异
+Show Hidden Files	显示隐藏文件
+Show Secret	显示凭据
+Sidebar Widgets	侧边栏组件
+Signal	信号
+Size	大小
+Split Below	在下方拆分
+Split Blocks	拆分区块
+Split Horizontally	水平拆分
+Split in Direction	按方向拆分
+Split Right	在右侧拆分
+Split Vertically	垂直拆分
+Sponsor	赞助
+Standard SSH Session	标准 SSH 会话
+Standard SSH sessions end when the connection drops. Durable sessions keep your shell state, running programs, and history alive through network changes, computer sleep, and Wave restarts.	标准 SSH 会话随连接中断而结束。持久会话会在网络变化、电脑休眠和 Wave 重启后保留 Shell 状态、运行程序和历史记录。
+Start	启动
+Start Session	启动会话
+Starting...	正在启动…
+Status	状态
+Stop Response	停止回复
+Stop WaveApp	停止 Wave 应用
+Switch back to Terminal	切换回终端
+Switch To Nth Tab	切换到指定标签页
+Switch to Wave App	切换到 Wave 应用
+Sync	同步
+Tab Backgrounds	标签页背景
+Tab Bar Position	标签栏位置
+Tab Loading	标签页正在加载
+Tab name	标签页名称
+Tab Not Found	标签页不存在
+Tab Switching (	切换标签页（
+Table of Contents	目录
+Tabs	标签页
+Teal	青色
+Telemetry keeps Wave AI free	使用情况统计支持 Wave AI 持续免费提供服务
+Terminal	终端
+Text Files	文本文件
+The current secret value is not shown by default for security purposes.	凭据内容默认隐藏，点击“显示凭据”可查看。
+The durable session is starting.	持久会话正在启动。
+The file	文件
+The WaveApp builder helps create wave widgets that integrate seamlessly into Wave Terminal.	Wave 应用构建器帮助你创建可集成到终端中的组件。
+Themes	主题
+There are currently no updates available.	当前已是最新版本。
+This copy operation will overwrite an existing file. Would you like to continue?	此次复制将覆盖现有文件。继续？
+This helps us block abuse by automated systems and ensure it's used by real people like you.	这有助于防止自动化滥用，保障真实用户使用服务。
+This legacy Wave AI block is no longer supported	旧版 Wave AI 区块已停止维护
+This older AI widget has been retired. Please use the modern Wave AI panel for AI chats, terminal context, tools, and uploads going forward.	旧版 AI 组件已停用。请使用新版 Wave AI 面板进行对话、访问终端上下文、调用工具及上传文件。
+This will restore	这将恢复
+Tips	使用提示
+to focus	以聚焦
+to its state before this edit was made	到此次编辑之前的状态
+To keep Wave AI free for everyone, we require a small amount of	为持续免费提供 Wave AI 服务，我们需要少量的
+to start a new chat	以新建对话
+to toggle panel	以切换面板显示
+Toggle DevTools	切换开发者工具
+Toggle Wave AI Panel	切换 Wave AI 面板
+Toggle Widgets Bar	切换组件侧栏
+Top	顶部
+Transparency	透明度
+Transparent Background	透明背景
+Type	类型
+unable to use wsh:	wsh 暂不可用：
+Underline	下划线
+Underline (Blinking)	下划线（闪烁）
+Unknown tag:	未知标签：
+Unsaved changes	有待保存的更改
+Update	更新
+Update Channel:	更新渠道：
+usage data (app version, feature usage, system info).	使用情况数据（应用版本、功能使用情况、系统信息）。
+User	用户
+User Agent Type	用户代理类型
+Verbose	详细
+View Docs	查看文档
+View documentation	查看文档
+Visual	可视化
+Visual editor coming soon...	可视化编辑器即将推出…
+Waiting for connection…	正在等待连接…
+Waiting for Tool Approvals...	正在等待工具调用批准…
+Warning: This custom mode was configured without the "tools" capability in the "ai:capabilities" array. Without tool support, Wave AI will not be able to interact with widgets or files.	提示：此自定义模式的 ai:capabilities 配置缺少 tools 能力。添加该能力后，Wave AI 才能与组件和文件交互。
+Wave AI is free to use and provides integrated AI chat that can interact with your widgets, help you with code, analyze files, and assist with your terminal workflows.	Wave AI 可免费使用，支持与组件交互、协助编程、分析文件，以及处理终端工作流。
+Wave AI is your terminal assistant with context. I can read your terminal output, analyze widgets, access files, and help you solve problems faster.	Wave AI 是具备上下文的终端助手，可读取终端输出、分析组件、访问文件，帮助你更快解决问题。
+Wave AI Modes	Wave AI 模式
+Wave AI Modes - Visual Editor	Wave AI 模式 — 可视化编辑器
+Wave AI now supports bring-your-own-key (BYOK) with OpenAI, Google Gemini, Azure, and OpenRouter, plus local models via Ollama, LM Studio, and other OpenAI-compatible providers.	Wave AI 支持使用自备密钥接入 OpenAI、Google Gemini、Azure 和 OpenRouter，也支持 Ollama、LM Studio 及兼容 OpenAI 接口的本地模型。
+Wave has detected a performance issue	Wave 检测到性能问题
+Wave is running in ARM64 translation mode which may impact performance. Recommendation: Download the native ARM64 version from our website for optimal performance.	Wave 正在通过 ARM64 转译运行，性能可能受到影响。建议从官网下载原生 ARM64 版本。
+WaveApp Builder	Wave 应用构建器
+We never collect your files, prompts, keystrokes, hostnames, or personally identifying information. Wave AI is powered by OpenAI's APIs, please refer to OpenAI's privacy policy for details on how they handle your data.	Wave 的使用情况统计排除文件、提示词、按键、主机名和个人身份信息。Wave AI 使用 OpenAI API，其数据处理方式请参阅 OpenAI 隐私政策。
+Web	网页
+Web View	网页视图
+WebGL disabled (click to enable)	WebGL 已关闭（点击启用）
+WebGL enabled (click to disable)	WebGL 已启用（点击关闭）
+WebGL not supported	当前环境不支持 WebGL
+Website	官方网站
+Welcome to Wave AI	欢迎使用 Wave AI
+When OFF, I'm sandboxed with no system access.	关闭时，AI 在沙盒中运行，系统访问受到隔离。
+When ON, I can read your terminal and analyze widgets.	开启时，AI 可以读取终端并分析组件。
+Widget Context	组件上下文
+Window has unsaved tabs, closing window will delete existing tabs. Continue?	窗口中有待保存的标签页，关闭窗口会删除这些标签页。继续？
+Word Wrap	自动换行
+Workspace	工作区
+Workspace Switcher	工作区切换器
+wsh commands	wsh 命令
+wsh is not installed for this connection	此连接尚未安装 wsh
+Yellow	黄色
+Your shell state, running programs, and history are protected. This session will survive network disconnects.	Shell 状态、运行中的程序和历史记录已受保护，网络断开后会话仍将保留。
+Zoom In	放大
+Zoom In (hidden)	放大（隐藏快捷键）
+Zoom Out	缩小
+Zoom Out (hidden)	缩小（隐藏快捷键）
+(No View)	（暂无视图）
+{0} (New Connection)	{0}（新连接）
+A new version has been downloaded. Restart the application to apply the updates.	新版本已下载，重启应用以完成更新。
+A new version of Wave Terminal is ready to install.	Wave Terminal 新版本已准备好安装。
+Add	添加
+AI Chat error:	AI 对话错误：
+AI Mode: {0}	AI 模式：{0}
+All CPU	全部 CPU
+An error occurred	发生错误
+An unknown error occurred	发生未知错误
+Approve	批准
+Approve All ({0})	全部批准（{0}）
+Arrow Keys to Navigate	使用方向键导航
+Arrows	方向键
+Ask Wave AI anything...	向 Wave AI 提问…
+Canceled by the user	用户已取消
+Cannot add directories to Wave AI. Please select a file.	请选择文件，Wave AI 当前接受文件附件。
+Cannot Read Directory	目录读取失败
+Case Sensitive	区分大小写
+Claude Code Detected	已检测到 Claude Code
+Click to Install Update	点击安装更新
+Click to Start	点击启动
+Close DevTools	关闭开发者工具
+Compatible Modes	兼容模式
+Confirm Delete Directory	确认删除目录
+Confirm Overwrite File(s)	确认覆盖文件
+Confirm Restore	确认恢复
+Connected to	已连接到
+Connected to Git Bash	已连接到 Git Bash
+Connected to Local Machine	已连接到本机
+Connecting to	正在连接到
+Connecting to "{0}"...	正在连接“{0}”…
+Connection degraded:	连接质量下降：
+Connection Error: {0}	连接错误：{0}
+Connection stalled:	连接停滞：
+Copy Failed	复制失败
+Copy failed:	复制失败：
+Core {0}	核心 {0}
+CSV File Too Large to Preview (1 MB Max)	CSV 文件超过预览大小限制（最大 1 MB）
+Current	当前
+Custom	自定义
+Delete Failed	删除失败
+Delete failed: {0}	删除失败：{0}
+Deny	拒绝
+Deny All	全部拒绝
+Details	详细信息
+Directory Read Error	目录读取错误
+Disconnect {0}	断开 {0}
+Disconnected from	已断开连接
+Disconnected from "{0}"	已断开与“{0}”的连接
+Dismiss	关闭提示
+Down	下方
+Downloading	正在下载
+Enable Telemetry and Continue	启用使用情况统计并继续
+Error	错误
+Error checking storage backend: {0}	检查存储后端时发生错误：{0}
+Error connecting to	连接失败
+Error loading diff data: {0}	加载差异数据时发生错误：{0}
+Error opening file	打开文件时发生错误
+Error opening Quick Look: {0}	打开快速预览时发生错误：{0}
+Error Rendering View Header:	渲染视图标题栏时发生错误：
+Error: {0}	错误：{0}
+Error: {0} {1}	错误：{0} {1}
+Exit Code:	退出码：
+Exited. Click to Restart	已退出，点击重新启动
+Failed to add file: {0}	添加文件失败：{0}
+Failed to add secret: {0}	添加凭据失败：{0}
+Failed to clear cookies and storage	清除 Cookie 和存储失败
+Failed to clear history	清除历史记录失败
+Failed to delete secret: {0}	删除凭据失败：{0}
+Failed to load {0}: {1}	加载 {0} 失败：{1}
+Failed to load chat. Starting new chat...	对话加载失败，正在新建对话…
+Failed to load secret: {0}	读取凭据失败：{0}
+Failed to load secrets: {0}	读取凭据列表失败：{0}
+Failed to read file: {0}	读取文件失败：{0}
+Failed to render diagram: {0}	渲染图表失败：{0}
+Failed to save {0}: {1}	保存 {0} 失败：{1}
+Failed to save secret: {0}	保存凭据失败：{0}
+Failed to save session scrollback: {0}	保存会话历史输出失败：{0}
+File	文件
+File Not Found	文件不存在
+File not found: {0}	文件不存在：{0}
+File Read Failed	文件读取失败
+File Too Large to Preview (10 MB Max)	文件超过预览大小限制（最大 10 MB）
+Go to {0} ({1})	转到 {0}（{1}）
+Hide Hidden Files	隐藏隐藏文件
+Hide Navigation	隐藏导航
+Image	图片
+Image too large (>5MB)	图片超过大小限制（5 MB）
+Incompatible Modes	不兼容模式
+Installing	正在安装
+Invalid ({0})	无效（{0}）
+Invalid JSON: {0}	JSON 格式无效：{0}
+Invalid key "{0}": all top-level keys must start with "ai@"	键“{0}”无效：所有顶层键均须以 ai@ 开头
+Invalid key "{0}": keys must only contain letters, numbers, underscores, @, dots, and hyphens	键“{0}”无效：仅支持字母、数字、下划线、@、点和连字符
+Invalid secret name: must start with a letter and contain only letters, numbers, and underscores	凭据名称须以字母开头，仅使用字母、数字和下划线
+Killed	已终止
+Later	稍后
+Load Error: {0}	加载错误：{0}
+Loading diagram...	正在加载图表…
+Local	本地
+Magnify	放大
+Magnify Block	放大区块
+Memory Available	可用内存
+Memory Free	空闲内存
+Memory Total	总内存
+Memory Used	已用内存
+Minimize	最小化
+Mobile User Agent: Android	移动端用户代理：Android
+Mobile User Agent: iPhone	移动端用户代理：iPhone
+No appropriate secret manager found. Cannot manage secrets securely.	当前环境缺少可用的安全凭据管理器。
+No scrollback content to save.	暂无可保存的终端历史输出。
+Not approved	尚未批准
+Open Bookmark...	打开书签…
+Open Clipboard URL (	打开剪贴板网址（
+Open DevTools	打开开发者工具
+Open File...	打开文件…
+Open URL	打开网址
+Open URL (	打开网址（
+Open workspace	打开工作区
+Preview ({0})	预览（{0}）
+Process #{0} {1}	进程 #{0} {1}
+Processes	进程
+Progress	进度
+Quit	退出
+Reconnect	重新连接
+Reconnect to {0}	重新连接到 {0}
+Regular Expression	正则表达式
+Reload Tab	重新加载标签页
+Reload Window	重新加载窗口
+Remote	远程
+Rename Failed	重命名失败
+Rename failed: {0}	重命名失败：{0}
+Restart	重启
+Right	右侧
+Running. Click to Restart	运行中，点击重新启动
+Save ({0})	保存（{0}）
+Save Failed	保存失败
+Searching	正在搜索
+Searching for "{0}"	正在搜索“{0}”
+Secret "{0}" already exists	凭据“{0}”已存在
+Secret name cannot be empty	请输入凭据名称
+Secret not found: {0}	凭据不存在：{0}
+Shell busy — Wave AI unable to run commands while another command is running.	Shell 正忙，当前命令结束后 Wave AI 才能执行其他命令。
+Showing first {0} entries	显示前 {0} 项
+SSH hosts	SSH 主机
+SSH hosts and WSL distros	SSH 主机与 WSL 发行版
+Stack Trace:	堆栈跟踪：
+Stalled	已停滞
+Switch workspace	切换工作区
+The durable session failed to start.	持久会话启动失败。
+The durable session has ended. This block is still configured for durable sessions.	持久会话已结束，此区块保留持久会话配置。
+The session was lost or not found on the remote server. This may have occurred due to a system reboot or the session being manually terminated.	远程服务器上的会话已丢失，可能由系统重启或手动终止会话引起。
+The shell was terminated and is no longer running. This block is still configured for durable sessions.	Shell 已终止，此区块保留持久会话配置。
+This is your current workspace	这是当前工作区
+This workspace is open	此工作区已打开
+Type to Filter	输入以筛选
+Type to search (Esc to cancel)	输入以搜索（Esc 取消）
+Un-Hide Navigation	显示导航
+Un-Magnify Block	还原区块大小
+Unable to load directory	目录加载失败
+Unknown error	未知错误
+Updating	正在更新
+Value	值
+Wave AI Cloud	Wave AI 云服务
+Wave AI integration disabled while you're inside {0}.	使用 {0} 时，Wave AI 集成暂时关闭。
+Wave App	Wave 应用
+Wave Config	Wave 设置
+Wave Terminal - {0}	Wave 中文版 — {0}
+WaveApp Builder ({0})	Wave 应用构建器（{0}）
+What would you like to build...	描述你想构建的应用…
+Whole Word	全词匹配
+Widget Access {0}	组件访问 {0}
+Widget Launcher	组件启动器
+You have unsaved changes. Discard and continue?	当前有待保存的更改。丢弃并继续？
+more than a day	超过一天
+, and committed to providing a free terminal for individual users. Please show your support by giving us a star on	，并致力于为个人用户提供免费终端。欢迎为我们点赞支持，访问
+) now toggles a Wave window visible and invisible	）现在可以切换 Wave 窗口的显示状态
+[bugfix]	[修复]
+&lt; Prev	&lt; 上一步
+&mdash; global hotkey (	— 全局快捷键（
+⭐ Star Now	⭐ 前往点赞
+⭐ Star on GitHub	⭐ 在 GitHub 点赞
+🙏 Already Starred	🙏 已经点过赞
+A GitHub star shows your support for Wave (and open-source) and helps us reach more developers.	在 GitHub 点赞可以支持 Wave 和开源项目，帮助更多开发者发现它。
+Add Error to AI Context	将错误添加到 AI 上下文
+Add File	添加文件
+Add to Context	添加到上下文
+All the persistence of tmux, built into your terminal. Look for the shield icon to enable durability on any SSH session.	终端内置类似 tmux 的会话保持能力。点击盾牌图标即可为 SSH 会话启用持久化。
+Anonymous usage data helps us improve features you use.	匿名使用情况数据有助于改进常用功能。
+App is Building...	正在构建应用…
+App is Not Running	应用尚未运行
+App manifest not available. Secrets will be shown once the app builds successfully.	应用清单尚未生成，构建成功后将显示凭据配置。
+App Not Running	应用尚未运行
+App Published Successfully	应用发布成功
+Are you sure you want to delete	确定删除
+Ask AI to Fix	请 AI 修复
+Bring your own API keys or run local models with Ollama, LM Studio, and other OpenAI-compatible providers	使用自备 API 密钥，或通过 Ollama、LM Studio 及兼容 OpenAI 接口的服务运行本地模型
+Buffered output streams back in, never miss a line	重新连接后自动补齐缓存输出
+Build Error	构建错误
+Build Output	构建输出
+But, without usage data, we're flying blind. A GitHub star helps us know Wave is useful and worth maintaining.	欢迎通过 GitHub 点赞支持 Wave，这有助于我们了解项目的使用价值并持续维护。
+button in the header (top left)	按钮（位于左上角标题栏）
+Close your laptop, switch networks, restart Wave — your remote sessions keep running.	合上电脑、切换网络或重启 Wave 后，远程会话仍可继续运行。
+Code	代码
+Config	配置
+Config & Data	配置与数据
+Config files that didn&apos;t exist yet couldn&apos;t be created or edited from the Settings widget	修复了设置组件中创建和编辑新配置文件的问题
+Config/Data	配置／数据
+Continue	继续
+Copy Config	复制配置
+Copy Data	复制数据
+Create	创建
+Create New WaveApp	新建 Wave 应用
+Current name:	当前名称：
+Data	数据
+Debug	调试
+Delete File	删除文件
+Drag &amp; Drop Files into Terminal	将文件拖入终端
+Drag and drop files here or click "Add File". Maximum file size:	将文件拖入此处，或点击“添加文件”。文件大小上限：
+Durable SSH Sessions	持久 SSH 会话
+Durable SSH sessions survive network drops, laptop sleep, and restarts — all without tmux or screen.	持久 SSH 会话可在网络中断、电脑休眠和重启后恢复，持久化由 Wave 内置功能提供。
+Error Loading Data	数据加载错误
+Error Setting Secret	凭据设置错误
+Existing WaveApps	现有 Wave 应用
+F2 to rename the active tab	按 F2 重命名当前标签页
+File options	文件选项
+Generated by framework (read-only)	由框架生成（只读）
+Get help, submit feature requests, report bugs, or just chat with fellow terminal enthusiasts.	获取帮助、提交功能建议、报告问题，或与终端爱好者交流。
+Get started by using the AI chat interface on the left to create your WaveApp. Describe what you want to build, and the AI will help you generate the code.	在左侧 AI 对话中描述想要构建的应用，AI 将协助生成代码。
+Github&nbsp;(wavetermdev/waveterm)	GitHub（wavetermdev/waveterm）
+Go to Secrets Tab	前往凭据标签页
+icon in the block header.	图标（位于区块标题栏）。
+is created	创建完成
+Join our Community	加入社区
+Join the Wave&nbsp;Discord&nbsp;Channel	加入 Wave Discord 频道
+Last updated:	最后更新：
+Loading app.go...	正在加载 app.go…
+Loading apps...	正在加载应用…
+Loading data...	正在加载数据…
+Loading files...	正在加载文件…
+Magnify any block to focus on what matters. Expand terminals, editors, and previews for a better view.	放大任意区块以专注当前内容，展开终端、编辑器和预览即可获得更宽敞的视图。
+Magnify Blocks	放大区块
+Map app secrets to Wave secret store names. Required secrets must be bound before the app can run successfully. Changes are saved automatically.	将应用凭据映射到 Wave 凭据库中的名称。运行应用前须绑定必填凭据，更改会自动保存。
+Map Default	映射默认值
+Maybe Later	稍后再说
+Mouse back/forward buttons now navigate in web widgets	鼠标前进和后退键现可用于网页组件导航
+New	新增
+New in v0.13:	v0.13 新功能：
+New in v0.14:	v0.14 新功能：
+New widget that displays running processes on local and remote machines, with CPU and memory usage and sortable columns.	新增进程组件，可查看本机与远程主机上的进程、CPU 和内存使用情况，并按列排序。
+No App to Preview	暂无可预览的应用
+No builder app selected	请选择要编辑的应用
+No files yet. Drag and drop files here or click "Add File" to get started.	暂无文件。拖入文件或点击“添加文件”以开始使用。
+No problem, we respect your privacy.	已保留你的隐私偏好。
+No secrets defined in this app manifest.	此应用清单尚未定义凭据。
+Optional	可选
+Or use the keyboard shortcut	也可以使用快捷键
+Other Changes	其他更改
+Paste secret value here...	在此粘贴凭据内容…
+Process Viewer	进程查看器
+Publish App	发布应用
+Publish Failed	发布失败
+Quake Mode	下拉终端模式
+Refresh file list	刷新文件列表
+Rename File	重命名文件
+Required	必填
+Restart App	重启应用
+Secret Bindings	凭据绑定
+Secret Name:	凭据名称：
+Secrets are stored securely in Wave's secret store	凭据安全地保存在 Wave 凭据库中
+Secrets Required	需要配置凭据
+Select a WaveApp to Edit	选择要编辑的 Wave 应用
+Send Output to AI	将输出发送到 AI
+Sessions automatically reconnect when your connection is restored	网络恢复后，会话将自动重新连接
+Set and Map Default	设置并映射默认值
+Set and Map Secret	设置并映射凭据
+setting adds split buttons to block headers	设置可在区块标题栏显示拆分按钮
+Shell state, running programs, and terminal history are all preserved	保留 Shell 状态、运行程序和终端历史记录
+Skip Feature Tour &gt;	跳过功能介绍 &gt;
+Some required secrets are not bound yet.	部分必填凭据仍待绑定。
+SSH Sessions, Protected	保护 SSH 会话
+Start App	启动应用
+Static Files	静态文件
+Support open-source. Star Wave. ⭐	支持开源，为 Wave 点赞。⭐
+Support us on GitHub	在 GitHub 支持项目
+Switch App	切换应用
+Telemetry Disabled ✓	使用情况统计已关闭 ✓
+Thanks for being an early Wave adopter! ⭐	感谢你成为 Wave 的早期用户！⭐
+The tsunami app must be running to view config and data. Please start the app from the Preview tab first.	查看配置和数据前，请在预览标签页启动 Tsunami 应用。
+These commands work seamlessly on both local and remote machines, making it easy to view and edit files wherever they are.	这些命令可在本机和远程主机上使用，便于查看和编辑各处的文件。
+This action cannot be undone.	此操作将永久生效。
+This app requires secrets that must be configured. Please use the Secrets tab to set and bind the required secrets for your app to run.	此应用需要凭据，请在凭据标签页完成设置和绑定后运行。
+This will overwrite any existing app with the same name. Are you sure?	此操作将覆盖同名应用。继续？
+This will publish your app to	这将发布应用到
+to open config files or code files in Wave's graphical editor	在 Wave 图形编辑器中打开配置或代码文件
+to paste their quoted path	以粘贴经过转义的文件路径
+to preview files in Wave's graphical viewer	在 Wave 图形查看器中预览文件
+to quickly toggle	以快速切换
+Toggle the Wave AI panel with the	切换 Wave AI 面板可点击
+Toggle the widgets sidebar on and off from the View menu	在查看菜单中切换组件侧栏的显示状态
+Use the magnify feature to work with complex outputs and large files more efficiently.	使用放大功能，可更高效地处理复杂输出和大型文件。
+Viewing/Editing Files	查看与编辑文件
+Waiting for output...	正在等待输出…
+Wave AI is your terminal assistant with context. I can read your terminal output, analyze widgets, read/write files, and help you solve problems faster.	Wave AI 是具备上下文的终端助手，可读取终端输出、分析组件、读写文件，帮助你更快解决问题。
+Wave AI is your terminal assistant with full context. It can read your terminal output, analyze widgets, read and write files, and help you solve problems&nbsp;faster.	Wave AI 是具备完整上下文的终端助手，可读取终端输出、分析组件、读写文件，帮助你更快解决问题。
+Wave AI now supports local models and bring-your-own-key! Use Ollama, LM Studio, vLLM, OpenRouter, or any OpenAI-compatible provider.	Wave AI 现已支持本地模型和自备密钥，可接入 Ollama、LM Studio、vLLM、OpenRouter 及兼容 OpenAI 接口的服务。
+Wave can preview markdown, images, and video files on both local	Wave 可预览 Markdown、图片和视频文件，文件可位于本机
+Wave is free, open-source, and open-model. Stars help us stay visible against closed alternatives. One click makes a difference.	Wave 免费、开源并支持多种模型。你的点赞能帮助更多人发现这个项目。
+Wave v0.14.5 introduces a new Process Viewer widget, several quality-of-life improvements, and a fix for creating new config files from the Settings widget.	Wave v0.14.5 新增进程查看器，改进多项使用体验，并修复了在设置组件中创建配置文件的问题。
+We're	我们坚持
+Welcome to Wave Terminal	欢迎使用 Wave Terminal
+Welcome to Wave v0.14!	欢迎使用 Wave v0.14！
+Widget Access ON	组件访问已开启
+You can also magnify a block by clicking on the	也可以点击下列按钮放大区块：
+Your app has been published to	应用已发布到
+Your app will appear here once	应用将在此处显示，待
+Your WaveApp is being compiled and prepared. This may take a few moments.	正在编译并准备 Wave 应用，请稍候。
+Your WaveApp is currently not running. Click the button below to start it.	Wave 应用尚未运行，点击下方按钮即可启动。
+Enabled	已启用
+Disabled	已关闭
+open source	开源
+open-model	开放模型接入
+and remote	与远程
+machines.	主机。
+A quick	快速按下
+-M to magnify and another	-M 放大，再次按下
+-M to unmagnify	-M 还原
+Use	使用
+or	或
+of	／
+Get Started	开始使用
+Next	下一步
+ON	开启
+OFF	关闭

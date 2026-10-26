@@ -18,11 +18,11 @@ type UpdateBannerEnv = WaveEnvSubset<{
 function getUpdateStatusMessage(status: string): string {
     switch (status) {
         case "ready":
-            return "Update";
+            return "更新";
         case "downloading":
-            return "Downloading";
+            return "正在下载";
         case "installing":
-            return "Installing";
+            return "正在安装";
         default:
             return null;
     }
@@ -42,7 +42,7 @@ const UpdateStatusBannerComponent = () => {
     }
 
     const isReady = appUpdateStatus === "ready";
-    const tooltipContent = isReady ? "Click to Install Update" : updateStatusMessage;
+    const tooltipContent = isReady ? "点击安装更新" : updateStatusMessage;
 
     return (
         <Tooltip

@@ -199,15 +199,15 @@ class TsunamiViewModel extends WebViewModel {
         // Add tsunami-specific menu items at the beginning
         const tsunamiItems: ContextMenuItem[] = [
             {
-                label: "Stop WaveApp",
+                label: "停止 Wave 应用",
                 click: () => this.destroyController(),
             },
             {
-                label: "Restart WaveApp",
+                label: "重启 Wave 应用",
                 click: () => this.restartController(),
             },
             {
-                label: "Restart WaveApp and Force Rebuild",
+                label: "重启 Wave 应用并强制重新构建",
                 click: () => this.restartAndForceRebuild(),
             },
             {
@@ -218,7 +218,7 @@ class TsunamiViewModel extends WebViewModel {
         if (showRemixOption) {
             tsunamiItems.push(
                 {
-                    label: "Remix WaveApp in Builder",
+                    label: "在构建器中改编 Wave 应用",
                     click: () => this.remixInBuilder(),
                 },
                 {
@@ -298,10 +298,10 @@ const TsunamiView = memo((props: ViewComponentProps<TsunamiViewModel>) => {
                     onClick={() => model.forceRestartController()}
                     className="px-4 py-2 bg-accent-color text-primary-text-color rounded hover:bg-accent-color/80 transition-colors cursor-pointer"
                 >
-                    Start
+                    启动
                 </button>
             )}
-            {isRestarting && <div className="text-sm text-success-color">Starting...</div>}
+            {isRestarting && <div className="text-sm text-success-color">正在启动…</div>}
         </div>
     );
 });

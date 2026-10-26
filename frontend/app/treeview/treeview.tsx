@@ -143,7 +143,7 @@ export function buildVisibleRows(
                 parentId: id,
                 depth: depth + 1,
                 kind: "loading",
-                label: "Loading…",
+                label: "正在加载…",
             });
             return;
         }
@@ -153,7 +153,7 @@ export function buildVisibleRows(
                 parentId: id,
                 depth: depth + 1,
                 kind: "error",
-                label: node.staterror ? `Error: ${node.staterror}` : "Unable to load directory",
+                label: node.staterror ? `错误：${node.staterror}` : "目录加载失败",
             });
             return;
         }
@@ -167,7 +167,7 @@ export function buildVisibleRows(
                 parentId: id,
                 depth: depth + 1,
                 kind: "capped",
-                label: `Showing first ${capMax} entries`,
+                label: `显示前 ${capMax} 项`,
             });
         }
     };
@@ -327,7 +327,7 @@ export const TreeView = forwardRef<TreeViewRef, TreeViewProps>((props, ref) => {
                 next.set(id, {
                     ...source,
                     childrenStatus: "error",
-                    staterror: error instanceof Error ? error.message : "Unknown error",
+                    staterror: error instanceof Error ? error.message : "未知错误",
                 });
                 return next;
             });

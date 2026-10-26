@@ -9,7 +9,7 @@ type ProgressBarProps = {
     label?: string;
 };
 
-const ProgressBar = ({ progress, label = "Progress" }: ProgressBarProps) => {
+const ProgressBar = ({ progress, label = "进度" }: ProgressBarProps) => {
     const progressWidth = boundNumber(progress, 0, 100);
 
     return (

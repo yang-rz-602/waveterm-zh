@@ -43,3 +43,18 @@ docsite/
 .superpowers
 docs/superpowers
 .claude
+# Local Chinese edition build and QA artifacts.
+.build-runtime/
+make-zh/
+localization/qa-data/
+localization/qa-config/
+localization/qa-userdata/
+localization/qa2/
+localization/qa3/
+localization/*.log
+# QA output may reflect the local user's connections and credential labels.
+localization/qa*/
+localization/smoke-*.json
+localization/qa-*.png
+localization/native-binary-verification.json
+localization/strings-inventory.json

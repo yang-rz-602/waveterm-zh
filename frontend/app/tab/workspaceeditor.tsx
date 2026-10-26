@@ -115,7 +115,7 @@ const WorkspaceEditorComponent = ({
             <IconSelector selectedIcon={icon} icons={icons} onSelect={onIconChange} />
             <div className="delete-ws-btn-wrapper">
                 <Button className="ghost red text-[12px] bold" onClick={onDeleteWorkspace}>
-                    Delete workspace
+                    删除工作区
                 </Button>
             </div>
         </div>

@@ -24,11 +24,11 @@ import type { PreviewEnv } from "./previewenv";
 
 // TODO drive this using config
 const BOOKMARKS: { label: string; path: string }[] = [
-    { label: "Home", path: "~" },
-    { label: "Desktop", path: "~/Desktop" },
-    { label: "Downloads", path: "~/Downloads" },
-    { label: "Documents", path: "~/Documents" },
-    { label: "Root", path: "/" },
+    { label: "主页", path: "~" },
+    { label: "桌面", path: "~/Desktop" },
+    { label: "下载", path: "~/Downloads" },
+    { label: "文档", path: "~/Documents" },
+    { label: "根目录", path: "/" },
 ];
 
 const MaxFileSize = 1024 * 1024 * 10; // 10MB
@@ -209,7 +209,7 @@ export class PreviewModel implements ViewModel {
                     icon: "folder-open",
                     longClick: (e: React.MouseEvent<any>) => {
                         const menuItems: ContextMenuItem[] = BOOKMARKS.map((bookmark) => ({
-                            label: `Go to ${bookmark.label} (${bookmark.path})`,
+                            label: `转到 ${bookmark.label}（${bookmark.path}）`,
                             click: () => this.goHistory(bookmark.path),
                         }));
                         ContextMenuModel.getInstance().showContextMenu(menuItems, e);
@@ -222,7 +222,7 @@ export class PreviewModel implements ViewModel {
             const blockData = get(this.blockAtom);
             return blockData?.meta?.edit ?? false;
         });
-        this.viewName = atom("Preview");
+        this.viewName = atom("预览");
         this.hideViewName = atom(true);
         this.viewText = atom((get) => {
             let headerPath = get(this.metaFilePath);
@@ -266,21 +266,21 @@ export class PreviewModel implements ViewModel {
                 if (fileInfo.state != "hasData") {
                     viewTextChildren.push({
                         elemtype: "textbutton",
-                        text: "Loading ...",
+                        text: "正在加载…",
                         className: clsx(`grey rounded-[4px] !py-[2px] !px-[10px] text-[11px] font-[500]`),
                         onClick: () => {},
                     });
                 } else if (fileInfo.data.readonly) {
                     viewTextChildren.push({
                         elemtype: "textbutton",
-                        text: "Read Only",
+                        text: "只读",
                         className: clsx(`yellow rounded-[4px] !py-[2px] !px-[10px] text-[11px] font-[500]`),
                         onClick: () => {},
                     });
                 } else {
                     viewTextChildren.push({
                         elemtype: "textbutton",
-                        text: "Save",
+                        text: "保存",
                         className: clsx(`${saveClassName} rounded-[4px] !py-[2px] !px-[10px] text-[11px] font-[500]`),
                         onClick: () => fireAndForget(this.handleFileSave.bind(this)),
                     });
@@ -288,7 +288,7 @@ export class PreviewModel implements ViewModel {
                 if (get(this.canPreview)) {
                     viewTextChildren.push({
                         elemtype: "textbutton",
-                        text: "Preview",
+                        text: "预览",
                         className: "grey rounded-[4px] !py-[2px] !px-[10px] text-[11px] font-[500]",
                         onClick: () => fireAndForget(() => this.setEditMode(false)),
                     });
@@ -296,7 +296,7 @@ export class PreviewModel implements ViewModel {
             } else if (get(this.canPreview)) {
                 viewTextChildren.push({
                     elemtype: "textbutton",
-                    text: "Edit",
+                    text: "编辑",
                     className: "grey rounded-[4px] !py-[2px] !px-[10px] text-[11px] font-[500]",
                     onClick: () => fireAndForget(() => this.setEditMode(true)),
                 });
@@ -338,7 +338,7 @@ export class PreviewModel implements ViewModel {
                     {
                         elemtype: "iconbutton",
                         icon: showHiddenFiles ? "eye" : "eye-slash",
-                        title: showHiddenFiles ? "Hide Hidden Files" : "Show Hidden Files",
+                        title: showHiddenFiles ? "隐藏隐藏文件" : "显示隐藏文件",
                         click: () => {
                             globalStore.set(this.showHiddenFiles, (prev) => !prev);
                         },
@@ -354,13 +354,13 @@ export class PreviewModel implements ViewModel {
                     {
                         elemtype: "iconbutton",
                         icon: "book",
-                        title: "Table of Contents",
+                        title: "目录",
                         click: () => this.markdownShowTocToggle(),
                     },
                     {
                         elemtype: "iconbutton",
                         icon: "arrows-rotate",
-                        title: "Refresh",
+                        title: "刷新",
                         click: () => this.refreshCallback?.(),
                     },
                 ] as IconButtonDecl[];
@@ -370,7 +370,7 @@ export class PreviewModel implements ViewModel {
                     {
                         elemtype: "iconbutton",
                         icon: "arrows-rotate",
-                        title: "Refresh",
+                        title: "刷新",
                         click: () => this.refreshCallback?.(),
                     },
                 ] as IconButtonDecl[];
@@ -416,7 +416,7 @@ export class PreviewModel implements ViewModel {
                 return statFile;
             } catch (e) {
                 const errorStatus: ErrorMsg = {
-                    status: "File Read Failed",
+                    status: "文件读取失败",
                     text: `${e}`,
                 };
                 globalStore.set(this.errorMsgAtom, errorStatus);
@@ -446,7 +446,7 @@ export class PreviewModel implements ViewModel {
                 return file;
             } catch (e) {
                 const errorStatus: ErrorMsg = {
-                    status: "File Read Failed",
+                    status: "文件读取失败",
                     text: `${e}`,
                 };
                 globalStore.set(this.errorMsgAtom, errorStatus);
@@ -508,10 +508,10 @@ export class PreviewModel implements ViewModel {
         const genErr = getFn(this.errorMsgAtom);
 
         if (!fileInfo) {
-            return { errorStr: `Load Error: ${genErr?.text}` };
+            return { errorStr: `加载错误：${genErr?.text}` };
         }
         if (connErr != "") {
-            return { errorStr: `Connection Error: ${connErr}` };
+            return { errorStr: `连接错误：${connErr}` };
         }
         if (fileInfo?.notfound) {
             return { specializedView: "codeedit" };
@@ -524,13 +524,13 @@ export class PreviewModel implements ViewModel {
         }
         if (!fileInfo) {
             const fileNameStr = fileName ? " " + JSON.stringify(fileName) : "";
-            return { errorStr: "File Not Found" + fileNameStr };
+            return { errorStr: "文件不存在" + fileNameStr };
         }
         if (fileInfo.size > MaxFileSize) {
-            return { errorStr: "File Too Large to Preview (10 MB Max)" };
+            return { errorStr: "文件超过预览大小限制（最大 10 MB）" };
         }
         if (mimeType == "text/csv" && fileInfo.size > MaxCSVSize) {
-            return { errorStr: "CSV File Too Large to Preview (1 MB Max)" };
+            return { errorStr: "CSV 文件超过预览大小限制（最大 1 MB）" };
         }
         if (mimeType == "directory") {
             return { specializedView: "directory" };
@@ -550,7 +550,7 @@ export class PreviewModel implements ViewModel {
         if (isTextFile(mimeType) || fileInfo.size == 0) {
             return { specializedView: "codeedit" };
         }
-        return { errorStr: `Preview (${mimeType})` };
+        return { errorStr: `预览（${mimeType}）` };
     }
 
     updateOpenFileModalAndError(isOpen, errorMsg = null) {
@@ -667,7 +667,7 @@ export class PreviewModel implements ViewModel {
             console.log("saved file", filePath);
         } catch (e) {
             const errorStatus: ErrorMsg = {
-                status: "Save Failed",
+                status: "保存失败",
                 text: `${e}`,
             };
             globalStore.set(this.errorMsgAtom, errorStatus);
@@ -706,7 +706,7 @@ export class PreviewModel implements ViewModel {
         const overrideFontSize = blockData?.meta?.["editor:fontsize"];
         const menuItems: ContextMenuItem[] = [];
         menuItems.push({
-            label: "Copy Full Path",
+            label: "复制完整路径",
             click: () =>
                 fireAndForget(async () => {
                     const filePath = await globalStore.get(this.statFilePath);
@@ -724,7 +724,7 @@ export class PreviewModel implements ViewModel {
                 }),
         });
         menuItems.push({
-            label: "Copy File Name",
+            label: "复制文件名",
             click: () =>
                 fireAndForget(async () => {
                     const fileInfo = await globalStore.get(this.statFile);
@@ -769,23 +769,23 @@ export class PreviewModel implements ViewModel {
                 },
             });
             menuItems.push({
-                label: "Editor Font Size",
+                label: "编辑器字号",
                 submenu: fontSizeSubMenu,
             });
             if (globalStore.get(this.newFileContent) != null) {
                 menuItems.push({ type: "separator" });
                 menuItems.push({
-                    label: "Save File",
+                    label: "保存文件",
                     click: () => fireAndForget(this.handleFileSave.bind(this)),
                 });
                 menuItems.push({
-                    label: "Revert File",
+                    label: "还原文件",
                     click: () => fireAndForget(this.handleFileRevert.bind(this)),
                 });
             }
             menuItems.push({ type: "separator" });
             menuItems.push({
-                label: "Word Wrap",
+                label: "自动换行",
                 type: "checkbox",
                 checked: wordWrap,
                 click: () =>
@@ -799,7 +799,7 @@ export class PreviewModel implements ViewModel {
         }
         if (loadableSV.state == "hasData" && loadableSV.data.specializedView == "directory") {
             menuItems.push({ type: "separator" });
-            menuItems.push({ label: "Default Settings", enabled: false });
+            menuItems.push({ label: "默认设置", enabled: false });
             menuItems.push(...makeDirectoryDefaultMenuItems(this));
         }
         return menuItems;

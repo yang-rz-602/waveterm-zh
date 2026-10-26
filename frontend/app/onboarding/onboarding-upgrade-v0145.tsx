@@ -6,8 +6,7 @@ const UpgradeOnboardingModal_v0_14_5_Content = () => {
         <div className="flex flex-col items-start gap-6 w-full mb-4 unselectable">
             <div className="text-secondary leading-relaxed">
                 <p className="mb-0">
-                    Wave v0.14.5 introduces a new Process Viewer widget, several quality-of-life improvements, and a
-                    fix for creating new config files from the Settings widget.
+                    Wave v0.14.5 新增进程查看器，改进多项使用体验，并修复了在设置组件中创建配置文件的问题。
                 </p>
             </div>
 
@@ -16,10 +15,9 @@ const UpgradeOnboardingModal_v0_14_5_Content = () => {
                     <i className="text-[24px] text-accent fa-solid fa-list-tree"></i>
                 </div>
                 <div className="flex flex-col items-start gap-2 flex-1">
-                    <div className="text-foreground text-base font-semibold leading-[18px]">Process Viewer</div>
+                    <div className="text-foreground text-base font-semibold leading-[18px]">进程查看器</div>
                     <div className="text-secondary leading-5">
-                        New widget that displays running processes on local and remote machines, with CPU and memory
-                        usage and sortable columns.
+                        新增进程组件，可查看本机与远程主机上的进程、CPU 和内存使用情况，并按列排序。
                     </div>
                 </div>
             </div>
@@ -29,26 +27,25 @@ const UpgradeOnboardingModal_v0_14_5_Content = () => {
                     <i className="text-[24px] text-accent fa-solid fa-wrench"></i>
                 </div>
                 <div className="flex flex-col items-start gap-2 flex-1">
-                    <div className="text-foreground text-base font-semibold leading-[18px]">Other Changes</div>
+                    <div className="text-foreground text-base font-semibold leading-[18px]">其他更改</div>
                     <div className="text-secondary leading-5">
                         <ul className="list-disc list-outside space-y-1 pl-5">
                             <li>
-                                <strong>Quake Mode</strong> &mdash; global hotkey (
-                                <code>app:globalhotkey</code>) now toggles a Wave window visible and invisible
+                                <strong>下拉终端模式</strong> — 全局快捷键（
+                                <code>app:globalhotkey</code>）现在可以切换 Wave 窗口的显示状态
                             </li>
                             <li>
-                                <strong>Drag &amp; Drop Files into Terminal</strong>
-                                to paste their quoted path
+                                <strong>将文件拖入终端</strong>
+                                以粘贴经过转义的文件路径
                             </li>
                             <li>
-                                New <code>app:showsplitbuttons</code> setting adds split buttons to block headers
+                                新增 <code>app:showsplitbuttons</code> 设置可在区块标题栏显示拆分按钮
                             </li>
-                            <li>Toggle the widgets sidebar on and off from the View menu</li>
-                            <li>F2 to rename the active tab</li>
-                            <li>Mouse back/forward buttons now navigate in web widgets</li>
+                            <li>在查看菜单中切换组件侧栏的显示状态</li>
+                            <li>按 F2 重命名当前标签页</li>
+                            <li>鼠标前进和后退键现可用于网页组件导航</li>
                             <li>
-                                <strong>[bugfix]</strong> Config files that didn&apos;t exist yet couldn&apos;t be
-                                created or edited from the Settings widget
+                                <strong>[修复]</strong> 修复了设置组件中创建和编辑新配置文件的问题
                             </li>
                         </ul>
                     </div>

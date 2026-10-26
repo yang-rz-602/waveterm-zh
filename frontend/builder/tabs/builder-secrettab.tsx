@@ -40,10 +40,10 @@ const SecretRow = memo(({ secretName, secretMeta, currentBinding, availableSecre
             <div className="flex-1 flex items-center gap-2">
                 <span className="font-medium text-primary">{secretName}</span>
                 {!secretMeta.optional && (
-                    <span className="px-2 py-0.5 text-xs bg-red-500/20 text-red-500 rounded">Required</span>
+                    <span className="px-2 py-0.5 text-xs bg-red-500/20 text-red-500 rounded">必填</span>
                 )}
                 {secretMeta.optional && (
-                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-500 rounded">Optional</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-500 rounded">可选</span>
                 )}
                 {secretMeta.desc && <span className="text-sm text-secondary">— {secretMeta.desc}</span>}
             </div>
@@ -53,7 +53,7 @@ const SecretRow = memo(({ secretName, secretMeta, currentBinding, availableSecre
                         onClick={() => onMapDefault(secretName)}
                         className="px-3 py-1 text-sm font-medium rounded bg-accent/80 text-primary hover:bg-accent transition-colors cursor-pointer whitespace-nowrap"
                     >
-                        Map Default
+                        映射默认值
                     </button>
                 )}
                 {!isMapped && !hasMatchingSecret && (
@@ -61,7 +61,7 @@ const SecretRow = memo(({ secretName, secretMeta, currentBinding, availableSecre
                         onClick={() => onSetAndMapDefault(secretName)}
                         className="px-3 py-1 text-sm font-medium rounded bg-accent/80 text-primary hover:bg-accent transition-colors cursor-pointer whitespace-nowrap"
                     >
-                        Set and Map Default
+                        设置并映射默认值
                     </button>
                 )}
             </div>
@@ -116,7 +116,7 @@ const SetSecretDialog = memo(({ secretName, onSetAndMap }: SetSecretDialogProps)
         return (
             <Modal className="p-4 min-w-[500px]" onOk={handleClose} onClose={handleClose} okLabel="OK">
                 <div className="flex flex-col gap-4 mb-4">
-                    <h2 className="text-xl font-semibold">Error Setting Secret</h2>
+                    <h2 className="text-xl font-semibold">凭据设置错误</h2>
                     <div className="text-sm text-error">{error}</div>
                 </div>
             </Modal>
@@ -130,26 +130,26 @@ const SetSecretDialog = memo(({ secretName, onSetAndMap }: SetSecretDialogProps)
             onCancel={handleClose}
             onClose={handleClose}
             okLabel="Set and Map"
-            cancelLabel="Cancel"
+            cancelLabel={"取消"}
             okDisabled={!secretValue.trim() || isSubmitting}
         >
             <div className="flex flex-col gap-4 mb-4">
-                <h2 className="text-xl font-semibold">Set and Map Secret</h2>
+                <h2 className="text-xl font-semibold">设置并映射凭据</h2>
                 <div className="flex flex-col gap-2">
                     <div className="text-sm font-medium mb-1">
-                        Secret Name: <span className="text-accent">{secretName}</span>
+                        凭据名称： <span className="text-accent">{secretName}</span>
                     </div>
                     <textarea
                         value={secretValue}
                         onChange={(e) => setSecretValue(e.target.value)}
-                        placeholder="Paste secret value here..."
+                        placeholder={"在此粘贴凭据内容…"}
                         className="w-full px-3 py-2 bg-panel border border-border rounded focus:outline-none focus:border-accent resize-none"
                         rows={4}
                         autoFocus
                         disabled={isSubmitting}
                     />
                     <div className="text-xs text-secondary">
-                        Secrets are stored securely in Wave's secret store
+                        凭据安全地保存在 Wave 凭据库中
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@ const BuilderSecretTab = memo(() => {
         return (
             <div className="w-full h-full flex items-center justify-center">
                 <div className="text-secondary text-center">
-                    App manifest not available. Secrets will be shown once the app builds successfully.
+                    应用清单尚未生成，构建成功后将显示凭据配置。
                 </div>
             </div>
         );
@@ -247,16 +247,15 @@ const BuilderSecretTab = memo(() => {
 
     return (
         <div className="w-full h-full flex flex-col p-4">
-            <h2 className="text-lg font-semibold mb-2">Secret Bindings</h2>
+            <h2 className="text-lg font-semibold mb-2">凭据绑定</h2>
 
             <div className="mb-4 p-2 bg-blue-500/10 border border-blue-500/30 rounded text-sm text-secondary">
-                Map app secrets to Wave secret store names. Required secrets must be bound before the app can run
-                successfully. Changes are saved automatically.
+                将应用凭据映射到 Wave 凭据库中的名称。运行应用前须绑定必填凭据，更改会自动保存。
             </div>
 
             {!allRequiredBound && (
                 <div className="mb-4 p-2 bg-yellow-500/10 border border-yellow-500/30 rounded text-sm text-yellow-600">
-                    Some required secrets are not bound yet.
+                    部分必填凭据仍待绑定。
                 </div>
             )}
 
@@ -265,7 +264,7 @@ const BuilderSecretTab = memo(() => {
             <div className="flex-1 overflow-auto">
                 {sortedSecretEntries.length === 0 ? (
                     <div className="text-secondary text-center py-8">
-                        No secrets defined in this app manifest.
+                        此应用清单尚未定义凭据。
                     </div>
                 ) : (
                     <div className="space-y-1">

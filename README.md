@@ -1,3 +1,14 @@
+# Wave Terminal 简体中文版
+
+基于 Wave Terminal `v0.14.5` 的 Windows x64 中文构建，版本标识 `0.14.5-zh.1`。
+本项目保留上游 Apache-2.0 许可与版权声明。
+
+- [汉化说明与构建步骤](localization/README.zh-CN.md)
+- 汉化版程序包见 GitHub Releases。
+- [Wave Terminal 上游项目](https://github.com/wavetermdev/waveterm/tree/v0.14.5)
+
+---
+
 <p align="center">
   <a href="https://www.waveterm.dev">
 	<picture>

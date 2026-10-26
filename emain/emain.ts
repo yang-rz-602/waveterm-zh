@@ -277,9 +277,9 @@ electronApp.on("before-quit", (e) => {
         e.preventDefault();
         const choice = electron.dialog.showMessageBoxSync(null, {
             type: "question",
-            buttons: ["Cancel", "Quit"],
-            title: "Confirm Quit",
-            message: "Are you sure you want to quit Wave Terminal?",
+            buttons: ["取消", "退出"],
+            title: "确认退出",
+            message: "确定退出 Wave Terminal？",
             defaultId: 0,
             cancelId: 0,
         });

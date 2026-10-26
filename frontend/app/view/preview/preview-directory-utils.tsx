@@ -102,7 +102,7 @@ export function handleRename(
             const errorText = `${e}`;
             console.warn(`Rename failed: ${errorText}`);
             const errorMsg: ErrorMsg = {
-                status: "Rename Failed",
+                status: "重命名失败",
                 text: `${e}`,
             };
             setErrorMsg(errorMsg);
@@ -130,19 +130,19 @@ export function handleFileDelete(
             let errorMsg: ErrorMsg;
             if (errorText.includes(recursiveError) && !recursive) {
                 errorMsg = {
-                    status: "Confirm Delete Directory",
-                    text: "Deleting a directory requires the recursive flag. Proceed?",
+                    status: "确认删除目录",
+                    text: "删除目录需要递归操作。继续？",
                     level: "warning",
                     buttons: [
                         {
-                            text: "Delete Recursively",
+                            text: "递归删除",
                             onClick: () => handleFileDelete(model, path, true, setErrorMsg),
                         },
                     ],
                 };
             } else {
                 errorMsg = {
-                    status: "Delete Failed",
+                    status: "删除失败",
                     text: `${e}`,
                 };
             }
@@ -157,10 +157,10 @@ export function makeDirectoryDefaultMenuItems(model: PreviewModel): ContextMenuI
     const showHiddenFiles = globalStore.get(model.showHiddenFiles) ?? true;
     return [
         {
-            label: "Directory Sort Order",
+            label: "目录排序方式",
             submenu: [
                 {
-                    label: "Name",
+                    label: "名称",
                     type: "checkbox",
                     checked: defaultSort === "name",
                     click: () =>
@@ -169,7 +169,7 @@ export function makeDirectoryDefaultMenuItems(model: PreviewModel): ContextMenuI
                         ),
                 },
                 {
-                    label: "Last Modified",
+                    label: "修改时间",
                     type: "checkbox",
                     checked: defaultSort === "modtime",
                     click: () =>
@@ -180,10 +180,10 @@ export function makeDirectoryDefaultMenuItems(model: PreviewModel): ContextMenuI
             ],
         },
         {
-            label: "Show Hidden Files",
+            label: "显示隐藏文件",
             submenu: [
                 {
-                    label: "On",
+                    label: "开启",
                     type: "checkbox",
                     checked: showHiddenFiles,
                     click: () => {
@@ -194,7 +194,7 @@ export function makeDirectoryDefaultMenuItems(model: PreviewModel): ContextMenuI
                     },
                 },
                 {
-                    label: "Off",
+                    label: "关闭",
                     type: "checkbox",
                     checked: !showHiddenFiles,
                     click: () => {

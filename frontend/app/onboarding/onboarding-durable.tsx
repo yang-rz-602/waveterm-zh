@@ -40,37 +40,36 @@ export const DurableSessionPage = ({
                 <div>
                     <Logo />
                 </div>
-                <div className="text-[25px] font-normal text-foreground">Durable SSH Sessions</div>
+                <div className="text-[25px] font-normal text-foreground">持久 SSH 会话</div>
             </header>
             <div className="flex-1 flex flex-row gap-0 min-h-0">
                 <div className="flex-1 flex flex-col items-center justify-center gap-8 pr-3 unselectable">
                     <div className="flex flex-col items-start gap-3 max-w-md">
                         <div className="flex h-[52px] ml-[-4px] pl-3 pr-3 items-center rounded-lg bg-hover text-[15px]">
                             <i className="fa-sharp fa-solid fa-shield text-sky-500" />
-                            <span className="font-bold ml-2 text-primary">SSH Sessions, Protected</span>
+                            <span className="font-bold ml-2 text-primary">保护 SSH 会话</span>
                         </div>
 
                         <div className="flex flex-col items-start gap-4 text-secondary">
-                            <p>Close your laptop, switch networks, restart Wave — your remote sessions keep running.</p>
+                            <p>合上电脑、切换网络或重启 Wave 后，远程会话仍可继续运行。</p>
 
                             <div className="flex items-start gap-3 w-full">
                                 <i className="fa-sharp fa-solid fa-link text-accent text-lg mt-1 flex-shrink-0" />
-                                <p>Shell state, running programs, and terminal history are all preserved</p>
+                                <p>保留 Shell 状态、运行程序和终端历史记录</p>
                             </div>
 
                             <div className="flex items-start gap-3 w-full">
                                 <i className="fa-sharp fa-solid fa-rotate text-accent text-lg mt-1 flex-shrink-0" />
-                                <p>Sessions automatically reconnect when your connection is restored</p>
+                                <p>网络恢复后，会话将自动重新连接</p>
                             </div>
 
                             <div className="flex items-start gap-3 w-full">
                                 <i className="fa-sharp fa-solid fa-box text-accent text-lg mt-1 flex-shrink-0" />
-                                <p>Buffered output streams back in, never miss a line</p>
+                                <p>重新连接后自动补齐缓存输出</p>
                             </div>
 
                             <p className="italic">
-                                All the persistence of tmux, built into your terminal. Look for the shield icon to
-                                enable durability on any SSH session.
+                                终端内置类似 tmux 的会话保持能力。点击盾牌图标即可为 SSH 会话启用持久化。
                             </p>
 
                             <EmojiButton emoji="🔥" isClicked={fireClicked} onClick={handleFireClick} />

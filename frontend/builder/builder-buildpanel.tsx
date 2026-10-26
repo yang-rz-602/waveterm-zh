@@ -22,7 +22,7 @@ function handleBuildPanelContextMenu(e: React.MouseEvent, selectedText: string):
         { role: "copy" },
         { type: "separator" },
         {
-            label: "Add to Context",
+            label: "添加到上下文",
             click: () => {
                 const model = WaveAIModel.getInstance();
                 const formattedText = `from builder output:\n\`\`\`\n${selectedText}\n\`\`\``;
@@ -104,7 +104,7 @@ const BuilderBuildPanel = memo(() => {
     return (
         <div className="w-full h-full flex flex-col bg-black rounded-br-2">
             <div className="flex-shrink-0 px-3 py-2 border-b border-gray-700 flex items-center justify-between">
-                <span className="text-sm font-semibold text-gray-300">Build Output</span>
+                <span className="text-sm font-semibold text-gray-300">构建输出</span>
                 <div className="flex items-center gap-4">
                     <label className="flex items-center gap-2 text-sm text-gray-300 cursor-pointer">
                         <input
@@ -113,19 +113,19 @@ const BuilderBuildPanel = memo(() => {
                             onChange={handleDebugToggle}
                             className="cursor-pointer"
                         />
-                        Debug
+                        调试
                     </label>
                     <button
                         className="px-3 py-1 text-sm font-medium rounded transition-colors bg-accent/80 text-white hover:bg-accent cursor-pointer"
                         onClick={handleSendToAI}
                     >
-                        Send Output to AI
+                        将输出发送到 AI
                     </button>
                     <button
                         className="px-3 py-1 text-sm font-medium rounded transition-colors bg-accent/80 text-white hover:bg-accent cursor-pointer"
                         onClick={handleRestart}
                     >
-                        Restart App
+                        重启应用
                     </button>
                 </div>
             </div>
@@ -138,7 +138,7 @@ const BuilderBuildPanel = memo(() => {
                 >
                     {/* this comment fixes JSX blank line in pre tag */}
                     {filteredLines.length === 0 ? (
-                        <span className="text-secondary">Waiting for output...</span>
+                        <span className="text-secondary">正在等待输出…</span>
                     ) : (
                         filteredLines.join("\n")
                     )}

@@ -201,18 +201,18 @@ export class WaveAIModel {
 
     async addFileFromRemoteUri(draggedFile: DraggedFile): Promise<void> {
         if (draggedFile.isDir) {
-            this.setError("Cannot add directories to Wave AI. Please select a file.");
+            this.setError("请选择文件，Wave AI 当前接受文件附件。");
             return;
         }
 
         try {
             const fileInfo = await RpcApi.FileInfoCommand(TabRpcClient, { info: { path: draggedFile.uri } }, null);
             if (fileInfo.notfound) {
-                this.setError(`File not found: ${draggedFile.relName}`);
+                this.setError(`文件不存在：${draggedFile.relName}`);
                 return;
             }
             if (fileInfo.isdir) {
-                this.setError("Cannot add directories to Wave AI. Please select a file.");
+                this.setError("请选择文件，Wave AI 当前接受文件附件。");
                 return;
             }
 
@@ -226,7 +226,7 @@ export class WaveAIModel {
 
             const fileData = await RpcApi.FileReadCommand(TabRpcClient, { info: { path: draggedFile.uri } }, null);
             if (!fileData.data64) {
-                this.setError(`Failed to read file: ${draggedFile.relName}`);
+                this.setError(`读取文件失败：${draggedFile.relName}`);
                 return;
             }
 
@@ -243,7 +243,7 @@ export class WaveAIModel {
         } catch (error) {
             console.error("Error handling FILE_ITEM drop:", error);
             const errorMsg = error instanceof Error ? error.message : String(error);
-            this.setError(`Failed to add file: ${errorMsg}`);
+            this.setError(`添加文件失败：${errorMsg}`);
         }
     }
 
@@ -473,7 +473,7 @@ export class WaveAIModel {
             return await this.reloadChatFromBackend(chatIdValue);
         } catch (error) {
             console.error("Failed to load chat:", error);
-            this.setError("Failed to load chat. Starting new chat...");
+            this.setError("对话加载失败，正在新建对话…");
 
             this.clearChat();
             return [];

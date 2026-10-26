@@ -194,7 +194,7 @@ export function VTab({
                 )}
                 contentEditable={isEditable}
                 role="textbox"
-                aria-label="Tab name"
+                aria-label={"标签页名称"}
                 aria-readonly={!isEditable}
                 onBlur={handleBlur}
                 onKeyDown={handleKeyDown}
@@ -213,7 +213,7 @@ export function VTab({
                         event.stopPropagation();
                         onClose();
                     }}
-                    aria-label="Close tab"
+                    aria-label={"关闭标签页"}
                 >
                     <i className="fa fa-solid fa-xmark" />
                 </button>

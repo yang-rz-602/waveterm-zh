@@ -152,7 +152,7 @@ function BlockHeaderSuggestionControl(props: BlockHeaderSuggestionControlProps) 
 function SuggestionControlNoResults({ children }: { children?: React.ReactNode }) {
     return (
         <div className="flex items-center justify-center min-h-[120px] p-4">
-            {children ?? <span className="text-gray-500">No Suggestions</span>}
+            {children ?? <span className="text-gray-500">暂无建议</span>}
         </div>
     );
 }
@@ -160,7 +160,7 @@ function SuggestionControlNoResults({ children }: { children?: React.ReactNode }
 function SuggestionControlNoData({ children }: { children?: React.ReactNode }) {
     return (
         <div className="flex items-center justify-center min-h-[120px] p-4">
-            {children ?? <span className="text-gray-500">No Suggestions</span>}
+            {children ?? <span className="text-gray-500">暂无建议</span>}
         </div>
     );
 }

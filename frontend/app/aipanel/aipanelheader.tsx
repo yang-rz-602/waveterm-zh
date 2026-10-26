@@ -32,8 +32,8 @@ export const AIPanelHeader = memo(() => {
             <div className="flex items-center flex-shrink-0 whitespace-nowrap">
                 {!inBuilder && (
                     <div className="flex items-center text-sm whitespace-nowrap">
-                        <span className="text-gray-300 @xs:hidden mr-1 text-[12px]">Context</span>
-                        <span className="text-gray-300 hidden @xs:inline mr-2 text-[12px]">Widget Context</span>
+                        <span className="text-gray-300 @xs:hidden mr-1 text-[12px]">上下文</span>
+                        <span className="text-gray-300 hidden @xs:inline mr-2 text-[12px]">组件上下文</span>
                         <button
                             onClick={() => {
                                 model.setWidgetAccess(!widgetAccess);
@@ -44,7 +44,7 @@ export const AIPanelHeader = memo(() => {
                             className={`relative inline-flex h-6 w-14 items-center rounded-full transition-colors cursor-pointer ${
                                 widgetAccess ? "bg-accent-600" : "bg-zinc-600"
                             }`}
-                            title={`Widget Access ${widgetAccess ? "ON" : "OFF"}`}
+                            title={`组件访问 ${widgetAccess ? "开启" : "关闭"}`}
                         >
                             <span
                                 className={`absolute inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
@@ -56,7 +56,7 @@ export const AIPanelHeader = memo(() => {
                                     widgetAccess ? "ml-2.5 mr-6 text-left" : "ml-6 mr-1 text-right"
                                 }`}
                             >
-                                {widgetAccess ? "ON" : "OFF"}
+                                {widgetAccess ? "开启" : "关闭"}
                             </span>
                         </button>
                     </div>
@@ -65,7 +65,7 @@ export const AIPanelHeader = memo(() => {
                 <button
                     onClick={handleKebabClick}
                     className="text-gray-400 hover:text-white cursor-pointer transition-colors p-1 rounded flex-shrink-0 ml-2 focus:outline-none"
-                    title="More options"
+                    title={"更多选项"}
                 >
                     <i className="fa fa-ellipsis-vertical"></i>
                 </button>

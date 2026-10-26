@@ -40,12 +40,11 @@ export const RestoreBackupModal = memo(({ part }: RestoreBackupModalProps) => {
 
     if (status === "success") {
         return (
-            <Modal className="restore-backup-modal pb-5 pr-5" onClose={handleClose} onOk={handleClose} okLabel="Close">
+            <Modal className="restore-backup-modal pb-5 pr-5" onClose={handleClose} onOk={handleClose} okLabel={"关闭"}>
                 <div className="flex flex-col gap-4 pt-4 pb-4 max-w-xl">
-                    <div className="font-semibold text-lg text-green-500">Backup Successfully Restored</div>
+                    <div className="font-semibold text-lg text-green-500">备份恢复成功</div>
                     <div className="text-sm text-gray-300 leading-relaxed">
-                        The file <span className="font-mono text-white break-all">{toolData.inputfilename}</span> has
-                        been restored to its previous state.
+                        文件 <span className="font-mono text-white break-all">{toolData.inputfilename}</span> 已恢复到先前的状态。
                     </div>
                 </div>
             </Modal>
@@ -54,11 +53,11 @@ export const RestoreBackupModal = memo(({ part }: RestoreBackupModalProps) => {
 
     if (status === "error") {
         return (
-            <Modal className="restore-backup-modal pb-5 pr-5" onClose={handleClose} onOk={handleClose} okLabel="Close">
+            <Modal className="restore-backup-modal pb-5 pr-5" onClose={handleClose} onOk={handleClose} okLabel={"关闭"}>
                 <div className="flex flex-col gap-4 pt-4 pb-4 max-w-xl">
-                    <div className="font-semibold text-lg text-red-500">Failed to Restore Backup</div>
+                    <div className="font-semibold text-lg text-red-500">备份恢复失败</div>
                     <div className="text-sm text-gray-300 leading-relaxed">
-                        An error occurred while restoring the backup:
+                        恢复备份时发生错误：
                     </div>
                     <div className="text-sm text-red-400 font-mono bg-zinc-800 p-3 rounded break-all">{error}</div>
                 </div>
@@ -74,20 +73,20 @@ export const RestoreBackupModal = memo(({ part }: RestoreBackupModalProps) => {
             onClose={handleCancel}
             onCancel={handleCancel}
             onOk={handleConfirm}
-            okLabel={isProcessing ? "Restoring..." : "Confirm Restore"}
-            cancelLabel="Cancel"
+            okLabel={isProcessing ? "Restoring..." : "确认恢复"}
+            cancelLabel={"取消"}
             okDisabled={isProcessing}
             cancelDisabled={isProcessing}
         >
             <div className="flex flex-col gap-4 pt-4 pb-4 max-w-xl">
-                <div className="font-semibold text-lg">Restore File Backup</div>
+                <div className="font-semibold text-lg">恢复文件备份</div>
                 <div className="text-sm text-gray-300 leading-relaxed">
-                    This will restore <span className="font-mono text-white break-all">{toolData.inputfilename}</span>{" "}
-                    to its state before this edit was made
+                    这将恢复 <span className="font-mono text-white break-all">{toolData.inputfilename}</span>{" "}
+                    到此次编辑之前的状态
                     {toolData.runts && <span> ({formatTimestamp(toolData.runts)})</span>}.
                 </div>
                 <div className="text-sm text-gray-300 leading-relaxed">
-                    Any changes made by this edit and subsequent edits will be lost.
+                    此次编辑及后续编辑所做的更改将被丢弃。
                 </div>
             </div>
         </Modal>

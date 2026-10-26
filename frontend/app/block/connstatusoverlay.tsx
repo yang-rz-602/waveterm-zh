@@ -40,7 +40,7 @@ function formatElapsedTime(elapsedMs: number): string {
         return `${elapsedHours}h${remainingMinutes}m`;
     }
 
-    return "more than a day";
+    return "超过一天";
 }
 
 const StalledOverlay = React.memo(
@@ -87,19 +87,19 @@ const StalledOverlay = React.memo(
                 <div className="flex items-center gap-3 w-full pt-2.5 pb-2.5 pr-2 pl-3">
                     <i
                         className="fa-solid fa-triangle-exclamation text-warning text-base shrink-0"
-                        title="Connection Stalled"
+                        title={"连接停滞"}
                     ></i>
                     <div className="text-[11px] font-semibold leading-4 tracking-[0.11px] text-white min-w-0 flex-1 break-words @max-xxs:hidden">
-                        Connection to "{connName}" is stalled
+                        与“{connName}”的连接已停滞
                         {elapsedTime && ` (no activity for ${elapsedTime})`}
                     </div>
                     <div className="flex-1 hidden @max-xxs:block"></div>
                     <Button
                         className="outlined grey text-[11px] py-[3px] px-[7px] @max-w350:text-[12px] @max-w350:py-[5px] @max-w350:px-[6px]"
                         onClick={handleDisconnect}
-                        title="Disconnect"
+                        title={"断开连接"}
                     >
-                        <span className="@max-w350:hidden!">Disconnect</span>
+                        <span className="@max-w350:hidden!">断开连接</span>
                         <i className="fa-solid fa-link-slash hidden! @max-w350:inline!"></i>
                     </Button>
                 </div>
@@ -171,10 +171,10 @@ export const ConnStatusOverlay = React.memo(
             }
         }, [connName, waveEnv]);
 
-        let statusText = `Disconnected from "${connName}"`;
+        let statusText = `已断开与“${connName}”的连接`;
         let showReconnect = true;
         if (connStatus.status == "connecting") {
-            statusText = `Connecting to "${connName}"...`;
+            statusText = `正在连接“${connName}”…`;
             showReconnect = false;
         }
         if (connStatus.status == "connected") {
@@ -186,7 +186,7 @@ export const ConnStatusOverlay = React.memo(
             reconDisplay = <i className="fa-sharp fa-solid fa-rotate-right"></i>;
             reconClassName = clsx(reconClassName, "text-[12px] py-[5px] px-[6px]");
         } else {
-            reconDisplay = "Reconnect";
+            reconDisplay = "重新连接";
             reconClassName = clsx(reconClassName, "text-[11px] py-[3px] px-[7px]");
         }
         const showIcon = connStatus.status != "connecting";
@@ -239,14 +239,14 @@ export const ConnStatusOverlay = React.memo(
                                     className="connstatus-error"
                                     options={{ scrollbars: { autoHide: "leave" } }}
                                 >
-                                    <CopyButton className="copy-button" onClick={handleCopy} title="Copy" />
-                                    {showError ? <div>error: {connStatus.error}</div> : null}
-                                    {showWshError ? <div>unable to use wsh: {connStatus.wsherror}</div> : null}
+                                    <CopyButton className="copy-button" onClick={handleCopy} title={"复制"} />
+                                    {showError ? <div>错误： {connStatus.error}</div> : null}
+                                    {showWshError ? <div>wsh 暂不可用： {connStatus.wsherror}</div> : null}
                                 </OverlayScrollbarsComponent>
                             )}
                             {showWshError && (
                                 <Button className={reconClassName} onClick={handleDisableWsh}>
-                                    always disable wsh
+                                    始终禁用 wsh
                                 </Button>
                             )}
                         </div>

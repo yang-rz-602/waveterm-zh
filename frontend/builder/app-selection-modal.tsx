@@ -51,7 +51,7 @@ function CreateNewWaveApp({ onCreateApp }: { onCreateApp: (appName: string) => P
 
     return (
         <div className="min-h-[80px]">
-            <h3 className="text-base font-medium mb-1 text-muted-foreground">Create New WaveApp</h3>
+            <h3 className="text-base font-medium mb-1 text-muted-foreground">新建 Wave 应用</h3>
             <div className="relative">
                 <div className="flex w-full">
                     <input
@@ -84,7 +84,7 @@ function CreateNewWaveApp({ onCreateApp }: { onCreateApp: (appName: string) => P
                                 : "bg-accent text-black hover:bg-accent-hover cursor-pointer"
                         }`}
                     >
-                        Create
+                        创建
                     </button>
                 </div>
                 {inputError && (
@@ -142,7 +142,7 @@ export function AppSelectionModal() {
             data: { "builder:appid": appIdToUse },
         });
         globalStore.set(atoms.builderAppId, appIdToUse);
-        document.title = `WaveApp Builder (${appIdToUse})`;
+        document.title = `Wave 应用构建器（${appIdToUse}）`;
         getApi().setBuilderWindowAppId(appIdToUse);
     };
 
@@ -155,7 +155,7 @@ export function AppSelectionModal() {
             data: { "builder:appid": draftAppId },
         });
         globalStore.set(atoms.builderAppId, draftAppId);
-        document.title = `WaveApp Builder (${draftAppId})`;
+        document.title = `Wave 应用构建器（${draftAppId}）`;
         getApi().setBuilderWindowAppId(draftAppId);
     };
 
@@ -175,7 +175,7 @@ export function AppSelectionModal() {
     if (loading) {
         return (
             <FlexiModal className="min-w-[600px] w-[600px]">
-                <div className="text-center py-8">Loading apps...</div>
+                <div className="text-center py-8">正在加载应用…</div>
             </FlexiModal>
         );
     }
@@ -183,7 +183,7 @@ export function AppSelectionModal() {
     return (
         <FlexiModal className="min-w-[600px] w-[600px] max-h-[90vh] overflow-y-auto">
             <div className="w-full px-2 pt-0 pb-4">
-                <h2 className="text-2xl mb-2">Select a WaveApp to Edit</h2>
+                <h2 className="text-2xl mb-2">选择要编辑的 Wave 应用</h2>
 
                 {error && (
                     <div className="mb-6 px-4 py-3 bg-panel rounded">
@@ -196,7 +196,7 @@ export function AppSelectionModal() {
 
                 {apps.length > 0 && (
                     <div className="mb-2">
-                        <h3 className="text-base font-medium mb-1 text-muted-foreground">Existing WaveApps</h3>
+                        <h3 className="text-base font-medium mb-1 text-muted-foreground">现有 Wave 应用</h3>
                         <div className="space-y-2 max-h-[220px] overflow-y-auto">
                             {apps.map((appInfo) => (
                                 <button
@@ -209,7 +209,7 @@ export function AppSelectionModal() {
                                         <div className="flex flex-col">
                                             <span>{getAppDisplayName(appInfo.appid)}</span>
                                             <span className="text-[11px] text-muted mt-0.5">
-                                                Last updated: {formatRelativeTime(appInfo.modtime)}
+                                                最后更新： {formatRelativeTime(appInfo.modtime)}
                                             </span>
                                         </div>
                                     </div>
@@ -222,7 +222,7 @@ export function AppSelectionModal() {
                 {apps.length > 0 && (
                     <div className="flex items-center gap-4 my-2">
                         <div className="flex-1 border-t border-border"></div>
-                        <span className="text-muted-foreground text-sm">or</span>
+                        <span className="text-muted-foreground text-sm">或</span>
                         <div className="flex-1 border-t border-border"></div>
                     </div>
                 )}

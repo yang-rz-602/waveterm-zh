@@ -50,28 +50,28 @@ export function blockViewToIcon(view: string): string {
 
 export function blockViewToName(view: string): string {
     if (util.isBlank(view)) {
-        return "(No View)";
+        return "（暂无视图）";
     }
     if (view == "term") {
-        return "Terminal";
+        return "终端";
     }
     if (view == "preview") {
-        return "Preview";
+        return "预览";
     }
     if (view == "web") {
-        return "Web";
+        return "网页";
     }
     if (view == "waveai") {
         return "WaveAI";
     }
     if (view == "help") {
-        return "Help";
+        return "帮助";
     }
     if (view == "tips") {
-        return "Tips";
+        return "使用提示";
     }
     if (view == "processviewer") {
-        return "Processes";
+        return "进程";
     }
     return view;
 }
@@ -215,7 +215,7 @@ export const OptMagnifyButton = React.memo(
         const magnifyDecl: IconButtonDecl = {
             elemtype: "iconbutton",
             icon: <MagnifyIcon enabled={magnified} />,
-            title: magnified ? "Minimize" : "Magnify",
+            title: magnified ? "最小化" : "放大",
             click: toggleMagnify,
             disabled,
         };

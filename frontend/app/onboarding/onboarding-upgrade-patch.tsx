@@ -75,7 +75,7 @@ export function UpgradeOnboardingFooter({
                 </div>
                 <div className="flex flex-row items-center justify-center [&>button]:!px-5 [&>button]:!py-2 [&>button]:text-sm">
                     <Button className="font-[600]" onClick={onClose}>
-                        Continue
+                        继续
                     </Button>
                 </div>
                 <div className="flex-1 flex justify-end">
@@ -264,7 +264,7 @@ const UpgradeOnboardingPatch = ({ isReleaseNotes = false }: UpgradeOnboardingPat
                             <Logo />
                         </div>
                         <div className="text-center text-[25px] font-normal text-foreground">
-                            Wave {currentVersion.version} Update
+                            Wave {currentVersion.version} 更新
                         </div>
                     </header>
                     <OverlayScrollbarsComponent

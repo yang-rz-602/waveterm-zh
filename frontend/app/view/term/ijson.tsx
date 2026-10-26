@@ -25,7 +25,7 @@ function convertNodeToTag(node: IJsonNode | string, idx?: number): React.ReactNo
     let key = node.props?.key ?? "child-" + idx;
     let TagComp = TagMap[node.tag];
     if (!TagComp) {
-        return <div key={key}>Unknown tag:{node.tag}</div>;
+        return <div key={key}>未知标签：{node.tag}</div>;
     }
     return <TagComp key={key} node={node} />;
 }

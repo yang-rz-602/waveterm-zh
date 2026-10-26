@@ -14,14 +14,13 @@ const EmptyStateView = memo(() => {
             <div className="flex flex-col items-center gap-6 max-w-[500px] text-center px-8">
                 <div className="text-6xl">🏗️</div>
                 <div className="flex flex-col gap-3">
-                    <h2 className="text-2xl font-semibold text-primary">No App to Preview</h2>
+                    <h2 className="text-2xl font-semibold text-primary">暂无可预览的应用</h2>
                     <p className="text-base text-secondary leading-relaxed">
-                        Get started by using the AI chat interface on the left to create your WaveApp. Describe what you
-                        want to build, and the AI will help you generate the code.
+                        在左侧 AI 对话中描述想要构建的应用，AI 将协助生成代码。
                     </p>
                 </div>
                 <div className="text-base text-secondary mt-2">
-                    Your app will appear here once <span className="font-mono">app.go</span> is created
+                    应用将在此处显示，待 <span className="font-mono">app.go</span> 创建完成
                 </div>
             </div>
         </div>
@@ -68,10 +67,9 @@ const ErrorStateView = memo(({ errorMsg }: { errorMsg: string }) => {
                 <div className="flex flex-col items-center gap-6 max-w-2xl text-center px-8">
                     <div className="text-6xl">🔐</div>
                     <div className="flex flex-col gap-3">
-                        <h2 className="text-2xl font-semibold text-error">Secrets Required</h2>
+                        <h2 className="text-2xl font-semibold text-error">需要配置凭据</h2>
                         <p className="text-base text-secondary leading-relaxed">
-                            This app requires secrets that must be configured. Please use the Secrets tab to set and bind
-                            the required secrets for your app to run.
+                            此应用需要凭据，请在凭据标签页完成设置和绑定后运行。
                         </p>
                         <div className="text-left bg-panel border border-error/30 rounded-lg p-4 max-h-96 overflow-auto mt-2">
                             <pre className="text-sm text-secondary whitespace-pre-wrap font-mono">{displayMsg}</pre>
@@ -80,7 +78,7 @@ const ErrorStateView = memo(({ errorMsg }: { errorMsg: string }) => {
                             onClick={handleGoToSecrets}
                             className="px-6 py-2 mt-2 bg-accent/80 text-primary font-semibold rounded hover:bg-accent transition-colors cursor-pointer"
                         >
-                            Go to Secrets Tab
+                            前往凭据标签页
                         </button>
                     </div>
                 </div>
@@ -92,7 +90,7 @@ const ErrorStateView = memo(({ errorMsg }: { errorMsg: string }) => {
         <div className="w-full h-full flex items-center justify-center bg-background">
             <div className="flex flex-col items-center gap-6 max-w-2xl text-center px-8">
                 <div className="flex flex-col gap-3">
-                    <h2 className="text-2xl font-semibold text-error">Build Error</h2>
+                    <h2 className="text-2xl font-semibold text-error">构建错误</h2>
                     <div className="text-left bg-panel border border-error/30 rounded-lg p-4 max-h-96 overflow-auto">
                         <pre className="text-sm text-secondary whitespace-pre-wrap font-mono">{displayMsg}</pre>
                     </div>
@@ -102,13 +100,13 @@ const ErrorStateView = memo(({ errorMsg }: { errorMsg: string }) => {
                                 onClick={handleAddToContext}
                                 className="px-4 py-2 bg-panel text-primary border border-border rounded hover:bg-panel/80 transition-colors cursor-pointer"
                             >
-                                Add Error to AI Context
+                                将错误添加到 AI 上下文
                             </button>
                             <button
                                 onClick={handleAskAIToFix}
                                 className="px-4 py-2 bg-accent/80 text-primary font-semibold rounded hover:bg-accent transition-colors cursor-pointer"
                             >
-                                Ask AI to Fix
+                                请 AI 修复
                             </button>
                         </div>
                     )}
@@ -126,9 +124,9 @@ const BuildingStateView = memo(() => {
             <div className="flex flex-col items-center gap-6 max-w-[500px] text-center px-8">
                 <div className="text-6xl">⚙️</div>
                 <div className="flex flex-col gap-3">
-                    <h2 className="text-2xl font-semibold text-primary">App is Building...</h2>
+                    <h2 className="text-2xl font-semibold text-primary">正在构建应用…</h2>
                     <p className="text-base text-secondary leading-relaxed">
-                        Your WaveApp is being compiled and prepared. This may take a few moments.
+                        正在编译并准备 Wave 应用，请稍候。
                     </p>
                 </div>
             </div>
@@ -151,9 +149,9 @@ const StoppedStateView = memo(({ onStart }: { onStart: () => void }) => {
         <div className="w-full h-full flex items-center justify-center bg-background">
             <div className="flex flex-col items-center gap-6 max-w-[500px] text-center px-8">
                 <div className="flex flex-col gap-3">
-                    <h2 className="text-2xl font-semibold text-primary">App is Not Running</h2>
+                    <h2 className="text-2xl font-semibold text-primary">应用尚未运行</h2>
                     <p className="text-base text-secondary leading-relaxed">
-                        Your WaveApp is currently not running. Click the button below to start it.
+                        Wave 应用尚未运行，点击下方按钮即可启动。
                     </p>
                 </div>
                 {!isStarting && (
@@ -161,10 +159,10 @@ const StoppedStateView = memo(({ onStart }: { onStart: () => void }) => {
                         onClick={handleStart}
                         className="px-6 py-2 bg-accent text-primary font-semibold rounded hover:bg-accent/80 transition-colors cursor-pointer"
                     >
-                        Start App
+                        启动应用
                     </button>
                 )}
-                {isStarting && <div className="text-base text-success">Starting...</div>}
+                {isStarting && <div className="text-base text-success">正在启动…</div>}
             </div>
         </div>
     );

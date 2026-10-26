@@ -157,7 +157,7 @@ const TabV = forwardRef<HTMLDivElement, TabVProps>((props, ref) => {
             editableRef.current.blur();
             event.preventDefault();
             event.stopPropagation();
-        } else if (curLen >= 14 && !["Backspace", "Delete", "ArrowLeft", "ArrowRight"].includes(event.key)) {
+        } else if (curLen >= 14 && !["Backspace", "删除", "ArrowLeft", "ArrowRight"].includes(event.key)) {
             const selection = window.getSelection();
             if (!selection || selection.isCollapsed) {
                 event.preventDefault();
@@ -209,7 +209,7 @@ const TabV = forwardRef<HTMLDivElement, TabVProps>((props, ref) => {
                     className="ghost grey close"
                     onClick={onClose}
                     onMouseDown={handleMouseDownOnClose}
-                    title="Close Tab"
+                    title={"关闭标签页"}
                 >
                     <i className="fa fa-solid fa-xmark" />
                 </Button>

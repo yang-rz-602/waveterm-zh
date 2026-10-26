@@ -59,7 +59,7 @@ const SpecializedView = memo(({ parentRef, model }: SpecializedViewProps) => {
     }
     const SpecializedViewComponent = SpecializedViewMap[specializedView.specializedView];
     if (!SpecializedViewComponent) {
-        return <CenteredDiv>Invalid Specialized View Component ({specializedView.specializedView})</CenteredDiv>;
+        return <CenteredDiv>专用视图组件无效（{specializedView.specializedView})</CenteredDiv>;
     }
     return <SpecializedViewComponent key={path} model={model} parentRef={parentRef} />;
 });
@@ -161,7 +161,7 @@ function PreviewView({
                 onSelect={handleSelect}
                 onTab={handleTab}
                 fetchSuggestions={fetchSuggestionsFn}
-                placeholderText="Open File..."
+                placeholderText={"打开文件…"}
             />
         </>
     );

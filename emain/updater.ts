@@ -1,7 +1,7 @@
 // Copyright 2025, Command Line Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { dialog, ipcMain, Notification } from "electron";
+import { app, dialog, ipcMain, Notification } from "electron";
 import { autoUpdater } from "electron-updater";
 import { readFileSync } from "fs";
 import path from "path";
@@ -94,7 +94,7 @@ export class Updater {
             this.status = "ready";
             const updateNotification = new Notification({
                 title: "Wave Terminal",
-                body: "A new version of Wave Terminal is ready to install.",
+                body: "Wave Terminal 新版本已准备好安装。",
             });
             updateNotification.on("click", () => {
                 fireAndForget(this.promptToInstallUpdate.bind(this));
@@ -163,7 +163,7 @@ export class Updater {
             if (userInput && !result.downloadPromise) {
                 const dialogOpts: Electron.MessageBoxOptions = {
                     type: "info",
-                    message: "There are currently no updates available.",
+                    message: "当前已是最新版本。",
                 };
                 if (focusedWaveWindow) {
                     dialog.showMessageBox(focusedWaveWindow, dialogOpts);
@@ -181,10 +181,10 @@ export class Updater {
     async promptToInstallUpdate() {
         const dialogOpts: Electron.MessageBoxOptions = {
             type: "info",
-            buttons: ["Restart", "Later"],
-            title: "Application Update",
+            buttons: ["重启", "稍后"],
+            title: "应用更新",
             message: process.platform === "win32" ? this.availableUpdateReleaseNotes : this.availableUpdateReleaseName,
-            detail: "A new version has been downloaded. Restart the application to apply the updates.",
+            detail: "新版本已下载，重启应用以完成更新。",
         };
 
         const allWindows = getAllWaveWindows();
@@ -211,6 +211,7 @@ export class Updater {
 }
 
 export function getResolvedUpdateChannel(): string {
+    if (app.getName() === "Wave-ZH") return "本地汉化版";
     return isDev() ? "dev" : (autoUpdater.channel ?? "latest");
 }
 
@@ -228,7 +229,7 @@ let autoUpdateLock = false;
  * Configures the auto-updater based on the user's preference
  */
 export async function configureAutoUpdater() {
-    if (isDev()) {
+    if (isDev() || app.getName() === "Wave-ZH") {
         console.log("skipping auto-updater in dev mode");
         return;
     }

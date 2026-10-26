@@ -118,7 +118,7 @@ export class TermViewModel implements ViewModel {
             const blockData = get(this.blockAtom);
             const termMode = get(this.termMode);
             if (termMode == "vdom") {
-                return "Wave App";
+                return "Wave 应用";
             }
             if (blockData?.meta?.controller == "cmd") {
                 return "";
@@ -132,7 +132,7 @@ export class TermViewModel implements ViewModel {
                     {
                         elemtype: "iconbutton",
                         icon: "square-terminal",
-                        title: "Switch back to Terminal",
+                        title: "切换回终端",
                         click: () => {
                             this.setTermMode("term");
                         },
@@ -145,7 +145,7 @@ export class TermViewModel implements ViewModel {
                 rtn.push({
                     elemtype: "iconbutton",
                     icon: "bolt",
-                    title: "Switch to Wave App",
+                    title: "切换到 Wave 应用",
                     click: () => {
                         this.setTermMode("vdom");
                     },
@@ -171,7 +171,7 @@ export class TermViewModel implements ViewModel {
                         icon: "refresh",
                         iconColor: "var(--success-color)",
                         iconSpin: true,
-                        title: "Restarting Command",
+                        title: "正在重新执行命令",
                         noAction: true,
                     });
                 } else {
@@ -182,7 +182,7 @@ export class TermViewModel implements ViewModel {
                                 elemtype: "iconbutton",
                                 icon: "check",
                                 iconColor: "var(--success-color)",
-                                title: "Command Exited Successfully",
+                                title: "命令执行成功",
                                 noAction: true,
                             });
                         } else {
@@ -190,7 +190,7 @@ export class TermViewModel implements ViewModel {
                                 elemtype: "iconbutton",
                                 icon: "xmark-large",
                                 iconColor: "var(--error-color)",
-                                title: "Exit Code: " + fullShellProcStatus?.shellprocexitcode,
+                                title: "退出码： " + fullShellProcStatus?.shellprocexitcode,
                                 noAction: true,
                             });
                         }
@@ -201,9 +201,9 @@ export class TermViewModel implements ViewModel {
             if (isMI && this.isBasicTerm(get)) {
                 rtn.push({
                     elemtype: "textbutton",
-                    text: "Multi Input ON",
+                    text: "多终端同步输入已开启",
                     className: "yellow !py-[2px] !px-[10px] text-[11px] font-[500]",
-                    title: "Input will be sent to all connected terminals (click to disable)",
+                    title: "输入将发送到所有已连接的终端（点击关闭）",
                     onClick: () => {
                         globalStore.set(this.tabModel.isTermMultiInput, false);
                     },
@@ -308,16 +308,16 @@ export class TermViewModel implements ViewModel {
             }
             let iconName: string = null;
             let title: string = null;
-            const noun = isCmd ? "Command" : "Shell";
+            const noun = isCmd ? "命令" : "Shell";
             if (shellProcStatus == "init") {
                 iconName = "play";
-                title = "Click to Start " + noun;
+                title = "点击启动 " + noun;
             } else if (shellProcStatus == "running") {
                 iconName = "refresh";
-                title = noun + " Running. Click to Restart";
+                title = noun + " 运行中，点击重新启动";
             } else if (shellProcStatus == "done") {
                 iconName = "refresh";
-                title = noun + " Exited. Click to Restart";
+                title = noun + " 已退出，点击重新启动";
             }
             if (iconName != null) {
                 const buttonDecl: IconButtonDecl = {
@@ -411,7 +411,7 @@ export class TermViewModel implements ViewModel {
                 elemtype: "iconbutton",
                 icon,
                 className: "text-muted",
-                title: "No shell integration — Wave AI unable to run commands.",
+                title: "Shell 集成尚未启用，Wave AI 的命令执行功能暂不可用。",
                 noAction: true,
             };
         }
@@ -420,21 +420,21 @@ export class TermViewModel implements ViewModel {
                 elemtype: "iconbutton",
                 icon,
                 className: "text-accent",
-                title: "Shell ready — Wave AI can run commands in this terminal.",
+                title: "Shell 已就绪，Wave AI 可以在此终端执行命令。",
                 noAction: true,
             };
         }
         if (shellIntegrationStatus === "running-command") {
             let title = claudeCodeActive
-                ? "Claude Code Detected"
-                : "Shell busy — Wave AI unable to run commands while another command is running.";
+                ? "已检测到 Claude Code"
+                : "Shell 正忙，当前命令结束后 Wave AI 才能执行其他命令。";
 
             if (this.termRef.current) {
                 const inAltBuffer = this.termRef.current.terminal?.buffer?.active?.type === "alternate";
                 const lastCommand = get(this.termRef.current.lastCommandAtom);
                 const blockingCmd = getBlockingCommand(lastCommand, inAltBuffer);
                 if (blockingCmd) {
-                    title = `Wave AI integration disabled while you're inside ${blockingCmd}.`;
+                    title = `使用 ${blockingCmd} 时，Wave AI 集成暂时关闭。`;
                 }
             }
 
@@ -455,7 +455,7 @@ export class TermViewModel implements ViewModel {
                 elemtype: "iconbutton",
                 icon: "microchip",
                 iconColor: "var(--error-color)",
-                title: "WebGL not supported",
+                title: "当前环境不支持 WebGL",
                 noAction: true,
             };
         }
@@ -468,7 +468,7 @@ export class TermViewModel implements ViewModel {
                 elemtype: "iconbutton",
                 icon: "microchip",
                 iconColor: "var(--success-color)",
-                title: "WebGL enabled (click to disable)",
+                title: "WebGL 已启用（点击关闭）",
                 click: () => this.toggleWebGl(),
             };
         }
@@ -476,7 +476,7 @@ export class TermViewModel implements ViewModel {
             elemtype: "iconbutton",
             icon: "microchip",
             iconColor: "var(--secondary-text-color)",
-            title: "WebGL disabled (click to enable)",
+            title: "WebGL 已关闭（点击启用）",
             click: () => this.toggleWebGl(),
         };
     }
@@ -829,7 +829,7 @@ export class TermViewModel implements ViewModel {
 
         if (hasSelection) {
             menu.push({
-                label: "Copy",
+                label: "复制",
                 click: () => {
                     if (selection) {
                         const text =
@@ -842,7 +842,7 @@ export class TermViewModel implements ViewModel {
             });
             menu.push({ type: "separator" });
             menu.push({
-                label: "Send to Wave AI",
+                label: "发送到 Wave AI",
                 click: () => {
                     if (selection) {
                         const aiModel = WaveAIModel.getInstance();
@@ -869,7 +869,7 @@ export class TermViewModel implements ViewModel {
             }
             if (hoveredURL) {
                 menu.push({
-                    label: hoveredURL.hostname ? "Open URL (" + hoveredURL.hostname + ")" : "Open URL",
+                    label: hoveredURL.hostname ? "打开网址（" + hoveredURL.hostname + ")" : "打开网址",
                     click: () => {
                         createBlock({
                             meta: {
@@ -880,7 +880,7 @@ export class TermViewModel implements ViewModel {
                     },
                 });
                 menu.push({
-                    label: "Open URL in External Browser",
+                    label: "在外部浏览器中打开网址",
                     click: () => {
                         getApi().openExternal(hoveredURL.toString());
                     },
@@ -890,7 +890,7 @@ export class TermViewModel implements ViewModel {
         }
 
         menu.push({
-            label: "Paste",
+            label: "粘贴",
             click: () => {
                 getApi().nativePaste();
             },
@@ -900,7 +900,7 @@ export class TermViewModel implements ViewModel {
 
         const magnified = globalStore.get(this.nodeModel.isMagnified);
         menu.push({
-            label: magnified ? "Un-Magnify Block" : "Magnify Block",
+            label: magnified ? "还原区块大小" : "放大区块",
             click: () => {
                 this.nodeModel.toggleMagnify();
             },
@@ -937,7 +937,7 @@ export class TermViewModel implements ViewModel {
 
         const fullMenu: ContextMenuItem[] = [];
         fullMenu.push({
-            label: "Split Horizontally",
+            label: "水平拆分",
             click: () => {
                 const blockData = globalStore.get(this.blockAtom);
                 const blockDef: BlockDef = {
@@ -947,7 +947,7 @@ export class TermViewModel implements ViewModel {
             },
         });
         fullMenu.push({
-            label: "Split Vertically",
+            label: "垂直拆分",
             click: () => {
                 const blockData = globalStore.get(this.blockAtom);
                 const blockDef: BlockDef = {
@@ -964,7 +964,7 @@ export class TermViewModel implements ViewModel {
 
         if (canShowFileBrowser) {
             fullMenu.push({
-                label: "File Browser",
+                label: "文件浏览器",
                 click: () => {
                     const blockData = globalStore.get(this.blockAtom);
                     const connection = blockData?.meta?.connection;
@@ -984,7 +984,7 @@ export class TermViewModel implements ViewModel {
         }
 
         fullMenu.push({
-            label: "Save Session As...",
+            label: "会话另存为…",
             click: () => {
                 if (this.termRef.current) {
                     const content = this.termRef.current.getScrollbackContent();
@@ -999,13 +999,13 @@ export class TermViewModel implements ViewModel {
                                 console.error("Failed to save scrollback:", error);
                                 const errorMessage = error?.message || "An unknown error occurred";
                                 modalsModel.pushModal("MessageModal", {
-                                    children: `Failed to save session scrollback: ${errorMessage}`,
+                                    children: `保存会话历史输出失败：${errorMessage}`,
                                 });
                             }
                         });
                     } else {
                         modalsModel.pushModal("MessageModal", {
-                            children: "No scrollback content to save.",
+                            children: "暂无可保存的终端历史输出。",
                         });
                     }
                 }
@@ -1022,14 +1022,14 @@ export class TermViewModel implements ViewModel {
             };
         });
         submenu.unshift({
-            label: "Default",
+            label: "默认",
             type: "checkbox",
             checked: curThemeName == null,
             click: () => this.setTerminalTheme(null),
         });
         const transparencySubMenu: ContextMenuItem[] = [];
         transparencySubMenu.push({
-            label: "Default",
+            label: "默认",
             type: "checkbox",
             checked: transparencyMeta == null,
             click: () => {
@@ -1040,7 +1040,7 @@ export class TermViewModel implements ViewModel {
             },
         });
         transparencySubMenu.push({
-            label: "Transparent Background",
+            label: "透明背景",
             type: "checkbox",
             checked: transparencyMeta == 0.5,
             click: () => {
@@ -1051,7 +1051,7 @@ export class TermViewModel implements ViewModel {
             },
         });
         transparencySubMenu.push({
-            label: "No Transparency",
+            label: "关闭透明效果",
             type: "checkbox",
             checked: transparencyMeta == 0,
             click: () => {
@@ -1096,7 +1096,7 @@ export class TermViewModel implements ViewModel {
         const effectiveCursorBlink = overrideCursorBlink === true;
         const cursorSubMenu: ContextMenuItem[] = [
             {
-                label: "Default",
+                label: "默认",
                 type: "checkbox",
                 checked: isCursorDefault,
                 click: () => {
@@ -1107,7 +1107,7 @@ export class TermViewModel implements ViewModel {
                 },
             },
             {
-                label: "Block",
+                label: "方块",
                 type: "checkbox",
                 checked: !isCursorDefault && effectiveCursor === "block" && !effectiveCursorBlink,
                 click: () => {
@@ -1118,7 +1118,7 @@ export class TermViewModel implements ViewModel {
                 },
             },
             {
-                label: "Block (Blinking)",
+                label: "方块（闪烁）",
                 type: "checkbox",
                 checked: !isCursorDefault && effectiveCursor === "block" && effectiveCursorBlink,
                 click: () => {
@@ -1129,7 +1129,7 @@ export class TermViewModel implements ViewModel {
                 },
             },
             {
-                label: "Bar",
+                label: "竖线",
                 type: "checkbox",
                 checked: !isCursorDefault && effectiveCursor === "bar" && !effectiveCursorBlink,
                 click: () => {
@@ -1140,7 +1140,7 @@ export class TermViewModel implements ViewModel {
                 },
             },
             {
-                label: "Bar (Blinking)",
+                label: "竖线（闪烁）",
                 type: "checkbox",
                 checked: !isCursorDefault && effectiveCursor === "bar" && effectiveCursorBlink,
                 click: () => {
@@ -1151,7 +1151,7 @@ export class TermViewModel implements ViewModel {
                 },
             },
             {
-                label: "Underline",
+                label: "下划线",
                 type: "checkbox",
                 checked: !isCursorDefault && effectiveCursor === "underline" && !effectiveCursorBlink,
                 click: () => {
@@ -1162,7 +1162,7 @@ export class TermViewModel implements ViewModel {
                 },
             },
             {
-                label: "Underline (Blinking)",
+                label: "下划线（闪烁）",
                 type: "checkbox",
                 checked: !isCursorDefault && effectiveCursor === "underline" && effectiveCursorBlink,
                 click: () => {
@@ -1174,29 +1174,29 @@ export class TermViewModel implements ViewModel {
             },
         ];
         fullMenu.push({
-            label: "Themes",
+            label: "主题",
             submenu: submenu,
         });
         fullMenu.push({
-            label: "Font Size",
+            label: "字号",
             submenu: fontSizeSubMenu,
         });
         fullMenu.push({
-            label: "Cursor",
+            label: "光标",
             submenu: cursorSubMenu,
         });
         fullMenu.push({
-            label: "Transparency",
+            label: "透明度",
             submenu: transparencySubMenu,
         });
         fullMenu.push({ type: "separator" });
         const advancedSubmenu: ContextMenuItem[] = [];
         const allowBracketedPaste = blockData?.meta?.["term:allowbracketedpaste"];
         advancedSubmenu.push({
-            label: "Allow Bracketed Paste Mode",
+            label: "允许括号粘贴模式",
             submenu: [
                 {
-                    label: "Default (" + (defaultAllowBracketedPaste ? "On" : "Off") + ")",
+                    label: "Default (" + (defaultAllowBracketedPaste ? "开启" : "关闭") + ")",
                     type: "checkbox",
                     checked: allowBracketedPaste == null,
                     click: () => {
@@ -1207,7 +1207,7 @@ export class TermViewModel implements ViewModel {
                     },
                 },
                 {
-                    label: "On",
+                    label: "开启",
                     type: "checkbox",
                     checked: allowBracketedPaste === true,
                     click: () => {
@@ -1218,7 +1218,7 @@ export class TermViewModel implements ViewModel {
                     },
                 },
                 {
-                    label: "Off",
+                    label: "关闭",
                     type: "checkbox",
                     checked: allowBracketedPaste === false,
                     click: () => {
@@ -1231,15 +1231,15 @@ export class TermViewModel implements ViewModel {
             ],
         });
         advancedSubmenu.push({
-            label: "Force Restart Controller",
+            label: "强制重启控制器",
             click: () => fireAndForget(() => this.forceRestartController()),
         });
         const isClearOnStart = blockData?.meta?.["cmd:clearonstart"];
         advancedSubmenu.push({
-            label: "Clear Output On Restart",
+            label: "重启时清空输出",
             submenu: [
                 {
-                    label: "On",
+                    label: "开启",
                     type: "checkbox",
                     checked: isClearOnStart,
                     click: () => {
@@ -1250,7 +1250,7 @@ export class TermViewModel implements ViewModel {
                     },
                 },
                 {
-                    label: "Off",
+                    label: "关闭",
                     type: "checkbox",
                     checked: !isClearOnStart,
                     click: () => {
@@ -1264,10 +1264,10 @@ export class TermViewModel implements ViewModel {
         });
         const runOnStart = blockData?.meta?.["cmd:runonstart"];
         advancedSubmenu.push({
-            label: "Run On Startup",
+            label: "启动时运行",
             submenu: [
                 {
-                    label: "On",
+                    label: "开启",
                     type: "checkbox",
                     checked: runOnStart,
                     click: () => {
@@ -1278,7 +1278,7 @@ export class TermViewModel implements ViewModel {
                     },
                 },
                 {
-                    label: "Off",
+                    label: "关闭",
                     type: "checkbox",
                     checked: !runOnStart,
                     click: () => {
@@ -1292,10 +1292,10 @@ export class TermViewModel implements ViewModel {
         });
         const debugConn = blockData?.meta?.["term:conndebug"];
         advancedSubmenu.push({
-            label: "Debug Connection",
+            label: "调试连接",
             submenu: [
                 {
-                    label: "Off",
+                    label: "关闭",
                     type: "checkbox",
                     checked: !debugConn,
                     click: () => {
@@ -1306,7 +1306,7 @@ export class TermViewModel implements ViewModel {
                     },
                 },
                 {
-                    label: "Info",
+                    label: "信息",
                     type: "checkbox",
                     checked: debugConn == "info",
                     click: () => {
@@ -1317,7 +1317,7 @@ export class TermViewModel implements ViewModel {
                     },
                 },
                 {
-                    label: "Verbose",
+                    label: "详细",
                     type: "checkbox",
                     checked: debugConn == "debug",
                     click: () => {
@@ -1333,20 +1333,20 @@ export class TermViewModel implements ViewModel {
         const isDurable = globalStore.get(getBlockTermDurableAtom(this.blockId));
         if (isDurable) {
             advancedSubmenu.push({
-                label: "Session Durability",
+                label: "会话持久化",
                 submenu: [
                     {
-                        label: "Restart Session in Standard Mode",
+                        label: "以标准模式重启会话",
                         click: () => fireAndForget(() => this.restartSessionWithDurability(false)),
                     },
                 ],
             });
         } else if (isDurable === false) {
             advancedSubmenu.push({
-                label: "Session Durability",
+                label: "会话持久化",
                 submenu: [
                     {
-                        label: "Restart Session in Durable Mode",
+                        label: "以持久模式重启会话",
                         click: () => fireAndForget(() => this.restartSessionWithDurability(true)),
                     },
                 ],
@@ -1354,13 +1354,13 @@ export class TermViewModel implements ViewModel {
         }
 
         fullMenu.push({
-            label: "Advanced",
+            label: "高级",
             submenu: advancedSubmenu,
         });
         if (blockData?.meta?.["term:vdomtoolbarblockid"]) {
             fullMenu.push({ type: "separator" });
             fullMenu.push({
-                label: "Close Toolbar",
+                label: "关闭工具栏",
                 click: () => {
                     RpcApi.DeleteSubBlockCommand(TabRpcClient, { blockid: blockData.meta["term:vdomtoolbarblockid"] });
                 },

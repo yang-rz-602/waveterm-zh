@@ -75,7 +75,7 @@ const InitPage = ({
         );
     };
 
-    const label = telemetryEnabled ? "Enabled" : "Disabled";
+    const label = telemetryEnabled ? "已启用" : "已关闭";
 
     return (
         <div className="flex flex-col h-full">
@@ -85,7 +85,7 @@ const InitPage = ({
                 <div className={`${isCompact ? "" : "mb-2.5"} flex justify-center`}>
                     <Logo />
                 </div>
-                <div className="text-center text-[25px] font-normal text-foreground">Welcome to Wave Terminal</div>
+                <div className="text-center text-[25px] font-normal text-foreground">欢迎使用 Wave Terminal</div>
             </header>
             <OverlayScrollbarsComponent
                 className="flex-1 overflow-y-auto min-h-0"
@@ -105,10 +105,9 @@ const InitPage = ({
                             </a>
                         </div>
                         <div className="flex flex-col items-start gap-1 flex-1">
-                            <div className="text-foreground text-base leading-[18px]">Support us on GitHub</div>
+                            <div className="text-foreground text-base leading-[18px]">在 GitHub 支持项目</div>
                             <div className="text-secondary leading-5">
-                                We're <i>open source</i>, <i>open-model</i>, and committed to providing a free terminal
-                                for individual users. Please show your support by giving us a star on{" "}
+                                我们坚持 <i>开源</i>, <i>开放模型接入</i>，并致力于为个人用户提供免费终端。欢迎为我们点赞支持，访问{" "}
                                 <a
                                     target="_blank"
                                     href="https://github.com/wavetermdev/waveterm?ref=install"
@@ -116,7 +115,7 @@ const InitPage = ({
                                     className="text-accent"
                                     onClick={handleStarClick}
                                 >
-                                    Github&nbsp;(wavetermdev/waveterm)
+                                    GitHub（wavetermdev/waveterm）
                                 </a>
                             </div>
                         </div>
@@ -133,10 +132,9 @@ const InitPage = ({
                             </a>
                         </div>
                         <div className="flex flex-col items-start gap-1 flex-1">
-                            <div className="text-foreground text-base leading-[18px]">Join our Community</div>
+                            <div className="text-foreground text-base leading-[18px]">加入社区</div>
                             <div className="text-secondary leading-5">
-                                Get help, submit feature requests, report bugs, or just chat with fellow terminal
-                                enthusiasts.
+                                获取帮助、提交功能建议、报告问题，或与终端爱好者交流。
                                 <br />
                                 <a
                                     target="_blank"
@@ -144,7 +142,7 @@ const InitPage = ({
                                     rel="noopener"
                                     className="text-accent"
                                 >
-                                    Join the Wave&nbsp;Discord&nbsp;Channel
+                                    加入 Wave Discord 频道
                                 </a>
                             </div>
                         </div>
@@ -155,7 +153,7 @@ const InitPage = ({
                         </div>
                         <div className="flex flex-col items-start gap-1 flex-1">
                             <div className="text-secondary leading-5">
-                                Anonymous usage data helps us improve features you use.
+                                匿名使用情况数据有助于改进常用功能。
                                 <br />
                                 <a
                                     className="text-secondary! hover:underline!"
@@ -163,7 +161,7 @@ const InitPage = ({
                                     href="https://waveterm.dev/privacy"
                                     rel="noopener"
                                 >
-                                    Privacy Policy
+                                    隐私政策
                                 </a>
                             </div>
                             <label className="flex items-center gap-2 cursor-pointer text-secondary">
@@ -182,7 +180,7 @@ const InitPage = ({
             <footer className={`unselectable flex-shrink-0 ${isCompact ? "mt-2" : "mt-5"}`}>
                 <div className="flex flex-row items-center justify-center [&>button]:!px-5 [&>button]:!py-2 [&>button]:text-sm [&>button:not(:first-child)]:ml-2.5">
                     <Button className="font-[600]" onClick={acceptTos}>
-                        Continue
+                        继续
                     </Button>
                 </div>
             </footer>
@@ -234,7 +232,7 @@ const NoTelemetryStarPage = ({ isCompact }: { isCompact: boolean }) => {
                 <div className={`flex justify-center`}>
                     <Logo />
                 </div>
-                <div className="text-center text-[25px] font-normal text-foreground">Telemetry Disabled ✓</div>
+                <div className="text-center text-[25px] font-normal text-foreground">使用情况统计已关闭 ✓</div>
             </header>
             <OverlayScrollbarsComponent
                 className="flex-1 overflow-y-auto min-h-0"
@@ -242,10 +240,9 @@ const NoTelemetryStarPage = ({ isCompact }: { isCompact: boolean }) => {
             >
                 <div className="flex flex-col items-center gap-6 w-full mb-2 unselectable">
                     <div className="text-center text-secondary leading-relaxed max-w-md">
-                        <p className="mb-4">No problem, we respect your privacy.</p>
+                        <p className="mb-4">已保留你的隐私偏好。</p>
                         <p className="mb-4">
-                            But, without usage data, we're flying blind. A GitHub star helps us know Wave is useful and
-                            worth maintaining.
+                            欢迎通过 GitHub 点赞支持 Wave，这有助于我们了解项目的使用价值并持续维护。
                         </p>
                     </div>
                 </div>
@@ -253,10 +250,10 @@ const NoTelemetryStarPage = ({ isCompact }: { isCompact: boolean }) => {
             <footer className={`unselectable flex-shrink-0 mt-2`}>
                 <div className="flex flex-row items-center justify-center gap-2.5 [&>button]:!px-5 [&>button]:!py-2 [&>button]:text-sm [&>button]:!h-[37px]">
                     <Button className="outlined green font-[600]" onClick={handleStarClick}>
-                        ⭐ Star on GitHub
+                        ⭐ 在 GitHub 点赞
                     </Button>
                     <Button className="outlined grey font-[600]" onClick={handleMaybeLater}>
-                        Maybe Later
+                        稍后再说
                     </Button>
                 </div>
             </footer>
