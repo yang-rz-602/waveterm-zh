@@ -54,7 +54,7 @@
         "node-abi": "^4.26.0",
         "playwright": "^1.56.1",
         "prettier": "^3.8.1",
-        "prettier-plugin-jsdoc": "^1.8.0",
+        "prettier-plugin-jsdoc": "^1.8.1",
         "prettier-plugin-organize-imports": "^4.3.0",
         "sass": "1.91.0",
         "sharp": "^0.34.5",
